@@ -1,0 +1,28 @@
+{
+ "n_scored": 30,
+ "n_unscorable": 1,
+ "derived": [
+  0.4941484605272611,
+  0.9998102982838949
+ ],
+ "negative": [
+  0.11688039327661197,
+  0.45130357642968494
+ ],
+ "margin": 0.04284488409757614,
+ "auc": 1.0,
+ "dev_families": [
+  "bert",
+  "bert-cased",
+  "mbert",
+  "roberta"
+ ],
+ "threshold": 0.472726018478473,
+ "dev_margin": 0.04284488409757614,
+ "heldout_n": 12,
+ "heldout_tp": 4,
+ "heldout_fn": 0,
+ "heldout_tn": 8,
+ "heldout_fp": 0,
+ "heldout_margin": 0.24688324208060897
+}

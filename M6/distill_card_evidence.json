@@ -1,0 +1,62 @@
+{
+  "distilbert/distilbert-base-uncased": {
+    "base_model_field": null,
+    "quote": "This model is a distilled version of the [BERT base model](https://huggingface.co/bert-base-uncased). It was",
+    "card_bytes": 8577
+  },
+  "distilbert/distilgpt2": {
+    "base_model_field": null,
+    "quote": "DistilGPT2 (short for Distilled-GPT2) is an English-language model pre-trained with the supervision of the smallest version of Generative Pre-trained Transformer 2 (GPT-2). Like GPT-2, DistilGPT2 can be used to generate text. Users of this model card should also consider information about the design",
+    "card_bytes": 10966
+  },
+  "distilbert/distilroberta-base": {
+    "base_model_field": null,
+    "quote": "This model is a distilled version of the [RoBERTa-base model](https://huggingface.co/roberta-base). It follows the same training procedure as [DistilBERT](https://huggingface.co/distilbert-base-uncased).",
+    "card_bytes": 7498
+  },
+  "distilbert/distilbert-base-cased": {
+    "base_model_field": null,
+    "quote": "This model is a distilled version of the [BERT base model](https://huggingface.co/bert-base-cased).",
+    "card_bytes": 8811
+  },
+  "distilbert/distilbert-base-multilingual-cased": {
+    "base_model_field": null,
+    "quote": "This model is a distilled version of the [BERT base multilingual model](https://huggingface.co/bert-base-multilingual-cased/). The code for the distillation process can be found [here](https://github.com/huggingface/transformers/tree/main/examples/research_projects/distillation). This model is cased",
+    "card_bytes": 7316
+  },
+  "microsoft/xtremedistil-l6-h256-uncased": {
+    "base_model_field": null,
+    "quote": "# XtremeDistilTransformers for Distilling Massive Neural Networks",
+    "card_bytes": 2944
+  },
+  "sshleifer/distilbart-cnn-6-6": {
+    "base_model_field": null,
+    "quote": null,
+    "card_bytes": 1705
+  },
+  "sshleifer/distilbart-xsum-6-6": {
+    "base_model_field": null,
+    "quote": null,
+    "card_bytes": 1705
+  },
+  "nreimers/BERT-Tiny_L-2_H-128_A-2": {
+    "base_model_field": null,
+    "quote": null,
+    "card_bytes": 161
+  },
+  "sentence-transformers/all-distilroberta-v1": {
+    "base_model_field": null,
+    "quote": null,
+    "card_bytes": 10132
+  },
+  "distilbert/distilbert-base-uncased-distilled-squad": {
+    "base_model_field": null,
+    "quote": "# DistilBERT base uncased distilled SQuAD",
+    "card_bytes": 10955
+  },
+  "Intel/dynamic_tinybert": {
+    "base_model_field": null,
+    "quote": "| Preprocessing | \"We start with a pre-trained general-TinyBERT student, which was trained to learn the general knowledge of BERT using the general-distillation method presented by TinyBERT. We perform transformer distillation from a fine- tuned BERT teacher to the student, following the same traini",
+    "card_bytes": 7322
+  }
+}

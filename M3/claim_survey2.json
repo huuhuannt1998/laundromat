@@ -1,0 +1,34 @@
+[
+ {
+  "label": "head (by downloads)",
+  "n": 3000,
+  "declare_pct": 60.56666666666667,
+  "implies_pct": 53.06666666666667,
+  "of_implied_declared_pct": 80.27638190954774,
+  "multi": 53
+ },
+ {
+  "label": "recent (by lastModified)",
+  "n": 3000,
+  "declare_pct": 81.43333333333334,
+  "implies_pct": 40.43333333333333,
+  "of_implied_declared_pct": 90.18961253091508,
+  "multi": 47
+ },
+ {
+  "label": "by likes",
+  "n": 3000,
+  "declare_pct": 44.56666666666667,
+  "implies_pct": 38.9,
+  "of_implied_declared_pct": 61.610968294772924,
+  "multi": 51
+ },
+ {
+  "label": "newest (by createdAt)",
+  "n": 3000,
+  "declare_pct": 86.33333333333333,
+  "implies_pct": 44.96666666666667,
+  "of_implied_declared_pct": 93.92142327650112,
+  "multi": 37
+ }
+]

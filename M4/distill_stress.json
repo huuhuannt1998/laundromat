@@ -1,0 +1,50 @@
+[
+ {
+  "class": "P+ DISTILLATION",
+  "a": "google-bert/bert-base-uncased",
+  "b": "distilbert/distilbert-base-uncased",
+  "lap": NaN,
+  "nA": 12,
+  "nB": 0
+ },
+ {
+  "class": "P+ DISTILLATION",
+  "a": "FacebookAI/roberta-base",
+  "b": "distilbert/distilroberta-base",
+  "lap": 0.5986927375197411,
+  "nA": 12,
+  "nB": 6
+ },
+ {
+  "class": "P+ DISTILLATION",
+  "a": "gpt2",
+  "b": "distilgpt2",
+  "lap": 0.5147546293834845,
+  "nA": 12,
+  "nB": 6
+ },
+ {
+  "class": "P+ multitask-FT",
+  "a": "bigscience/bloom-560m",
+  "b": "bigscience/bloomz-560m",
+  "lap": 0.9761763190229734,
+  "nA": 24,
+  "nB": 24
+ },
+ {
+  "class": "P- unrelated",
+  "a": "google-bert/bert-base-uncased",
+  "b": "FacebookAI/roberta-base",
+  "lap": 0.11699134111404419,
+  "nA": 12,
+  "nB": 12
+ },
+ {
+  "class": "P- unrelated",
+  "a": "distilbert/distilbert-base-uncased",
+  "b": "distilbert/distilroberta-base",
+  "lap": NaN,
+  "nA": 0,
+  "nB": 6
+ }
+]

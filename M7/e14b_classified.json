@@ -1,0 +1,31 @@
+{
+ "n_fetched": 545,
+ "n_missing_arch_raw": 47,
+ "breakdown": {
+  "GENUINE HF model": 18,
+  "test fixture": 6,
+  "GGUF (not HF format)": 23
+ },
+ "genuine": [
+  "emilyalsentzer/Bio_ClinicalBERT",
+  "stanford-crfm/music-medium-800k",
+  "stanford-crfm/music-small-800k",
+  "aynetdia/babylm-mtp-gpt2",
+  "hfl/chinese-electra-180g-small-ex-discriminator",
+  "robot-test/dummy-tokenizer-fast-with-model-config",
+  "microsoft/mdeberta-v3-base",
+  "microsoft/deberta-v3-base",
+  "microsoft/deberta-v3-large",
+  "microsoft/deberta-v3-small",
+  "microsoft/deberta-base",
+  "microsoft/deberta-v2-xlarge",
+  "microsoft/deberta-large",
+  "microsoft/deberta-v3-xsmall",
+  "ku-nlp/deberta-v3-base-japanese",
+  "microsoft/deberta-v2-xxlarge",
+  "antflydb/gliner2-base-v1",
+  "lighthouse/mdeberta-v3-base-kor-further"
+ ],
+ "rate_raw": 0.08623853211009175,
+ "rate_genuine": 0.03302752293577982
+}

@@ -1,0 +1,65 @@
+[
+ {
+  "class": "IDENTITY",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "HuggingFaceTB/SmolLM2-135M",
+  "laundered": false,
+  "mode": "full",
+  "lap_colnorm": 1.0,
+  "lap_only": 1.0000001192092896
+ },
+ {
+  "class": "P+ derived",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "laundered": false,
+  "mode": "full",
+  "lap_colnorm": 0.9968764225641886,
+  "lap_only": 0.9969153086344401
+ },
+ {
+  "class": "P+ derived",
+  "a": "Qwen/Qwen2.5-0.5B",
+  "b": "Qwen/Qwen2.5-0.5B-Instruct",
+  "laundered": false,
+  "mode": "full",
+  "lap_colnorm": 0.9968592102328936,
+  "lap_only": 0.9968590786059698
+ },
+ {
+  "class": "P~ SAME-RECIPE INDEP",
+  "a": "EleutherAI/pythia-160m",
+  "b": "EleutherAI/pythia-160m-deduped",
+  "laundered": false,
+  "mode": "full",
+  "lap_colnorm": 0.1960927496353785,
+  "lap_only": 0.19417646278937659
+ },
+ {
+  "class": "LAUNDERED perm-only",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "laundered": true,
+  "mode": "perm",
+  "lap_colnorm": 0.9968764185905457,
+  "lap_only": 0.9969153086344401
+ },
+ {
+  "class": "LAUNDERED full",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "laundered": true,
+  "mode": "full",
+  "lap_colnorm": 0.9968750615914662,
+  "lap_only": 0.8807213048140208
+ },
+ {
+  "class": "LAUNDERED full",
+  "a": "Qwen/Qwen2.5-0.5B",
+  "b": "Qwen/Qwen2.5-0.5B-Instruct",
+  "laundered": true,
+  "mode": "full",
+  "lap_colnorm": 0.9968578765789667,
+  "lap_only": 0.8773340235153834
+ }
+]

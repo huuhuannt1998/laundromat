@@ -1,0 +1,25 @@
+# LAUNDROMAT — pinned analysis environment
+#
+# Captured 2026-08-25 from the machine every result in the paper was produced on.
+# python 3.13.11  |  macOS-26.5.2-arm64-arm-64bit-Mach-O
+#
+# This locks the ANALYSIS environment (our scripts). The verifier under study runs in
+# its own uv-managed environment inside M1/oracle/model-provenance-kit, pinned by that
+# repository's own lockfile at commit a75007d5ca4aaf8df2e3f055f318557a965b93aa — we do
+# not override it, because doing so would change the artifact we are measuring.
+#
+# The black-box tester (M1/oracle/model_provenance_testing) and AWM (M7/awm/repo) each
+# ship their own requirements.txt; both run under this environment as captured.
+
+# accelerate: not installed
+# sentencepiece: not installed
+huggingface_hub==1.10.2
+matplotlib==3.10.8
+numpy==2.4.3
+pandas==3.0.1
+safetensors==0.7.0
+scikit-learn==1.8.0
+scipy==1.17.1
+tokenizers==0.22.2
+torch==2.11.0
+transformers==5.5.4

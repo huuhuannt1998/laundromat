@@ -1,0 +1,54 @@
+[
+ {
+  "cls": "P+",
+  "kind": "distill",
+  "a": "google-bert/bert-base-uncased",
+  "b": "distilbert/distilbert-base-uncased",
+  "layers_parent": 12,
+  "layers_child": 6,
+  "stride": 2,
+  "lap_index": 0.290001946190993,
+  "lap_stride": 0.5255436400572459,
+  "n_index": 6,
+  "n_stride": 6
+ },
+ {
+  "cls": "P+",
+  "kind": "distill",
+  "a": "FacebookAI/roberta-base",
+  "b": "distilbert/distilroberta-base",
+  "layers_parent": 12,
+  "layers_child": 6,
+  "stride": 2,
+  "lap_index": 0.3609451800584793,
+  "lap_stride": 0.5986927375197411,
+  "n_index": 6,
+  "n_stride": 6
+ },
+ {
+  "cls": "P+",
+  "kind": "distill",
+  "a": "openai-community/gpt2",
+  "b": "distilbert/distilgpt2",
+  "layers_parent": 12,
+  "layers_child": 6,
+  "stride": 2,
+  "lap_index": 0.23369399830698967,
+  "lap_stride": 0.5147546293834845,
+  "n_index": 6,
+  "n_stride": 6
+ },
+ {
+  "cls": "P-",
+  "kind": "unrelated",
+  "a": "distilbert/distilbert-base-uncased",
+  "b": "distilbert/distilroberta-base",
+  "layers_parent": 6,
+  "layers_child": 6,
+  "stride": 1,
+  "lap_index": 0.11688039327661197,
+  "lap_stride": 0.11688039327661197,
+  "n_index": 6,
+  "n_stride": 6
+ }
+]

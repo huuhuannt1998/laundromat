@@ -1,0 +1,138 @@
+[
+ {
+  "cls": "P+",
+  "kind": "fine-tune",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "lap": 0.9968764225641886,
+  "n_layers": 30
+ },
+ {
+  "cls": "P+",
+  "kind": "fine-tune",
+  "a": "Qwen/Qwen2.5-0.5B",
+  "b": "Qwen/Qwen2.5-0.5B-Instruct",
+  "lap": 0.9968592102328936,
+  "n_layers": 24
+ },
+ {
+  "cls": "P+",
+  "kind": "fine-tune",
+  "a": "google-bert/bert-base-uncased",
+  "b": "textattack/bert-base-uncased-SST-2",
+  "lap": 0.9998102982838949,
+  "n_layers": 12
+ },
+ {
+  "cls": "P+",
+  "kind": "multitask",
+  "a": "bigscience/bloom-560m",
+  "b": "bigscience/bloomz-560m",
+  "lap": 0.9761763190229734,
+  "n_layers": 24
+ },
+ {
+  "cls": "P+",
+  "kind": "cont-pre",
+  "a": "FacebookAI/roberta-base",
+  "b": "ehsanaghaei/SecureBERT",
+  "lap": 0.8586324006319046,
+  "n_layers": 12
+ },
+ {
+  "cls": "P+",
+  "kind": "distill",
+  "a": "google-bert/bert-base-uncased",
+  "b": "distilbert/distilbert-base-uncased",
+  "lap": null,
+  "n_layers": 0
+ },
+ {
+  "cls": "P+",
+  "kind": "distill",
+  "a": "FacebookAI/roberta-base",
+  "b": "distilbert/distilroberta-base",
+  "lap": 0.3609451800584793,
+  "n_layers": 6
+ },
+ {
+  "cls": "P+",
+  "kind": "distill",
+  "a": "openai-community/gpt2",
+  "b": "distilbert/distilgpt2",
+  "lap": 0.23369399830698967,
+  "n_layers": 6
+ },
+ {
+  "cls": "P~",
+  "kind": "same-recipe",
+  "a": "EleutherAI/pythia-70m",
+  "b": "EleutherAI/pythia-70m-deduped",
+  "lap": 0.19738934189081192,
+  "n_layers": 6
+ },
+ {
+  "cls": "P~",
+  "kind": "same-recipe",
+  "a": "EleutherAI/pythia-160m",
+  "b": "EleutherAI/pythia-160m-deduped",
+  "lap": 0.1960927496353785,
+  "n_layers": 12
+ },
+ {
+  "cls": "P~",
+  "kind": "same-recipe",
+  "a": "EleutherAI/pythia-410m",
+  "b": "EleutherAI/pythia-410m-deduped",
+  "lap": 0.21511989335219064,
+  "n_layers": 24
+ },
+ {
+  "cls": "P~",
+  "kind": "same-recipe",
+  "a": "EleutherAI/pythia-70m",
+  "b": "EleutherAI/pythia-70m-v0",
+  "lap": 0.20949442436297736,
+  "n_layers": 6
+ },
+ {
+  "cls": "P~",
+  "kind": "same-recipe",
+  "a": "EleutherAI/pythia-160m",
+  "b": "EleutherAI/pythia-160m-v0",
+  "lap": 0.18922693530718485,
+  "n_layers": 12
+ },
+ {
+  "cls": "P~",
+  "kind": "same-recipe",
+  "a": "EleutherAI/pythia-410m",
+  "b": "EleutherAI/pythia-410m-v0",
+  "lap": 0.2173572207490603,
+  "n_layers": 24
+ },
+ {
+  "cls": "P~",
+  "kind": "same-recipe",
+  "a": "EleutherAI/pythia-70m-deduped",
+  "b": "EleutherAI/pythia-70m-deduped-v0",
+  "lap": 0.2678713873028755,
+  "n_layers": 6
+ },
+ {
+  "cls": "P-",
+  "kind": "unrelated",
+  "a": "google-bert/bert-base-uncased",
+  "b": "FacebookAI/roberta-base",
+  "lap": 0.11699134111404419,
+  "n_layers": 12
+ },
+ {
+  "cls": "P-",
+  "kind": "unrelated",
+  "a": "distilbert/distilbert-base-uncased",
+  "b": "distilbert/distilroberta-base",
+  "lap": null,
+  "n_layers": 0
+ }
+]

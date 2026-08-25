@@ -1,0 +1,147 @@
+{
+ "EleutherAI/gpt-neo-125m": [
+  768,
+  null
+ ],
+ "EleutherAI/pythia-160m": [
+  768,
+  12
+ ],
+ "EleutherAI/pythia-160m-deduped": [
+  768,
+  12
+ ],
+ "EleutherAI/pythia-1b": null,
+ "EleutherAI/pythia-1b-deduped": null,
+ "EleutherAI/pythia-410m": [
+  1024,
+  24
+ ],
+ "EleutherAI/pythia-410m-deduped": [
+  1024,
+  24
+ ],
+ "EleutherAI/pythia-70m": [
+  512,
+  6
+ ],
+ "EleutherAI/pythia-70m-deduped": [
+  512,
+  6
+ ],
+ "FacebookAI/roberta-base": [
+  768,
+  12
+ ],
+ "HuggingFaceTB/SmolLM2-135M": [
+  576,
+  30
+ ],
+ "HuggingFaceTB/SmolLM2-135M-Instruct": [
+  576,
+  30
+ ],
+ "HuggingFaceTB/SmolLM2-360M": [
+  960,
+  32
+ ],
+ "Qwen/Qwen2.5-0.5B": [
+  896,
+  24
+ ],
+ "Qwen/Qwen2.5-0.5B-Instruct": [
+  896,
+  24
+ ],
+ "albert/albert-base-v2": [
+  768,
+  12
+ ],
+ "bigscience/bloom-1b1": null,
+ "bigscience/bloom-560m": [
+  null,
+  24
+ ],
+ "bigscience/bloomz-560m": [
+  null,
+  24
+ ],
+ "distilbert/distilbert-base-cased": [
+  768,
+  6
+ ],
+ "distilbert/distilbert-base-multilingual-cased": [
+  768,
+  6
+ ],
+ "distilbert/distilbert-base-uncased": [
+  768,
+  6
+ ],
+ "distilbert/distilgpt2": [
+  768,
+  6
+ ],
+ "distilbert/distilroberta-base": [
+  768,
+  6
+ ],
+ "distilgpt2": [
+  768,
+  6
+ ],
+ "ehsanaghaei/SecureBERT": [
+  768,
+  12
+ ],
+ "facebook/bart-large-cnn": null,
+ "facebook/bart-large-xsum": null,
+ "facebook/opt-125m": [
+  768,
+  12
+ ],
+ "facebook/opt-350m": [
+  1024,
+  24
+ ],
+ "google-bert/bert-base-cased": [
+  768,
+  12
+ ],
+ "google-bert/bert-base-multilingual-cased": [
+  768,
+  12
+ ],
+ "google-bert/bert-base-uncased": [
+  768,
+  12
+ ],
+ "gpt2": [
+  768,
+  12
+ ],
+ "gpt2-medium": [
+  1024,
+  24
+ ],
+ "microsoft/xtremedistil-l6-h256-uncased": [
+  256,
+  6
+ ],
+ "nreimers/BERT-Tiny_L-2_H-128_A-2": [
+  128,
+  2
+ ],
+ "openai-community/gpt2": [
+  768,
+  12
+ ],
+ "sshleifer/distilbart-cnn-6-6": [
+  1024,
+  6
+ ],
+ "sshleifer/distilbart-xsum-6-6": [
+  1024,
+  6
+ ]
+}

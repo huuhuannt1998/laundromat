@@ -1,0 +1,10 @@
+{
+ "population": "vendor shipped fingerprint catalog",
+ "n_assets": 184,
+ "n_fetched": 157,
+ "n_unavailable": 27,
+ "missing_architectures": 0,
+ "missing_model_type": 0,
+ "any_gate_critical": 0,
+ "examples": []
+}

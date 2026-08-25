@@ -1,0 +1,53 @@
+[
+ {
+  "cls": "N~ depth-mismatched",
+  "a": "google-bert/bert-base-uncased",
+  "b": "google/bert_uncased_L-6_H-768_A-12",
+  "m": 12,
+  "n": 6,
+  "stride": 0.12090221419930458,
+  "dp": 0.12133605405688286,
+  "path": [
+   1,
+   2,
+   6,
+   8,
+   10,
+   11
+  ]
+ },
+ {
+  "cls": "P-  depth-mismatched",
+  "a": "google-bert/bert-base-uncased",
+  "b": "distilbert/distilroberta-base",
+  "m": 12,
+  "n": 6,
+  "stride": 0.11670765404899915,
+  "dp": 0.11717198292414348,
+  "path": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   10
+  ]
+ },
+ {
+  "cls": "P-  depth-mismatched",
+  "a": "FacebookAI/roberta-base",
+  "b": "distilbert/distilbert-base-uncased",
+  "m": 12,
+  "n": 6,
+  "stride": 0.11723531534274419,
+  "dp": 0.1179261381427447,
+  "path": [
+   5,
+   6,
+   7,
+   8,
+   10,
+   11
+  ]
+ }
+]

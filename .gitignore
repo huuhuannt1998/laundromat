@@ -1,0 +1,50 @@
+# ── manuscript: excluded by PI direction ──────────────────────────────────────
+manuscripts/
+LAUNDROMAT-draft.pdf
+.paper-loop-snapshots/
+*.tex
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# ── third-party code, cloned not authored (each has its own .git and licence) ─
+M1/oracle/
+M7/awm/repo/
+
+# ── model weights and caches: regenerable, and far too large for git ──────────
+*.safetensors
+*.bin
+*.h5
+*.msgpack
+*.ckpt*
+*.pt
+*.pth
+*.onnx
+M5/repaired/
+M7/awm/work/
+M6/work_e12/
+M7/work_e7/
+
+# keep the four frozen-manifest files that live under M2/work (the vocabulary-remap
+# attack artifact); verify-data fails without them
+M2/work/*
+!M2/work/M2t-overlap0_50/
+M2/work/M2t-overlap0_50/*
+!M2/work/M2t-overlap0_50/config.json
+!M2/work/M2t-overlap0_50/generation_config.json
+!M2/work/M2t-overlap0_50/tokenizer.json
+!M2/work/M2t-overlap0_50/tokenizer_config.json
+
+# ── run logs: tracebacks embed absolute paths that would de-anonymise the artifact;
+#    every result they describe is preserved in the .json/.jsonl files beside them ──
+*.log
+
+# ── environment noise ─────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+.ipynb_checkpoints/

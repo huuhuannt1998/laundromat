@@ -1,0 +1,34 @@
+{
+ "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+ "n_prompts": 64,
+ "arms": [
+  {
+   "n_prompts": 64,
+   "n_logits": 46497792,
+   "max_abs_dlogit": 0.00017642974853515625,
+   "mean_abs_dlogit": 1.7819542234659805e-05,
+   "argmax_agreement": 1.0,
+   "n_positions": 946,
+   "greedy_sequence_equal": "62/62",
+   "prompts_skipped_single_token": 2,
+   "ppl_ref": 22.443091142517336,
+   "ppl_mod": 22.44308266832227,
+   "arm": "X1a  MLP intermediate permutation",
+   "info": "{'transform': 'X1a', 'frac': 1.0, 'seed': 11, 'layers': 30}"
+  },
+  {
+   "n_prompts": 64,
+   "n_logits": 46497792,
+   "max_abs_dlogit": 0.00013494491577148438,
+   "mean_abs_dlogit": 1.0523684716166438e-05,
+   "argmax_agreement": 1.0,
+   "n_positions": 946,
+   "greedy_sequence_equal": "62/62",
+   "prompts_skipped_single_token": 2,
+   "ppl_ref": 22.443091142517336,
+   "ppl_mod": 22.443093273172604,
+   "arm": "X1b  GQA-aware head permutation",
+   "info": "{'transform': 'X1b', 'seed': 11, 'layers': 30, 'kv_groups': 3, 'grp': 3}"
+  }
+ ]
+}

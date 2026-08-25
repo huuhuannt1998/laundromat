@@ -1,0 +1,21 @@
+{
+  "_comment": "Verified lineage for every child in the M5 sweeps. 'evidence' records WHERE the claim comes from. Three BERT-family labels in the first draft of sweep_bert.py were WRONG; the displacement measure flagged the legal-bert one before the model card was read.",
+  "FacebookAI/roberta-base": {
+    "allenai/biomed_roberta_base":  {"rel": "continued_pretrain", "parent_ok": true,  "evidence": "card: 'We adapt RoBERTa-base ... via continued pretraining'"},
+    "allenai/cs_roberta_base":      {"rel": "continued_pretrain", "parent_ok": true,  "evidence": "INFERRED from the same 'Don't Stop Pretraining' release; model card is empty (21 bytes)"},
+    "allenai/news_roberta_base":    {"rel": "continued_pretrain", "parent_ok": true,  "evidence": "INFERRED from release; model card empty (21 bytes)"},
+    "allenai/reviews_roberta_base": {"rel": "continued_pretrain", "parent_ok": true,  "evidence": "INFERRED from release; model card empty (21 bytes)"},
+    "ehsanaghaei/SecureBERT":       {"rel": "continued_pretrain", "parent_ok": true,  "evidence": "card metadata: base_model = FacebookAI/roberta-base"},
+    "cardiffnlp/twitter-roberta-base": {"rel": "continued_pretrain", "parent_ok": true, "evidence": "card: 'trained on ~58M tweets on top of the original RoBERTa-base checkpoint'"},
+    "cardiffnlp/twitter-roberta-base-sentiment-latest": {"rel": "continued_pretrain+finetune", "parent_ok": true, "depth": 2, "evidence": "TimeLMs: roberta-base -> twitter-roberta-base-2021 -> sentiment head"}
+  },
+  "google-bert/bert-base-uncased": {
+    "ProsusAI/finbert":             {"rel": "continued_pretrain", "parent_ok": true,  "evidence": "card: 'built by further training the BERT language model in the finance domain'"},
+    "textattack/bert-base-uncased-SST-2": {"rel": "finetune", "parent_ok": true, "evidence": "repo name + TextAttack release convention; no card"},
+    "textattack/bert-base-uncased-imdb":  {"rel": "finetune", "parent_ok": true, "evidence": "card: 'This bert-base-uncased model was fine-tuned ... imdb'"},
+    "csarron/bert-base-uncased-squad-v1": {"rel": "finetune", "parent_ok": true, "evidence": "card: 'fine-tuned from the HuggingFace BERT base uncased'"},
+    "nlpaueb/legal-bert-base-uncased":    {"rel": "FROM_SCRATCH", "parent_ok": false, "evidence": "card: 'LEGAL-BERT-SC ... trained from scratch in the legal corpora using a newly created vocabulary'. NOT a derivative. MPK's 'Not Matched' is CORRECT. The FP variants that DO build on BERT-BASE live on archive.org, not the Hub.", "mislabelled_as": "CP legal"},
+    "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract": {"rel": "FROM_SCRATCH", "parent_ok": false, "evidence": "card: 'pretrained from scratch using abstracts from PubMed'. NOT a derivative.", "mislabelled_as": "CP biomed"},
+    "emilyalsentzer/Bio_ClinicalBERT": {"rel": "continued_pretrain", "parent_ok": false, "evidence": "card: 'initialized from BioBERT'; BioBERT v1.0 derives from bert-base-CASED, so comparing to bert-base-UNCASED is cross-lineage.", "mislabelled_as": "CP clinical", "true_parent": "dmis-lab/biobert (<- bert-base-cased)"}
+  }
+}
