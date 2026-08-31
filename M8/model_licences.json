@@ -1,0 +1,16 @@
+{
+ "bigscience/bloom-560m": "bigscience-bloom-rail-1.0",
+ "bigscience/bloomz-560m": "bigscience-bloom-rail-1.0",
+ "openai-community/gpt2": "mit",
+ "distilbert/distilgpt2": "apache-2.0",
+ "google-bert/bert-base-uncased": "apache-2.0",
+ "distilbert/distilbert-base-uncased": "apache-2.0",
+ "FacebookAI/roberta-base": "mit",
+ "distilbert/distilroberta-base": "apache-2.0",
+ "microsoft/deberta-v3-base": "mit",
+ "EleutherAI/pythia-160m": "apache-2.0",
+ "EleutherAI/pythia-160m-deduped": "apache-2.0",
+ "HuggingFaceTB/SmolLM2-135M": "apache-2.0",
+ "HuggingFaceTB/SmolLM2-135M-Instruct": "apache-2.0",
+ "nlpaueb/legal-bert-base-uncased": "cc-by-sa-4.0"
+}

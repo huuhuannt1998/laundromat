@@ -72,6 +72,7 @@ Rebuild with `python3 M6/build_gold_manifest.py`.
 | Regression CIs (E13) | §VII | `M7/e13_regression.py` → `M7/e13_regression.json` |
 | Rank + runtime (E17/E22) | §VI, §X | `M7/e17_rank_e22_runtime.py` → `M7/e17_e22.json` |
 | Consolidated transform matrix (E15) | §VI | `M7/e15_transform_matrix.py` → `.csv` / `.md` |
+| Deployment testbed (E25) | §III, §VIII-B | `M8/run_testbed.py` → `M8/e25_results.json` |
 
 Figures 2–4 regenerate from frozen data, so figure and text cannot drift. `make_fig3.py` prints
 the fit it produces; it must read `sigma = 0.8692 - 0.3327 d, R2 = 0.6927, last_obs = 0.8295`.
@@ -90,6 +91,15 @@ Scripts derive the repository root from their own location. An earlier state emb
 path containing the author's username in 43 scripts, which would have de-anonymised the artifact;
 `grep -rl "/Users/"` over the tracked sources now returns nothing. The paper carries
 `\author{Anonymous Submission}` with no affiliation, e-mail or acknowledgements.
+
+## 3d. The deployment testbed
+
+`M8/` holds the consumer pipeline of §III: `emit_bom.py` turns a verdict into a CycloneDX 1.6
+ML-BOM validated against the pinned official schema (`M8/bom-1.6.schema.json`),
+`policy/supplychain.rego` is the OPA admission gate, and `run_testbed.py` drives the corpus
+through both consumer wirings. Requires `opa` on PATH (tested with 1.17.1) and `jsonschema`.
+Model licences in `M8/model_licences.json` are the models' real licence tags, fetched from the
+hub, not assigned by us.
 
 ## 4. Seeds and determinism
 

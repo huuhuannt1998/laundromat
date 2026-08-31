@@ -120,6 +120,15 @@ environment locked ☑ (`requirements-lock.txt`) · clean-room reproduction ☑.
 6. ~~E14 prevalence~~ — **done 2026-08-25**; §VIII restored with the DeBERTa finding.
 7. ~~E5~~ — **done 2026-08-25**; MultiBERTs reproduces the failure, 6/6.
 
+## Beyond the review: deployment grounding (2026-08-31)
+
+The mock review did not ask for this; the PI did, and it answers the objection the review's own
+§37 (threat-model revision) gestures at without naming. **E25** replaces the assumed consumer with
+a real one — CycloneDX 1.6 ML-BOM validated against the official schema, OPA admission gate — and
+measures what the verifier's errors cost. Neither consumer wiring is safe: fail-open misses 11 of
+37 genuinely inherited advisories, fail-closed misses 3 and wrongly quarantines 5. This settles
+constitution Claim 3, the one claim scores alone could not test. `M8/`, §III + §VIII-B.
+
 ## Standing constraints
 
 - No vendor contact, no disclosure transmission, nothing sent to anyone (PI direction).

@@ -107,3 +107,6 @@ c67d46fc5018030780cd5c39584c986a  analysis/prereg_final.json
 5bf2b9ea81872f7227d40b69b2ba6a98  analysis/prereg_stats.json
 f4e0f0de6aa3c368063e948db42df178  analysis/prereg_stats2.json
 0d927c590b1ee9ca9b36396aeeb535b5  M6/pooled_lineage_corpus_31row.json
+843ebc0d477300dfcc13a91d7843e121  M8/e25_results.json
+a2856660829d89d6cf5d59baf56307c1  M8/model_licences.json
+4c47e735b3cf826c5487a347b1444602  M8/bom-1.6.schema.json

@@ -1304,3 +1304,63 @@ equals upstream `origin/main`.
 Citation gate stays 10/12: `cisco2026mpk` (GitHub artifact, no DOI, verified absent from every
 index — full 40-char SHA pinned rather than a DOI invented) and `stemma2026` (preprint indexing
 lag).
+
+---
+
+## 2026-08-31 — E25: a real deployment for the threat model
+
+**The gap.** §III declared an adversary's capabilities and a success criterion but never showed
+the verifier *inside* anything. "A consumer runs the verifier and acts on its verdict" was one
+sentence, assumed. A reviewer asking "how is this actually launched?" had no answer.
+
+**The setup, built from tools a consumer would really use — not a scenario we invented.**
+CycloneDX 1.6 defines `component.pedigree.ancestors` as *"zero or more components in which a
+component is derived from"*, with `machine-learning-model` a first-class component type. That is
+exactly the field a lineage verdict populates. Pipeline:
+
+    model pair → verifier verdict → CycloneDX 1.6 ML-BOM → OPA/Rego admission gate → admit/deny
+
+Every BOM is validated against the **official pinned schema** (`M8/bom-1.6.schema.json`); the gate
+is **OPA 1.17.1**. The obligation instrumented is the one the paper's own abstract names —
+scoping inherited vulnerabilities — driven by one realistic consumer action: an advisory is
+published against an ancestor, and the gate asks whether each model inherits it.
+
+**The load-bearing modelling choice, made explicit.** A match becomes an ancestor edge, a
+not-matched becomes no edge — but the tool can return *nothing*, and the standard cannot represent
+that. Only two readings are defensible, so both were evaluated:
+
+| consumer wiring | missed an inherited advisory | wrongly quarantined | correct |
+|---|---|---|---|
+| fail-open (silence ⇒ unrelated) | **11 / 37** | 5 | 21 |
+| fail-closed (silence ⇒ unknown) | **3 / 37** | 5 | 29 |
+
+**Neither wiring is safe.** Fail-open lets eleven models escape an advisory they genuinely inherit,
+including all four AllenAI DAPT rungs. Fail-closed clears the eight no-verdict cases but leaves
+three — there the verifier returned a *confident wrong answer* no wiring can recover — and both
+quarantine five models that inherit nothing, the recipe-convergence false positives now expressed
+as blocked deployments.
+
+This settles constitution Claim 3 ("under-inclusion is the safe direction"), the one claim scores
+alone could not test because it is a claim about consequences.
+
+**Two defects caught before anything reached the paper.**
+1. *The first run measured nothing and looked like good news* — zero wrong admissions under
+   fail-open. Cause: our corpus contains **zero licence-violating derivative pairs**, so a licence
+   policy can never fire. Rebuilt around advisory scope, which needs no fabricated licence.
+2. *A conflation that would have fabricated the failure under study.* The runner treated a
+   manifest row with `measured=False` (we did not record the verdict) as "the verifier returned no
+   verdict". Those are different things, and the difference is the entire experiment. Verdicts are
+   now sourced from the measured result files, and genuinely unknown ones are skipped explicitly.
+
+**A real property of the surface, found by schema validation.** `license.id` is the SPDX enum, and
+`bigscience-bloom-rail-1.0` is not in it — the RAIL family, whose use restrictions explicitly bind
+derivative works, can only be carried as free text in a conformant ML-BOM. The obligations most in
+need of automated propagation are the ones the format expresses least well.
+
+**Paper changes.** §III gained "The pipeline the verdict enters"; §VIII-B was rewritten around the
+measurement (`tab:deploy`) and absorbed the weaker "we observed no downstream harm" framing; §VIII
+and §X contracted to make room; the SPDX limit, the repair detail, the floor-construction
+diagnostic and the statistical elaboration moved to appendices.
+
+Gates: text ends p13 (limit 13), 18 pages (limit 18), abstract 248 words (<250), 0 errors /
+0 undefined / 0 overfull, provenance 0 BLOCK, ai-tics 0 BLOCK, 80/80 frozen.

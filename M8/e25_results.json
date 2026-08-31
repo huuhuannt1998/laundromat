@@ -1,0 +1,40 @@
+{
+ "fail-open": {
+  "wrong_admit": [
+   "cardiffnlp/twitter-roberta-base-sentiment-latest",
+   "microsoft/xtremedistil-l6-h256-uncased",
+   "Intel/dynamic_tinybert",
+   "microsoft/MiniLM-L12-H384-uncased",
+   "huawei-noah/TinyBERT_General_4L_312D",
+   "google/bert_uncased_L-4_H-256_A-4",
+   "allenai/cs_roberta_base",
+   "allenai/biomed_roberta_base",
+   "allenai/news_roberta_base",
+   "allenai/reviews_roberta_base",
+   "emilyalsentzer/Bio_ClinicalBERT"
+  ],
+  "wrong_deny": [
+   "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+   "EleutherAI/pythia-70m-deduped",
+   "EleutherAI/pythia-160m-deduped",
+   "EleutherAI/pythia-410m-deduped",
+   "EleutherAI/pythia-1b-deduped"
+  ],
+  "correct": 21
+ },
+ "fail-closed": {
+  "wrong_admit": [
+   "cardiffnlp/twitter-roberta-base-sentiment-latest",
+   "microsoft/xtremedistil-l6-h256-uncased",
+   "Intel/dynamic_tinybert"
+  ],
+  "wrong_deny": [
+   "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+   "EleutherAI/pythia-70m-deduped",
+   "EleutherAI/pythia-160m-deduped",
+   "EleutherAI/pythia-410m-deduped",
+   "EleutherAI/pythia-1b-deduped"
+  ],
+  "correct": 29
+ }
+}

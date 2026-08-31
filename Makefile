@@ -5,7 +5,7 @@ MPK := $(ROOT)/M1/oracle/model-provenance-kit
 
 .PHONY: help verify-data smoke reproduce-figures reproduce-tables reproduce-manifest \
         reproduce-ladder reproduce-awm reproduce-substrate reproduce-defence check-version \
-        reproduce-recalibration reproduce-stats
+        reproduce-recalibration reproduce-stats reproduce-deployment
 
 help:
 	@echo "verify-data        check the 80 frozen result files against MANIFEST-dataintegrity.txt"
@@ -19,6 +19,7 @@ help:
 	@echo "reproduce-substrate E4: black-box tester at 2000 prompts (hours)"
 	@echo "reproduce-defence  E18: expanded alignment defence, family-disjoint holdout (hours)"
 	@echo "reproduce-recalibration E9: refit the combination on audited labels (seconds)"
+	@echo "reproduce-deployment E25: verdict -> ML-BOM -> OPA gate (needs opa on PATH)"
 	@echo "reproduce-stats    E13/E15/E17/E22: bootstrap CIs, transform matrix, rank, runtime (seconds)"
 
 verify-data:
@@ -69,6 +70,9 @@ reproduce-defence:
 
 reproduce-recalibration:
 	$(PY) M7/e9_recalibrate.py
+
+reproduce-deployment:
+	$(PY) M8/run_testbed.py
 
 reproduce-stats:
 	$(PY) M7/e13_regression.py && $(PY) M7/e17_rank_e22_runtime.py && $(PY) M7/e15_transform_matrix.py
