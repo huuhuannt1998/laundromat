@@ -1,0 +1,86 @@
+{
+ "n": 11,
+ "missing": [],
+ "points": [
+  {
+   "child": "ProsusAI/finbert",
+   "d_emb": 0.06126931883912215,
+   "published": 0.8243,
+   "one_format": 0.9992
+  },
+  {
+   "child": "textattack/bert-base-uncased-SST-2",
+   "d_emb": 0.008081570397755892,
+   "published": 0.8249,
+   "one_format": 1.0
+  },
+  {
+   "child": "textattack/bert-base-uncased-imdb",
+   "d_emb": 0.014815196653730824,
+   "published": 0.8248,
+   "one_format": 0.9999
+  },
+  {
+   "child": "csarron/bert-base-uncased-squad-v1",
+   "d_emb": 0.024161007899038012,
+   "published": 0.9998,
+   "one_format": 0.9998
+  },
+  {
+   "child": "allenai/cs_roberta_base",
+   "d_emb": 0.2363661385567014,
+   "published": 0.7807,
+   "one_format": 0.7899
+  },
+  {
+   "child": "allenai/biomed_roberta_base",
+   "d_emb": 0.17011638732817147,
+   "published": 0.7827,
+   "one_format": 0.7925
+  },
+  {
+   "child": "allenai/news_roberta_base",
+   "d_emb": 0.11625807990261763,
+   "published": 0.7869,
+   "one_format": 0.7969
+  },
+  {
+   "child": "allenai/reviews_roberta_base",
+   "d_emb": 0.319063820229959,
+   "published": 0.7657,
+   "one_format": 0.7748
+  },
+  {
+   "child": "ehsanaghaei/SecureBERT",
+   "d_emb": 0.5474230687120973,
+   "published": 0.7767,
+   "one_format": 0.7862
+  },
+  {
+   "child": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+   "d_emb": 0.829475170810507,
+   "published": 0.5375,
+   "one_format": 0.5592
+  },
+  {
+   "child": "cardiffnlp/twitter-roberta-base",
+   "d_emb": 0.5791035837008972,
+   "published": 0.6899,
+   "one_format": 0.6997
+  }
+ ],
+ "published": {
+  "slope": -0.3327351677340258,
+  "intercept": 0.8691702513955206,
+  "r2": 0.692691528238937,
+  "d_at_065": 0.658692776264383,
+  "d_at_05298": 1.0199410351081333
+ },
+ "one_format": {
+  "slope": -0.4749899909847313,
+  "intercept": 0.9616803864005933,
+  "r2": 0.8005655385155183,
+  "d_at_065": 0.6561830613618389,
+  "d_at_05298": 0.9092410252797856
+ }
+}

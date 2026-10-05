@@ -1,0 +1,120 @@
+# LAUNDROMAT data-integrity manifest
+# Regenerated 2026-08-22. Previous version preserved as
+# MANIFEST-dataintegrity.prev.txt so the change is auditable rather than silent.
+#
+# WHY THIS REGENERATION MATTERS. The previous manifest pinned
+# M1/results/mpk_crashes.jsonl at d41d8cd98f00b204e9800998ecf8427e -- the MD5 of a
+# ZERO-BYTE FILE. That is the artifact of record behind the paper's denial-of-verification
+# claim, and the pin certified the broken version of it. The file was regenerated on
+# 2026-08-20 (10 models, 8 confirmed defects, 2 controls) and is now 7214 bytes; the
+# manifest had never been refreshed to match.
+#
+# CHANGED SINCE THE PREVIOUS MANIFEST (2):
+#   M1/results/mpk_crashes.jsonl
+#     d41d8cd98f00b204e9800998ecf8427e -> 50e7982fa8df32490081e6212f4b07ff
+#   M5/sweep_bert.jsonl
+#     06c8524d60f3de74cb8e2f1f71a53385 -> e8ce9969aaa29fd893cd6c2704d4a506
+#
+# ADDED (8) -- results produced after the previous manifest was written:
+#   M2/results/o0_eas_recovery.jsonl
+#   M2/results/o0_weight_recovery.jsonl
+#   M2/results/signal_floors.jsonl
+#   M4/defence_distill.json
+#   M4/defence_expanded.json
+#   M4/defence_expanded_stats.json
+#   M4/defence_final_stats.json
+#   M4/heldout_split.json
+#
+# Total entries: 79
+#
+50e7982fa8df32490081e6212f4b07ff  M1/results/mpk_crashes.jsonl
+4521aa0371d105a7fea521ca626110f1  M1/results/pairs.jsonl
+ce9879b807a5a4ca5d688f27625c4274  M1/results/pairs2.jsonl
+32eb5916e6ef4c70a264361b9534e532  M1/results/scans.jsonl
+6509d36268b48d651e52ebede025f78b  M1/results/tier3_positives.jsonl
+a8498847b41ca819e21d19c50c2078ed  M2/results/anchor_attack_HuggingFaceTB--SmolLM2-135M-Instruct.jsonl
+0610966443e705bfa147e3141bb27748  M2/results/decomp_transfer.jsonl
+525614f60bda6bbf99be2d87c1740d7c  M2/results/exactness_HuggingFaceTB--SmolLM2-135M.json
+8929837d05d607cc60cda569199b8b0f  M2/results/frac_sweep_HuggingFaceTB--SmolLM2-135M-Instruct.jsonl
+ea55e2cfc5fdcd263b74edd24279c371  M2/results/gate_HuggingFaceTB--SmolLM2-135M-Instruct.jsonl
+75082ffb92c5d31c82b00b4844df3f29  M2/results/gate_Qwen--Qwen2.5-0.5B-Instruct.jsonl
+b30afeb77e30c9cf29108818b011e626  M2/results/m2t_attack.jsonl
+38fe4fad947fbdbe048aa9d651b5abe5  M2/results/m2t_composed.jsonl
+69c9d9d29a926138c54f589a32d659f0  M2/results/null_frozen.json
+fdf312b60d21fafa52ecd66c5da9202f  M2/results/o0_eas_recovery.jsonl
+b47c30f6d71e584345bf1c8710346d22  M2/results/o0_weight_recovery.jsonl
+a074fa36f55ca7561dda9619abed1631  M2/results/q1_baseline.jsonl
+1fba92f5908da0525e8fc41d16377121  M2/results/signal_floors.jsonl
+fc3923103c9ff00093da059434da893a  M2/results/sweep_embed_HuggingFaceTB--SmolLM2-135M-Instruct.jsonl
+0b9c190b470485835d29ddfe43e91b3a  M2/results/wide_scans.jsonl
+8a7cc1bf3560c508a48b7150f7a5a299  M2/work/M2t-overlap0_50/config.json
+908461afa5d110082ce88d45f387d4e8  M2/work/M2t-overlap0_50/generation_config.json
+af260ece17038701e8ff8ab9dcec990a  M2/work/M2t-overlap0_50/tokenizer.json
+6b0d6b1121d1f13067c19ba701e05c37  M2/work/M2t-overlap0_50/tokenizer_config.json
+7fec4135b0b78e3ce12e70340cc452aa  M3/claim_createdAt.jsonl
+c1ac86362a67a2166383633b415c4e6e  M3/claim_downloads.jsonl
+71d40ed2831ae13ce2d5c39ec628dc5a  M3/claim_lastModified.jsonl
+97da475d785b39724f5745ba7674b928  M3/claim_likes.jsonl
+916e593ba65b90e37f8763d1f7ef95ac  M3/claim_survey.jsonl
+fbf59647aa377da21e4b8f7384404ef9  M3/claim_survey2.json
+c3c2c92bf22410f03d6c053af1e0295f  M3/verify_claims.jsonl
+75f586f31adc87f8c858889b91a2e0d0  M4/adaptive_ov.json
+38d5bcbe19bef1942c1032bad910af87  M4/adaptive_qk.json
+b56b445b0c9692efc3f45ab8a5d27a0c  M4/defence_distill.json
+24191abcd6bcb6c1b05ebcac3e986647  M4/defence_expanded.json
+aa96c984cea2a9668e952092aa77d3f6  M4/defence_expanded_stats.json
+0b6266b2235808e6785c91e067716fd7  M4/defence_final_stats.json
+f8ebd7c9fbdca649533ef90279d3a5d9  M4/defence_full.json
+77c2b0353c2ade6cdd457fd12b329144  M4/defence_signals.json
+1153d3070fa6333583308e02a0efc7ca  M4/distill_stress.json
+3ebba3e6088b47613231b101db7141a6  M4/family_generality.jsonl
+7d35875d3a9f9ee60d09cd66ab7b73f1  M4/heldout_split.json
+9960c52a3cfec3ab59aeb316e7e02f85  M4/lap2.json
+a31c9a3e8be0d27e611c54d48f342c92  M4/lap_defence.json
+660582dfcfdda9b54d0982f02db0f8a7  M4/p_tilde_arm.jsonl
+59aa9cd8492bf48a6c2d2eb4b914c26e  M4/power_fix.jsonl
+268066b1be27ffee2c5903f914cf4f9c  M5/analyze_all.json
+22f77f73c07be4fc1baa5dfd3e786941  M5/corpus_distance.jsonl
+c502ff056ff8c35314090cb4ad27b7de  M5/displacement_reference.json
+cae8ba4b6efc9c6ed4c81bbaaa49ff19  M5/lineage.json
+99914b932bd37a50b983c5e7c90ae93b  M5/repaired/allenai--biomed_roberta_base/added_tokens.json
+5fa67b1fc6b948acdb9d21bdf4423a29  M5/repaired/allenai--biomed_roberta_base/config.json
+72e6c8ab541f1ff24b139c96216fe8c9  M5/repaired/allenai--biomed_roberta_base/special_tokens_map.json
+92caedfe02743db23e11e7fb456524f5  M5/repaired/allenai--biomed_roberta_base/tokenizer_config.json
+cf410ee085c5c69c957bb1f6d8456596  M5/repaired/allenai--biomed_roberta_base/vocab.json
+99914b932bd37a50b983c5e7c90ae93b  M5/repaired/allenai--cs_roberta_base/added_tokens.json
+5fa67b1fc6b948acdb9d21bdf4423a29  M5/repaired/allenai--cs_roberta_base/config.json
+72e6c8ab541f1ff24b139c96216fe8c9  M5/repaired/allenai--cs_roberta_base/special_tokens_map.json
+92caedfe02743db23e11e7fb456524f5  M5/repaired/allenai--cs_roberta_base/tokenizer_config.json
+cf410ee085c5c69c957bb1f6d8456596  M5/repaired/allenai--cs_roberta_base/vocab.json
+99914b932bd37a50b983c5e7c90ae93b  M5/repaired/allenai--news_roberta_base/added_tokens.json
+5fa67b1fc6b948acdb9d21bdf4423a29  M5/repaired/allenai--news_roberta_base/config.json
+72e6c8ab541f1ff24b139c96216fe8c9  M5/repaired/allenai--news_roberta_base/special_tokens_map.json
+92caedfe02743db23e11e7fb456524f5  M5/repaired/allenai--news_roberta_base/tokenizer_config.json
+cf410ee085c5c69c957bb1f6d8456596  M5/repaired/allenai--news_roberta_base/vocab.json
+99914b932bd37a50b983c5e7c90ae93b  M5/repaired/allenai--reviews_roberta_base/added_tokens.json
+5fa67b1fc6b948acdb9d21bdf4423a29  M5/repaired/allenai--reviews_roberta_base/config.json
+72e6c8ab541f1ff24b139c96216fe8c9  M5/repaired/allenai--reviews_roberta_base/special_tokens_map.json
+92caedfe02743db23e11e7fb456524f5  M5/repaired/allenai--reviews_roberta_base/tokenizer_config.json
+cf410ee085c5c69c957bb1f6d8456596  M5/repaired/allenai--reviews_roberta_base/vocab.json
+461a70b1fd20e0ecbee4acac09686c17  M5/repaired/emilyalsentzer--Bio_ClinicalBERT/config.json
+e8ce9969aaa29fd893cd6c2704d4a506  M5/sweep_bert.jsonl
+7e010858f0bca95106c00f35366cf695  analysis/c5_final.json
+5d45f4463638b7936f4114c9f8268370  analysis/capability.json
+2646211a98271c4946ed7bdec85bea3d  analysis/mixed_effects_data.csv
+90930be9043b5af4c8a690ca47718c1f  analysis/model_dims.json
+c67d46fc5018030780cd5c39584c986a  analysis/prereg_final.json
+5bf2b9ea81872f7227d40b69b2ba6a98  analysis/prereg_stats.json
+f4e0f0de6aa3c368063e948db42df178  analysis/prereg_stats2.json
+0d927c590b1ee9ca9b36396aeeb535b5  M6/pooled_lineage_corpus_31row.json
+843ebc0d477300dfcc13a91d7843e121  M8/e25_results.json
+a2856660829d89d6cf5d59baf56307c1  M8/model_licences.json
+4c47e735b3cf826c5487a347b1444602  M8/bom-1.6.schema.json
+# Appended 2026-08-31: E23 scale extension and E26 anchor scale-robustness.
+b0788e35b4cf12cc13a48f505994ddfa  M9/e23_scale.jsonl
+6a36b57865aa9a3e824a12fb9a134362  M9/e26_anchor_scale.json
+# Appended 2026-08-31: E27 genuine-ancestor control at 6.9B.
+fbaddcef4ad47817df44c6c5c7da2082  M9/e27_ancestor_scale.jsonl
+# Appended 2026-09-03: E28 symmetry, E29 merging (mock-review response).
+a7f10eee056a4d9cdb3a366a64d7e377  M9/e28_symmetry.jsonl
+77821cea7930b35bec603e0c5a22b42f  M9/e29_merging.jsonl

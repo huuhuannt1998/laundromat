@@ -1,0 +1,426 @@
+{
+ "method": "M9/verify_label.py statistic (mean whole-matrix cosine of mlp.dense_h_to_4h.weight, fp16 load) + torch.equal over all step0 tensors",
+ "rows": [
+  {
+   "a": "EleutherAI/pythia-70m",
+   "b": "EleutherAI/pythia-70m-deduped",
+   "cls": "shared-init? (standard vs deduplicated)",
+   "step0": {
+    "file_a": "87c8ac0ba129/model.safetensors",
+    "file_b": "c913ae980de9/model.safetensors",
+    "sha256_a": "17a077abfddb6c589091e292adfcc2ee82d39bfd839f5dd80aaaea42861aaf8e",
+    "sha256_b": "17a077abfddb6c589091e292adfcc2ee82d39bfd839f5dd80aaaea42861aaf8e",
+    "n_common": 76,
+    "only_a": 0,
+    "only_b": 0,
+    "n_equal": 76,
+    "all_equal": true,
+    "max_abs_diff": 0.0
+   },
+   "screen_step0": {
+    "layers": 6,
+    "mean_cos": 1.0,
+    "min_cos": 1.0,
+    "max_cos": 1.0
+   },
+   "screen_final": {
+    "layers": 6,
+    "mean_cos": 0.134083,
+    "min_cos": 0.091329,
+    "max_cos": 0.181226
+   },
+   "reproduction_control": {
+    "expected_final_mean_cos": 0.1341,
+    "source": "M9/e37_pythia_cosine.log",
+    "reproduced": true
+   }
+  },
+  {
+   "a": "EleutherAI/pythia-70m",
+   "b": "EleutherAI/pythia-70m-seed1",
+   "cls": "separate seed (PolyPythias)",
+   "step0": {
+    "file_a": "87c8ac0ba129/model.safetensors",
+    "file_b": "f26c445e87e9/pytorch_model.bin",
+    "sha256_a": "17a077abfddb6c589091e292adfcc2ee82d39bfd839f5dd80aaaea42861aaf8e",
+    "sha256_b": "317b5b3ba1a044261f99abdafa121486a87da18119a9c344550389638b059990",
+    "n_common": 76,
+    "only_a": 0,
+    "only_b": 0,
+    "n_equal": 50,
+    "all_equal": false,
+    "max_abs_diff": 0.23248291015625
+   },
+   "screen_step0": {
+    "layers": 6,
+    "mean_cos": 9.3e-05,
+    "min_cos": -0.002327,
+    "max_cos": 0.001637
+   },
+   "screen_final": {
+    "layers": 6,
+    "mean_cos": -0.000653,
+    "min_cos": -0.001889,
+    "max_cos": 0.000784
+   }
+  },
+  {
+   "a": "EleutherAI/pythia-70m-seed1",
+   "b": "EleutherAI/pythia-70m-seed2",
+   "cls": "separate seed (PolyPythias)",
+   "step0": {
+    "file_a": "f26c445e87e9/pytorch_model.bin",
+    "file_b": "5443be7e2c05/pytorch_model.bin",
+    "sha256_a": "317b5b3ba1a044261f99abdafa121486a87da18119a9c344550389638b059990",
+    "sha256_b": "fe757584e4bc0d31402d6e21d4f75f86326c209d0412ed9901858b33412a3909",
+    "n_common": 76,
+    "only_a": 0,
+    "only_b": 0,
+    "n_equal": 50,
+    "all_equal": false,
+    "max_abs_diff": 0.2318115234375
+   },
+   "screen_step0": {
+    "layers": 6,
+    "mean_cos": -1.4e-05,
+    "min_cos": -0.000811,
+    "max_cos": 0.000877
+   },
+   "screen_final": {
+    "layers": 6,
+    "mean_cos": 0.000537,
+    "min_cos": -5.4e-05,
+    "max_cos": 0.001319
+   }
+  },
+  {
+   "a": "EleutherAI/pythia-70m-seed2",
+   "b": "EleutherAI/pythia-70m-seed3",
+   "cls": "separate seed (PolyPythias)",
+   "step0": {
+    "file_a": "5443be7e2c05/pytorch_model.bin",
+    "file_b": "6b22820192cb/pytorch_model.bin",
+    "sha256_a": "fe757584e4bc0d31402d6e21d4f75f86326c209d0412ed9901858b33412a3909",
+    "sha256_b": "1022b6b491abafb26bddc4a9526693c74d29c51606ab9515d1fdf7d85f4f4c07",
+    "n_common": 76,
+    "only_a": 0,
+    "only_b": 0,
+    "n_equal": 50,
+    "all_equal": false,
+    "max_abs_diff": 0.22625732421875
+   },
+   "screen_step0": {
+    "layers": 6,
+    "mean_cos": 0.000289,
+    "min_cos": -0.000482,
+    "max_cos": 0.000746
+   },
+   "screen_final": {
+    "layers": 6,
+    "mean_cos": -0.000807,
+    "min_cos": -0.00161,
+    "max_cos": 0.000463
+   }
+  },
+  {
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-deduped",
+   "cls": "shared-init? (standard vs deduplicated)",
+   "step0": {
+    "file_a": "0cf035e7d55e/model.safetensors",
+    "file_b": "0450b9dc64e8/model.safetensors",
+    "sha256_a": "87c169cd152db340535d6f330af0e2eed7578484ef2d23dd44ca90cbcc215ba7",
+    "sha256_b": "87c169cd152db340535d6f330af0e2eed7578484ef2d23dd44ca90cbcc215ba7",
+    "n_common": 148,
+    "only_a": 0,
+    "only_b": 0,
+    "n_equal": 148,
+    "all_equal": true,
+    "max_abs_diff": 0.0
+   },
+   "screen_step0": {
+    "layers": 12,
+    "mean_cos": 1.0,
+    "min_cos": 1.0,
+    "max_cos": 1.0
+   },
+   "screen_final": {
+    "layers": 12,
+    "mean_cos": 0.16061,
+    "min_cos": 0.120534,
+    "max_cos": 0.270175
+   },
+   "reproduction_control": {
+    "expected_final_mean_cos": 0.1606,
+    "source": "M9/e37_pythia_cosine.log",
+    "reproduced": true
+   }
+  },
+  {
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-seed1",
+   "cls": "separate seed (PolyPythias)",
+   "step0": {
+    "file_a": "0cf035e7d55e/model.safetensors",
+    "file_b": "e0512b7e8a9d/pytorch_model.bin",
+    "sha256_a": "87c169cd152db340535d6f330af0e2eed7578484ef2d23dd44ca90cbcc215ba7",
+    "sha256_b": "5ffd758c520af643eba7ce9b6b2c237c976d0270865f9d9c813355519285c9a7",
+    "n_common": 148,
+    "only_a": 0,
+    "only_b": 0,
+    "n_equal": 98,
+    "all_equal": false,
+    "max_abs_diff": 0.20733642578125
+   },
+   "screen_step0": {
+    "layers": 12,
+    "mean_cos": -3.4e-05,
+    "min_cos": -0.000843,
+    "max_cos": 0.000654
+   },
+   "screen_final": {
+    "layers": 12,
+    "mean_cos": -1.9e-05,
+    "min_cos": -0.001285,
+    "max_cos": 0.001669
+   }
+  },
+  {
+   "a": "EleutherAI/pythia-160m-seed1",
+   "b": "EleutherAI/pythia-160m-seed2",
+   "cls": "separate seed (PolyPythias)",
+   "step0": {
+    "file_a": "e0512b7e8a9d/pytorch_model.bin",
+    "file_b": "67161ff839bd/pytorch_model.bin",
+    "sha256_a": "5ffd758c520af643eba7ce9b6b2c237c976d0270865f9d9c813355519285c9a7",
+    "sha256_b": "4a25cc91d8f16dd3d53142f6fcfd3432c96feddce0d2b7f57199577ed0952610",
+    "n_common": 148,
+    "only_a": 0,
+    "only_b": 0,
+    "n_equal": 98,
+    "all_equal": false,
+    "max_abs_diff": 0.1893310546875
+   },
+   "screen_step0": {
+    "layers": 12,
+    "mean_cos": 6.7e-05,
+    "min_cos": -0.001443,
+    "max_cos": 0.001445
+   },
+   "screen_final": {
+    "layers": 12,
+    "mean_cos": -0.000218,
+    "min_cos": -0.001633,
+    "max_cos": 0.000654
+   }
+  },
+  {
+   "a": "EleutherAI/pythia-160m-seed2",
+   "b": "EleutherAI/pythia-160m-seed3",
+   "cls": "separate seed (PolyPythias)",
+   "step0": {
+    "file_a": "67161ff839bd/pytorch_model.bin",
+    "file_b": "df109a7fbb0c/pytorch_model.bin",
+    "sha256_a": "4a25cc91d8f16dd3d53142f6fcfd3432c96feddce0d2b7f57199577ed0952610",
+    "sha256_b": "1e93f762c9a0601bf41722d7c690f6c75ec83fb9daeed1dcbb72bacc587116b3",
+    "n_common": 148,
+    "only_a": 0,
+    "only_b": 0,
+    "n_equal": 98,
+    "all_equal": false,
+    "max_abs_diff": 0.18475341796875
+   },
+   "screen_step0": {
+    "layers": 12,
+    "mean_cos": -6.3e-05,
+    "min_cos": -0.001056,
+    "max_cos": 0.001254
+   },
+   "screen_final": {
+    "layers": 12,
+    "mean_cos": -4.3e-05,
+    "min_cos": -0.001922,
+    "max_cos": 0.001452
+   }
+  },
+  {
+   "a": "EleutherAI/pythia-410m",
+   "b": "EleutherAI/pythia-410m-deduped",
+   "cls": "shared-init? (standard vs deduplicated)",
+   "step0": {
+    "file_a": "8bba10b3d358/model.safetensors",
+    "file_b": "e361f9afd54b/model.safetensors",
+    "sha256_a": "25c40c86d28f75cad7f98fca8a4ed4a75485423f14df85832226b4ded66c097d",
+    "sha256_b": "25c40c86d28f75cad7f98fca8a4ed4a75485423f14df85832226b4ded66c097d",
+    "n_common": 292,
+    "only_a": 0,
+    "only_b": 0,
+    "n_equal": 292,
+    "all_equal": true,
+    "max_abs_diff": 0.0
+   },
+   "screen_step0": {
+    "layers": 24,
+    "mean_cos": 1.0,
+    "min_cos": 1.0,
+    "max_cos": 1.0
+   },
+   "screen_final": {
+    "layers": 24,
+    "mean_cos": 0.199572,
+    "min_cos": 0.129521,
+    "max_cos": 0.42023
+   },
+   "reproduction_control": {
+    "expected_final_mean_cos": 0.1996,
+    "source": "M9/e37_pythia_cosine.log",
+    "reproduced": true
+   }
+  },
+  {
+   "a": "EleutherAI/pythia-410m",
+   "b": "EleutherAI/pythia-410m-seed1",
+   "cls": "separate seed (PolyPythias)",
+   "step0": {
+    "file_a": "8bba10b3d358/model.safetensors",
+    "file_b": "4aa96ad7344b/pytorch_model.bin",
+    "sha256_a": "25c40c86d28f75cad7f98fca8a4ed4a75485423f14df85832226b4ded66c097d",
+    "sha256_b": "2307ba042f0c2882bfcc76f0c0863fc411cce3e5f3cd7dbff84fc7482d65288e",
+    "n_common": 292,
+    "only_a": 0,
+    "only_b": 0,
+    "n_equal": 194,
+    "all_equal": false,
+    "max_abs_diff": 0.16448974609375
+   },
+   "screen_step0": {
+    "layers": 24,
+    "mean_cos": 0.000148,
+    "min_cos": -0.001088,
+    "max_cos": 0.001066
+   },
+   "screen_final": {
+    "layers": 24,
+    "mean_cos": -6.4e-05,
+    "min_cos": -0.001466,
+    "max_cos": 0.00128
+   }
+  },
+  {
+   "a": "EleutherAI/pythia-410m-seed1",
+   "b": "EleutherAI/pythia-410m-seed2",
+   "cls": "separate seed (PolyPythias)",
+   "step0": {
+    "file_a": "4aa96ad7344b/pytorch_model.bin",
+    "file_b": "623c37c02909/pytorch_model.bin",
+    "sha256_a": "2307ba042f0c2882bfcc76f0c0863fc411cce3e5f3cd7dbff84fc7482d65288e",
+    "sha256_b": "1a2b0960712adaa9c386987256247828a225311cb1f0464f9529dd0281888d4c",
+    "n_common": 292,
+    "only_a": 0,
+    "only_b": 0,
+    "n_equal": 194,
+    "all_equal": false,
+    "max_abs_diff": 0.16583251953125
+   },
+   "screen_step0": {
+    "layers": 24,
+    "mean_cos": -6.1e-05,
+    "min_cos": -0.0007,
+    "max_cos": 0.001128
+   },
+   "screen_final": {
+    "layers": 24,
+    "mean_cos": -0.000518,
+    "min_cos": -0.001915,
+    "max_cos": 0.002292
+   }
+  },
+  {
+   "a": "EleutherAI/pythia-410m-seed2",
+   "b": "EleutherAI/pythia-410m-seed3",
+   "cls": "separate seed (PolyPythias)",
+   "step0": {
+    "file_a": "623c37c02909/pytorch_model.bin",
+    "file_b": "e52f3a11137d/pytorch_model.bin",
+    "sha256_a": "1a2b0960712adaa9c386987256247828a225311cb1f0464f9529dd0281888d4c",
+    "sha256_b": "02ce7e11e59f6ce4b80a269986b17374d7d69d5e8717cdf1465327a9a63c6910",
+    "n_common": 292,
+    "only_a": 0,
+    "only_b": 0,
+    "n_equal": 194,
+    "all_equal": false,
+    "max_abs_diff": 0.16180419921875
+   },
+   "screen_step0": {
+    "layers": 24,
+    "mean_cos": 2.5e-05,
+    "min_cos": -0.000373,
+    "max_cos": 0.000828
+   },
+   "screen_final": {
+    "layers": 24,
+    "mean_cos": -0.000265,
+    "min_cos": -0.001385,
+    "max_cos": 0.000732
+   }
+  },
+  {
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "cls": "decoupled: data order varied, weight init fixed (publisher)",
+   "step0": {
+    "file_a": "0cf035e7d55e/model.safetensors",
+    "file_b": "f93cb0d06bb9/pytorch_model.bin",
+    "sha256_a": "87c169cd152db340535d6f330af0e2eed7578484ef2d23dd44ca90cbcc215ba7",
+    "sha256_b": "6654b4ea6f701e037dbc9f79a6925df5caca9e36c9a448abdc4c48c8c9c51631",
+    "n_common": 148,
+    "only_a": 0,
+    "only_b": 0,
+    "n_equal": 148,
+    "all_equal": true,
+    "max_abs_diff": 0.0
+   },
+   "screen_step0": {
+    "layers": 12,
+    "mean_cos": 1.0,
+    "min_cos": 1.0,
+    "max_cos": 1.0
+   },
+   "screen_final": {
+    "layers": 12,
+    "mean_cos": 0.19568,
+    "min_cos": 0.154979,
+    "max_cos": 0.304248
+   }
+  },
+  {
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "cls": "decoupled: weight init varied, data order fixed (publisher)",
+   "step0": {
+    "file_a": "0cf035e7d55e/model.safetensors",
+    "file_b": "c974e61353ea/pytorch_model.bin",
+    "sha256_a": "87c169cd152db340535d6f330af0e2eed7578484ef2d23dd44ca90cbcc215ba7",
+    "sha256_b": "cf7bc2a2516731eda8a5bdcad43437ef4de0bac9f4a5b936f83d5d056f24a243",
+    "n_common": 148,
+    "only_a": 0,
+    "only_b": 0,
+    "n_equal": 98,
+    "all_equal": false,
+    "max_abs_diff": 0.18798828125
+   },
+   "screen_step0": {
+    "layers": 12,
+    "mean_cos": -0.000199,
+    "min_cos": -0.000748,
+    "max_cos": 0.000619
+   },
+   "screen_final": {
+    "layers": 12,
+    "mean_cos": 0.211082,
+    "min_cos": 0.172772,
+    "max_cos": 0.318813
+   }
+  }
+ ]
+}

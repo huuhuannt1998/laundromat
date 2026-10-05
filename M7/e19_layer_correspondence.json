@@ -1,0 +1,220 @@
+[
+ {
+  "cls": "P+",
+  "pair": "bert-base-uncased -> distilbert-base-uncas",
+  "index": 0.29,
+  "stride": 0.5255,
+  "dp": 0.832,
+  "path": [
+   0,
+   2,
+   4,
+   7,
+   9,
+   11
+  ],
+  "matches_stride": false
+ },
+ {
+  "cls": "P+",
+  "pair": "bert-base-cased -> distilbert-base-cased",
+  "index": 0.2762,
+  "stride": 0.4941,
+  "dp": 0.7918,
+  "path": [
+   0,
+   2,
+   4,
+   7,
+   9,
+   11
+  ],
+  "matches_stride": false
+ },
+ {
+  "cls": "P+",
+  "pair": "bert-base-multilingual-cased -> distilbert",
+  "index": 0.2935,
+  "stride": 0.5189,
+  "dp": 0.7974,
+  "path": [
+   0,
+   2,
+   4,
+   7,
+   9,
+   11
+  ],
+  "matches_stride": false
+ },
+ {
+  "cls": "P+",
+  "pair": "roberta-base -> distilroberta-base",
+  "index": 0.3609,
+  "stride": 0.5987,
+  "dp": 0.8989,
+  "path": [
+   0,
+   2,
+   4,
+   7,
+   9,
+   11
+  ],
+  "matches_stride": false
+ },
+ {
+  "cls": "P+",
+  "pair": "gpt2 -> distilgpt2",
+  "index": 0.2337,
+  "stride": 0.5148,
+  "dp": 0.9266,
+  "path": [
+   0,
+   2,
+   4,
+   7,
+   9,
+   11
+  ],
+  "matches_stride": false
+ },
+ {
+  "cls": "P~",
+  "pair": "pythia-70m -> pythia-70m-deduped",
+  "index": 0.1974,
+  "stride": null,
+  "dp": 0.1974,
+  "path": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "matches_stride": true
+ },
+ {
+  "cls": "P~",
+  "pair": "pythia-160m -> pythia-160m-deduped",
+  "index": 0.1961,
+  "stride": null,
+  "dp": 0.1961,
+  "path": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "matches_stride": true
+ },
+ {
+  "cls": "P~",
+  "pair": "pythia-410m -> pythia-410m-deduped",
+  "index": 0.2151,
+  "stride": null,
+  "dp": 0.2151,
+  "path": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23
+  ],
+  "matches_stride": true
+ },
+ {
+  "cls": "N~",
+  "pair": "bert-base-uncased -> legal-bert-base-uncas",
+  "index": 0.4513,
+  "stride": null,
+  "dp": 0.4513,
+  "path": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "matches_stride": true
+ },
+ {
+  "cls": "N~",
+  "pair": "bert-base-uncased -> BiomedNLP-BiomedBERT-",
+  "index": 0.1198,
+  "stride": null,
+  "dp": 0.1198,
+  "path": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "matches_stride": true
+ },
+ {
+  "cls": "P-",
+  "pair": "bert-base-uncased -> roberta-base",
+  "index": 0.117,
+  "stride": null,
+  "dp": 0.117,
+  "path": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11
+  ],
+  "matches_stride": true
+ }
+]

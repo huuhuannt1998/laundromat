@@ -1,0 +1,13 @@
+{
+ "threshold": 0.39131300834318,
+ "dev_margin": 0.24688324208060897,
+ "dev_n": 13,
+ "heldout_n": 5,
+ "tp": 2,
+ "tn": 3,
+ "fp": 0,
+ "fn": 0,
+ "accuracy": 1.0,
+ "heldout_margin": 0.7588190982739131,
+ "note": "distillation included, stride-matched; all distil parents <=160M so fall in dev"
+}

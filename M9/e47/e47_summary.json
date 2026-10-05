@@ -1,0 +1,599 @@
+{
+ "sha256": {
+  "verifier": "27e3b062ed72ad9c03101d032debf40087f7a96b44fce6e97b8803fedd754619",
+  "init_screen": "0826b2b032612107957bff8378b8636725302e44618f3b5eb2b34594a4075b84",
+  "trajectory": "4c1e6524ad5264ad4882cac21918ddef0f1d612f63fc6c646b2893eb3d3aaa9c",
+  "awm": "80122a569acd857ae7a1325c4319c849f1f3a16af02db39b83ce57fe1e45b22a",
+  "tester_log": "c1360d8fca93782f34c4b541b82dcb096a2f66e9439ca2dac6175625a99bafe6",
+  "tester_csv": "f8c32da7836e072a2d6dda9d9b65ad3093adc0cfed9fad3e034a0cefcb651d46"
+ },
+ "files": {
+  "verifier": "M9/e47/e47_verifier.jsonl",
+  "init_screen": "M9/e47/e47_init_screen.json",
+  "trajectory": "M9/e47/e47_decoupled_trajectory.json",
+  "awm": "M7/awm/e47_awm_polypythias.jsonl",
+  "tester_log": "M6/e47_tester_2000.log",
+  "tester_csv": "M6/e47_tester_2000.csv"
+ },
+ "verifier_as-served": {
+  "n": 9,
+  "tier1_confirmed": 9,
+  "identity": [
+   0.5574,
+   0.761
+  ],
+  "wvc": [
+   0.0012,
+   0.0062
+  ],
+  "below_065": [
+   0.5574,
+   0.6302,
+   0.6374
+  ],
+  "eas": [
+   0.9187,
+   0.9686
+  ],
+  "lep": [
+   0.851,
+   0.9974
+  ],
+  "end": [
+   0.0656,
+   0.9943
+  ],
+  "nlf": [
+   0.0115,
+   0.9766
+  ],
+  "per_pair": {
+   "pythia-70m|pythia-70m-seed1": 0.6849,
+   "pythia-160m|pythia-160m-seed1": 0.738,
+   "pythia-410m|pythia-410m-seed1": 0.6777,
+   "pythia-70m-seed1|pythia-70m-seed2": 0.6302,
+   "pythia-160m-seed1|pythia-160m-seed2": 0.7548,
+   "pythia-410m-seed1|pythia-410m-seed2": 0.6374,
+   "pythia-70m-seed2|pythia-70m-seed3": 0.6504,
+   "pythia-160m-seed2|pythia-160m-seed3": 0.761,
+   "pythia-410m-seed2|pythia-410m-seed3": 0.5574
+  }
+ },
+ "verifier_one-order": {
+  "n": 9,
+  "tier1_confirmed": 9,
+  "identity": [
+   0.5574,
+   0.761
+  ],
+  "wvc": [
+   0.0009,
+   0.0062
+  ],
+  "below_065": [
+   0.5574,
+   0.6302,
+   0.6374
+  ],
+  "eas": [
+   0.9187,
+   0.9686
+  ],
+  "lep": [
+   0.851,
+   0.9974
+  ],
+  "end": [
+   0.0656,
+   0.9943
+  ],
+  "nlf": [
+   0.6762,
+   0.9766
+  ],
+  "per_pair": {
+   "pythia-70m|pythia-70m-seed1": 0.7435,
+   "pythia-160m|pythia-160m-seed1": 0.738,
+   "pythia-410m|pythia-410m-seed1": 0.7545,
+   "pythia-70m-seed1|pythia-70m-seed2": 0.6302,
+   "pythia-160m-seed1|pythia-160m-seed2": 0.7548,
+   "pythia-410m-seed1|pythia-410m-seed2": 0.6374,
+   "pythia-70m-seed2|pythia-70m-seed3": 0.6504,
+   "pythia-160m-seed2|pythia-160m-seed3": 0.761,
+   "pythia-410m-seed2|pythia-410m-seed3": 0.5574
+  }
+ },
+ "verifier_controls": [
+  {
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-deduped",
+   "arm": "as-served",
+   "reproduced": true,
+   "identity": 0.6745,
+   "wvc": 0.1392,
+   "verdict": "Confirmed Match",
+   "tier": 1
+  },
+  {
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-deduped",
+   "arm": "one-order",
+   "reproduced": true,
+   "identity": 0.6745,
+   "wvc": 0.1392,
+   "verdict": "Confirmed Match",
+   "tier": 1
+  },
+  {
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "arm": "as-served",
+   "reproduced": null,
+   "identity": 0.6918,
+   "wvc": 0.0027,
+   "verdict": "Confirmed Match",
+   "tier": 1
+  },
+  {
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "arm": "one-order",
+   "reproduced": null,
+   "identity": 0.8035,
+   "wvc": 0.1885,
+   "verdict": "Confirmed Match",
+   "tier": 1
+  },
+  {
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "arm": "as-served",
+   "reproduced": null,
+   "identity": 0.6541,
+   "wvc": 0.0037,
+   "verdict": "Confirmed Match",
+   "tier": 1
+  },
+  {
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "arm": "one-order",
+   "reproduced": null,
+   "identity": 0.7729,
+   "wvc": 0.2263,
+   "verdict": "Confirmed Match",
+   "tier": 1
+  }
+ ],
+ "awm_seed": {
+  "n": 9,
+  "raw": [
+   0.0013,
+   0.005
+  ],
+  "z": [
+   0.13,
+   0.86
+  ]
+ },
+ "awm_controls": [
+  {
+   "label": "pythia-160m vs -deduped (control)",
+   "raw": 0.2438,
+   "z": 85.72,
+   "reproduced": true
+  },
+  {
+   "label": "pythia-160m vs data-seed1",
+   "raw": 0.29059999999999997,
+   "z": 102.45,
+   "reproduced": null
+  },
+  {
+   "label": "pythia-160m vs weight-seed1",
+   "raw": 0.32520000000000004,
+   "z": 114.81,
+   "reproduced": null
+  }
+ ],
+ "init_screen": [
+  {
+   "a": "pythia-70m",
+   "b": "pythia-70m-deduped",
+   "step0_all_equal": true,
+   "step0_equal": "76/76",
+   "step0_cos": 1.0,
+   "final_cos": 0.134083,
+   "repro": true
+  },
+  {
+   "a": "pythia-70m",
+   "b": "pythia-70m-seed1",
+   "step0_all_equal": false,
+   "step0_equal": "50/76",
+   "step0_cos": 9.3e-05,
+   "final_cos": -0.000653,
+   "repro": null
+  },
+  {
+   "a": "pythia-70m-seed1",
+   "b": "pythia-70m-seed2",
+   "step0_all_equal": false,
+   "step0_equal": "50/76",
+   "step0_cos": -1.4e-05,
+   "final_cos": 0.000537,
+   "repro": null
+  },
+  {
+   "a": "pythia-70m-seed2",
+   "b": "pythia-70m-seed3",
+   "step0_all_equal": false,
+   "step0_equal": "50/76",
+   "step0_cos": 0.000289,
+   "final_cos": -0.000807,
+   "repro": null
+  },
+  {
+   "a": "pythia-160m",
+   "b": "pythia-160m-deduped",
+   "step0_all_equal": true,
+   "step0_equal": "148/148",
+   "step0_cos": 1.0,
+   "final_cos": 0.16061,
+   "repro": true
+  },
+  {
+   "a": "pythia-160m",
+   "b": "pythia-160m-seed1",
+   "step0_all_equal": false,
+   "step0_equal": "98/148",
+   "step0_cos": -3.4e-05,
+   "final_cos": -1.9e-05,
+   "repro": null
+  },
+  {
+   "a": "pythia-160m-seed1",
+   "b": "pythia-160m-seed2",
+   "step0_all_equal": false,
+   "step0_equal": "98/148",
+   "step0_cos": 6.7e-05,
+   "final_cos": -0.000218,
+   "repro": null
+  },
+  {
+   "a": "pythia-160m-seed2",
+   "b": "pythia-160m-seed3",
+   "step0_all_equal": false,
+   "step0_equal": "98/148",
+   "step0_cos": -6.3e-05,
+   "final_cos": -4.3e-05,
+   "repro": null
+  },
+  {
+   "a": "pythia-410m",
+   "b": "pythia-410m-deduped",
+   "step0_all_equal": true,
+   "step0_equal": "292/292",
+   "step0_cos": 1.0,
+   "final_cos": 0.199572,
+   "repro": true
+  },
+  {
+   "a": "pythia-410m",
+   "b": "pythia-410m-seed1",
+   "step0_all_equal": false,
+   "step0_equal": "194/292",
+   "step0_cos": 0.000148,
+   "final_cos": -6.4e-05,
+   "repro": null
+  },
+  {
+   "a": "pythia-410m-seed1",
+   "b": "pythia-410m-seed2",
+   "step0_all_equal": false,
+   "step0_equal": "194/292",
+   "step0_cos": -6.1e-05,
+   "final_cos": -0.000518,
+   "repro": null
+  },
+  {
+   "a": "pythia-410m-seed2",
+   "b": "pythia-410m-seed3",
+   "step0_all_equal": false,
+   "step0_equal": "194/292",
+   "step0_cos": 2.5e-05,
+   "final_cos": -0.000265,
+   "repro": null
+  },
+  {
+   "a": "pythia-160m",
+   "b": "pythia-160m-data-seed1",
+   "step0_all_equal": true,
+   "step0_equal": "148/148",
+   "step0_cos": 1.0,
+   "final_cos": 0.19568,
+   "repro": null
+  },
+  {
+   "a": "pythia-160m",
+   "b": "pythia-160m-weight-seed1",
+   "step0_all_equal": false,
+   "step0_equal": "98/148",
+   "step0_cos": -0.000199,
+   "final_cos": 0.211082,
+   "repro": null
+  }
+ ],
+ "init_screen_seed": {
+  "step0_abs_cos_max": 0.000289,
+  "final_abs_cos_max": 0.000807,
+  "any_step0_identical": false
+ },
+ "trajectory": [
+  {
+   "revision": "step0",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "mean_cos": -0.000199
+  },
+  {
+   "revision": "step0",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "mean_cos": 1.0
+  },
+  {
+   "revision": "step0",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-seed1",
+   "mean_cos": -3.4e-05
+  },
+  {
+   "revision": "step1",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "mean_cos": 1.0
+  },
+  {
+   "revision": "step1",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "mean_cos": 1.0
+  },
+  {
+   "revision": "step1",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-seed1",
+   "mean_cos": -3.4e-05
+  },
+  {
+   "revision": "step64",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "mean_cos": 0.999998
+  },
+  {
+   "revision": "step64",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "mean_cos": 0.999998
+  },
+  {
+   "revision": "step64",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-seed1",
+   "mean_cos": -4.1e-05
+  },
+  {
+   "revision": "step1000",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "mean_cos": 0.994206
+  },
+  {
+   "revision": "step1000",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "mean_cos": 0.992604
+  },
+  {
+   "revision": "step1000",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-seed1",
+   "mean_cos": -0.00015
+  },
+  {
+   "revision": "step10000",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "mean_cos": 0.484503
+  },
+  {
+   "revision": "step10000",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "mean_cos": 0.461029
+  },
+  {
+   "revision": "step10000",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-seed1",
+   "mean_cos": -0.000152
+  },
+  {
+   "revision": "main",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "mean_cos": 0.211082
+  },
+  {
+   "revision": "main",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "mean_cos": 0.19568
+  },
+  {
+   "revision": "main",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-seed1",
+   "mean_cos": -1.9e-05
+  }
+ ],
+ "tester": [
+  {
+   "outcome": "FP",
+   "p": 0.00023614,
+   "hits": 1205,
+   "n": 2000,
+   "model": "EleutherAI/pythia-160m-deduped",
+   "guess": "EleutherAI/pythia-160m"
+  },
+  {
+   "outcome": "TN",
+   "p": 0.1618781,
+   "hits": 1256,
+   "n": 2000,
+   "model": "EleutherAI/pythia-410m-deduped",
+   "guess": "None"
+  },
+  {
+   "outcome": "TN",
+   "p": 0.37522345,
+   "hits": 1068,
+   "n": 2000,
+   "model": "EleutherAI/pythia-70m-seed1",
+   "guess": "None"
+  },
+  {
+   "outcome": "FP",
+   "p": 0.01383528,
+   "hits": 1185,
+   "n": 2000,
+   "model": "EleutherAI/pythia-160m-seed1",
+   "guess": "EleutherAI/pythia-160m"
+  },
+  {
+   "outcome": "TN",
+   "p": 0.6485218,
+   "hits": 1245,
+   "n": 2000,
+   "model": "EleutherAI/pythia-410m-seed1",
+   "guess": "None"
+  },
+  {
+   "outcome": "FP",
+   "p": 0.00088012,
+   "hits": 1112,
+   "n": 2000,
+   "model": "EleutherAI/pythia-70m-seed2",
+   "guess": "EleutherAI/pythia-70m"
+  },
+  {
+   "outcome": "TN",
+   "p": 0.09072069,
+   "hits": 1162,
+   "n": 2000,
+   "model": "EleutherAI/pythia-160m-seed2",
+   "guess": "None"
+  },
+  {
+   "outcome": "TN",
+   "p": 0.45575772,
+   "hits": 1233,
+   "n": 2000,
+   "model": "EleutherAI/pythia-410m-seed2",
+   "guess": "None"
+  },
+  {
+   "outcome": "FP",
+   "p": 0.00480847,
+   "hits": 1105,
+   "n": 2000,
+   "model": "EleutherAI/pythia-70m-seed3",
+   "guess": "EleutherAI/pythia-70m"
+  },
+  {
+   "outcome": "FP",
+   "p": 0.0274688,
+   "hits": 1178,
+   "n": 2000,
+   "model": "EleutherAI/pythia-160m-seed3",
+   "guess": "EleutherAI/pythia-160m"
+  },
+  {
+   "outcome": "TN",
+   "p": 0.08399275,
+   "hits": 1180,
+   "n": 2000,
+   "model": "EleutherAI/pythia-410m-seed3",
+   "guess": "None"
+  },
+  {
+   "outcome": "TN",
+   "p": 0.06867423,
+   "hits": 1169,
+   "n": 2000,
+   "model": "EleutherAI/pythia-160m-data-seed1",
+   "guess": "None"
+  },
+  {
+   "outcome": "FP",
+   "p": 0.00022594,
+   "hits": 1224,
+   "n": 2000,
+   "model": "EleutherAI/pythia-160m-weight-seed1",
+   "guess": "EleutherAI/pythia-160m"
+  }
+ ],
+ "tester_seed": {
+  "n": 9,
+  "named_parent": 4,
+  "p": [
+   [
+    "pythia-70m-seed1",
+    "TN",
+    0.37522345
+   ],
+   [
+    "pythia-160m-seed1",
+    "FP",
+    0.01383528
+   ],
+   [
+    "pythia-410m-seed1",
+    "TN",
+    0.6485218
+   ],
+   [
+    "pythia-70m-seed2",
+    "FP",
+    0.00088012
+   ],
+   [
+    "pythia-160m-seed2",
+    "TN",
+    0.09072069
+   ],
+   [
+    "pythia-410m-seed2",
+    "TN",
+    0.45575772
+   ],
+   [
+    "pythia-70m-seed3",
+    "FP",
+    0.00480847
+   ],
+   [
+    "pythia-160m-seed3",
+    "FP",
+    0.0274688
+   ],
+   [
+    "pythia-410m-seed3",
+    "TN",
+    0.08399275
+   ]
+  ]
+ }
+}

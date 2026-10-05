@@ -1,0 +1,683 @@
+{
+ "note": "Hugging Face repo revisions resolved from the local cache: the objects the measurements were made against. 'refs' maps a branch/revision name to its commit sha; models fetched at a pinned revision (e.g. Pythia stepN) appear as that ref name.",
+ "n_models": 66,
+ "n_cached": 61,
+ "models": [
+  {
+   "model": "EleutherAI/pythia-160m",
+   "cached": true,
+   "refs": {
+    "step16000": "13af86250de4e88e9c788ba8d7fb5b0e8a4afb7a",
+    "step32000": "dfead30ed6021412baa93aac4dbb31f1ee82033d",
+    "step8000": "efd022a43b3330576e60ae82bf5d71619f404997",
+    "step2000": "a4817f95aaebbfddd0763a6a027f5be6bd2c9246",
+    "step1000": "f711eaa4e5158955f6fcdff84a2145158b739f77",
+    "step143000": "b56d9bee36300031aeea723b73c4d62ac7fa71a2",
+    "step4000": "b0f0e0245cd0942bcf9389f4145bc9c8cd2517fd",
+    "step96000": "aaf70579ac956a238ee7b6e95bfc31a7f699ffb6",
+    "main": "50f5173d932e8e61f858120bcb800b97af589f46",
+    "step128000": "aa5969a496f6b99bbd90d79505341c15d05e1eb7",
+    "step64000": "aac0de458f9106a48f9e58f4ad7ba03f86753932"
+   },
+   "snapshots": [
+    "13af86250de4e88e9c788ba8d7fb5b0e8a4afb7a",
+    "50f5173d932e8e61f858120bcb800b97af589f46",
+    "a4817f95aaebbfddd0763a6a027f5be6bd2c9246",
+    "aa5969a496f6b99bbd90d79505341c15d05e1eb7",
+    "aac0de458f9106a48f9e58f4ad7ba03f86753932",
+    "aaf70579ac956a238ee7b6e95bfc31a7f699ffb6",
+    "b0f0e0245cd0942bcf9389f4145bc9c8cd2517fd",
+    "b56d9bee36300031aeea723b73c4d62ac7fa71a2",
+    "dfead30ed6021412baa93aac4dbb31f1ee82033d",
+    "efd022a43b3330576e60ae82bf5d71619f404997",
+    "f711eaa4e5158955f6fcdff84a2145158b739f77"
+   ]
+  },
+  {
+   "model": "EleutherAI/pythia-160m-deduped",
+   "cached": true,
+   "refs": {
+    "main": "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e"
+   },
+   "snapshots": [
+    "582159a2dfe3e712a8d47ae83dec95ae3bde8e7e"
+   ]
+  },
+  {
+   "model": "EleutherAI/pythia-160m-v0",
+   "cached": true,
+   "refs": {
+    "main": "3ef0c8cc72344bf3f6691d73c1a952892f8d1618"
+   },
+   "snapshots": [
+    "3ef0c8cc72344bf3f6691d73c1a952892f8d1618"
+   ]
+  },
+  {
+   "model": "EleutherAI/pythia-1b",
+   "cached": true,
+   "refs": {
+    "main": "f73d7dcc545c8bd326d8559c8ef84ffe92fea6b2"
+   },
+   "snapshots": [
+    "f73d7dcc545c8bd326d8559c8ef84ffe92fea6b2"
+   ]
+  },
+  {
+   "model": "EleutherAI/pythia-1b-deduped",
+   "cached": true,
+   "refs": {
+    "main": "7199d8fc61a6d565cd1f3c62bf11525b563e13b2"
+   },
+   "snapshots": [
+    "7199d8fc61a6d565cd1f3c62bf11525b563e13b2"
+   ]
+  },
+  {
+   "model": "EleutherAI/pythia-410m",
+   "cached": true,
+   "refs": {
+    "main": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f"
+   },
+   "snapshots": [
+    "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f"
+   ]
+  },
+  {
+   "model": "EleutherAI/pythia-410m-deduped",
+   "cached": true,
+   "refs": {
+    "main": "c4fc8d586d62df497f1f9b69d66d3ca419992d3e"
+   },
+   "snapshots": [
+    "c4fc8d586d62df497f1f9b69d66d3ca419992d3e"
+   ]
+  },
+  {
+   "model": "EleutherAI/pythia-410m-v0",
+   "cached": true,
+   "refs": {
+    "main": "dc7539d488d46992ea8b23461f2b6060534208cb"
+   },
+   "snapshots": [
+    "dc7539d488d46992ea8b23461f2b6060534208cb"
+   ]
+  },
+  {
+   "model": "EleutherAI/pythia-70m",
+   "cached": true,
+   "refs": {
+    "main": "a39f36b100fe8a5377810d56c3f4789b9c53ac42"
+   },
+   "snapshots": [
+    "a39f36b100fe8a5377810d56c3f4789b9c53ac42"
+   ]
+  },
+  {
+   "model": "EleutherAI/pythia-70m-deduped",
+   "cached": true,
+   "refs": {
+    "main": "e93a9faa9c77e5d09219f6c868bfc7a1bd65593c"
+   },
+   "snapshots": [
+    "e93a9faa9c77e5d09219f6c868bfc7a1bd65593c"
+   ]
+  },
+  {
+   "model": "EleutherAI/pythia-70m-deduped-v0",
+   "cached": true,
+   "refs": {
+    "main": "fefff897c5382cd0e1465128aa6867052a06ecd5"
+   },
+   "snapshots": [
+    "fefff897c5382cd0e1465128aa6867052a06ecd5"
+   ]
+  },
+  {
+   "model": "EleutherAI/pythia-70m-v0",
+   "cached": true,
+   "refs": {
+    "main": "57d0448e12b146f9d3decf2d64df9a6dc5194f7b"
+   },
+   "snapshots": [
+    "57d0448e12b146f9d3decf2d64df9a6dc5194f7b"
+   ]
+  },
+  {
+   "model": "FacebookAI/roberta-base",
+   "cached": true,
+   "refs": {
+    "main": "e2da8e2f811d1448a5b465c236feacd80ffbac7b"
+   },
+   "snapshots": [
+    "e2da8e2f811d1448a5b465c236feacd80ffbac7b"
+   ]
+  },
+  {
+   "model": "HuggingFaceTB/SmolLM2-135M",
+   "cached": true,
+   "refs": {
+    "main": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2"
+   },
+   "snapshots": [
+    "93efa2f097d58c2a74874c7e644dbc9b0cee75a2"
+   ]
+  },
+  {
+   "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+   "cached": true,
+   "refs": {
+    "main": "12fd25f77366fa6b3b4b768ec3050bf629380bac"
+   },
+   "snapshots": [
+    "12fd25f77366fa6b3b4b768ec3050bf629380bac"
+   ]
+  },
+  {
+   "model": "Intel/dynamic_tinybert",
+   "cached": true,
+   "refs": {
+    "main": "cd8fba8ea22eb32272ec4d03679d49ab1bbf6504"
+   },
+   "snapshots": [
+    "827c84e4b41b1e9955ea5d1e0a54bf052f378c70",
+    "cd8fba8ea22eb32272ec4d03679d49ab1bbf6504"
+   ]
+  },
+  {
+   "model": "ProsusAI/finbert",
+   "cached": true,
+   "refs": {
+    "main": "4556d13015211d73dccd3fdd39d39232506f3e43"
+   },
+   "snapshots": [
+    "4556d13015211d73dccd3fdd39d39232506f3e43",
+    "7db323f79b751944bcfa66298ec06977e4518306"
+   ]
+  },
+  {
+   "model": "Qwen/Qwen2.5-0.5B",
+   "cached": true,
+   "refs": {
+    "main": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+   },
+   "snapshots": [
+    "060db6499f32faf8b98477b0a26969ef7d8b9987"
+   ]
+  },
+  {
+   "model": "Qwen/Qwen2.5-0.5B-Instruct",
+   "cached": true,
+   "refs": {
+    "main": "7ae557604adf67be50417f59c2c2f167def9a775"
+   },
+   "snapshots": [
+    "7ae557604adf67be50417f59c2c2f167def9a775"
+   ]
+  },
+  {
+   "model": "allenai/biomed_roberta_base",
+   "cached": true,
+   "refs": {
+    "main": "0641aa1783909c6f94801601d4a166101f3d51a6"
+   },
+   "snapshots": [
+    "0641aa1783909c6f94801601d4a166101f3d51a6",
+    "ffc2f2def99bdbc9e924f65a10d7326150a3d550"
+   ]
+  },
+  {
+   "model": "allenai/cs_roberta_base",
+   "cached": true,
+   "refs": {
+    "main": "11a2149cfda93e7e42aa076c1c9b6d244e237c1b"
+   },
+   "snapshots": [
+    "11a2149cfda93e7e42aa076c1c9b6d244e237c1b",
+    "bb64759e877641a90ecb02834f9e6602d85aeacf"
+   ]
+  },
+  {
+   "model": "allenai/news_roberta_base",
+   "cached": true,
+   "refs": {
+    "main": "6fe451d531d810eb1ad24d66eb11affff9116e18"
+   },
+   "snapshots": [
+    "6fe451d531d810eb1ad24d66eb11affff9116e18",
+    "e7532883d406adc2f89952fe6e64d7a05d7e4edd"
+   ]
+  },
+  {
+   "model": "allenai/reviews_roberta_base",
+   "cached": true,
+   "refs": {
+    "main": "6d6e5c4a015c39633c1bd916fd4e67d244e67b4c"
+   },
+   "snapshots": [
+    "63ff393b5750fad560812a8e20ca68d9d01077bf",
+    "6d6e5c4a015c39633c1bd916fd4e67d244e67b4c"
+   ]
+  },
+  {
+   "model": "bigscience/bloom-560m",
+   "cached": true,
+   "refs": {
+    "main": "ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971"
+   },
+   "snapshots": [
+    "ac2ae5fab2ce3f9f40dc79b5ca9f637430d24971"
+   ]
+  },
+  {
+   "model": "bigscience/bloomz-560m",
+   "cached": true,
+   "refs": {
+    "main": "a2845d7e13dd12efae154a9f1c63fcc2e0cc4b05"
+   },
+   "snapshots": [
+    "a2845d7e13dd12efae154a9f1c63fcc2e0cc4b05"
+   ]
+  },
+  {
+   "model": "cardiffnlp/twitter-roberta-base",
+   "cached": true,
+   "refs": {
+    "main": "cbb417e9647b51504caf68cbe1af6bbf56da06b7"
+   },
+   "snapshots": [
+    "27f71810be1c539f1d796ed011703af7a7945e83",
+    "cbb417e9647b51504caf68cbe1af6bbf56da06b7"
+   ]
+  },
+  {
+   "model": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+   "cached": true,
+   "refs": {
+    "main": "3216a57f2a0d9c45a2e6c20157c20c49fb4bf9c7"
+   },
+   "snapshots": [
+    "3216a57f2a0d9c45a2e6c20157c20c49fb4bf9c7",
+    "d616e2bdfcdb0ca89d9b6efc4909e1db063af290"
+   ]
+  },
+  {
+   "model": "csarron/bert-base-uncased-squad-v1",
+   "cached": true,
+   "refs": {
+    "main": "c0773ca28abf86a669cd1cccc9104c7f829f2be0"
+   },
+   "snapshots": [
+    "c0773ca28abf86a669cd1cccc9104c7f829f2be0"
+   ]
+  },
+  {
+   "model": "distilbert/distilbert-base-cased",
+   "cached": true,
+   "refs": {
+    "main": "6ea81172465e8b0ad3fddeed32b986cdcdcffcf0"
+   },
+   "snapshots": [
+    "6ea81172465e8b0ad3fddeed32b986cdcdcffcf0"
+   ]
+  },
+  {
+   "model": "distilbert/distilbert-base-multilingual-cased",
+   "cached": true,
+   "refs": {
+    "main": "45c032ab32cc946ad88a166f7cb282f58c753c2e"
+   },
+   "snapshots": [
+    "45c032ab32cc946ad88a166f7cb282f58c753c2e"
+   ]
+  },
+  {
+   "model": "distilbert/distilbert-base-uncased",
+   "cached": true,
+   "refs": {
+    "main": "12040accade4e8a0f71eabdb258fecc2e7e948be"
+   },
+   "snapshots": [
+    "12040accade4e8a0f71eabdb258fecc2e7e948be"
+   ]
+  },
+  {
+   "model": "distilbert/distilbert-base-uncased-distilled-squad",
+   "cached": true,
+   "refs": {
+    "main": "dfb8fa0e03905f0b6ea92133e56b6fef138015f2"
+   },
+   "snapshots": [
+    "dfb8fa0e03905f0b6ea92133e56b6fef138015f2"
+   ]
+  },
+  {
+   "model": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+   "cached": true,
+   "refs": {
+    "main": "714eb0fa89d2f80546fda750413ed43d93601a13"
+   },
+   "snapshots": [
+    "714eb0fa89d2f80546fda750413ed43d93601a13"
+   ]
+  },
+  {
+   "model": "distilbert/distilgpt2",
+   "cached": true,
+   "refs": {
+    "main": "2290a62682d06624634c1f46a6ad5be0f47f38aa"
+   },
+   "snapshots": [
+    "2290a62682d06624634c1f46a6ad5be0f47f38aa"
+   ]
+  },
+  {
+   "model": "distilbert/distilroberta-base",
+   "cached": true,
+   "refs": {
+    "main": "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b"
+   },
+   "snapshots": [
+    "fb53ab8802853c8e4fbdbcd0529f21fc6f459b2b"
+   ]
+  },
+  {
+   "model": "ehsanaghaei/SecureBERT",
+   "cached": true,
+   "refs": {
+    "main": "3a47918dd874e5c769efd152b51c5756a953fb67"
+   },
+   "snapshots": [
+    "3a47918dd874e5c769efd152b51c5756a953fb67"
+   ]
+  },
+  {
+   "model": "emilyalsentzer/Bio_ClinicalBERT",
+   "cached": true,
+   "refs": {
+    "main": "d5892b39a4adaed74b92212a44081509db72f87b"
+   },
+   "snapshots": [
+    "3c22c28ae9c1619228e31dc7630645fee6081c98",
+    "d5892b39a4adaed74b92212a44081509db72f87b"
+   ]
+  },
+  {
+   "model": "facebook/bart-large-cnn",
+   "cached": true,
+   "refs": {
+    "main": "37f520fa929c961707657b28798b30c003dd100b"
+   },
+   "snapshots": [
+    "37f520fa929c961707657b28798b30c003dd100b"
+   ]
+  },
+  {
+   "model": "facebook/bart-large-xsum",
+   "cached": true,
+   "refs": {
+    "main": "2179ab81d3f133e639f2957aec5380e9d56b2783"
+   },
+   "snapshots": [
+    "11b65c131d59e3d10964281e22d34e6bd7628616",
+    "2179ab81d3f133e639f2957aec5380e9d56b2783"
+   ]
+  },
+  {
+   "model": "google-bert/bert-base-cased",
+   "cached": true,
+   "refs": {
+    "main": "cd5ef92a9fb2f889e972770a36d4ed042daf221e"
+   },
+   "snapshots": [
+    "cd5ef92a9fb2f889e972770a36d4ed042daf221e"
+   ]
+  },
+  {
+   "model": "google-bert/bert-base-multilingual-cased",
+   "cached": true,
+   "refs": {
+    "main": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8"
+   },
+   "snapshots": [
+    "3f076fdb1ab68d5b2880cb87a0886f315b8146f8"
+   ]
+  },
+  {
+   "model": "google-bert/bert-base-uncased",
+   "cached": true,
+   "refs": {
+    "main": "86b5e0934494bd15c9632b12f734a8a67f723594"
+   },
+   "snapshots": [
+    "86b5e0934494bd15c9632b12f734a8a67f723594"
+   ]
+  },
+  {
+   "model": "google/bert_uncased_L-4_H-256_A-4",
+   "cached": true,
+   "refs": {
+    "main": "387825ce42dbb39b87911cdf8e383ee3b25184f8"
+   },
+   "snapshots": [
+    "387825ce42dbb39b87911cdf8e383ee3b25184f8"
+   ]
+  },
+  {
+   "model": "huawei-noah/TinyBERT_General_4L_312D",
+   "cached": true,
+   "refs": {
+    "main": "34707a33cd59a94ecde241ac209bf35103691b43"
+   },
+   "snapshots": [
+    "34707a33cd59a94ecde241ac209bf35103691b43"
+   ]
+  },
+  {
+   "model": "lvwerra/gpt2-imdb",
+   "cached": true,
+   "refs": {
+    "main": "f1bfd819c6bee6c18fa5f95bfe88d9198839a435"
+   },
+   "snapshots": [
+    "f0c412a62b752a83524a061dc68aac27a4031d94",
+    "f1bfd819c6bee6c18fa5f95bfe88d9198839a435"
+   ]
+  },
+  {
+   "model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+   "cached": true,
+   "refs": {
+    "main": "d673b8835373c6fa116d6d8006b33d48734e305d"
+   },
+   "snapshots": [
+    "9d727c2e330ecf5a338c74356e76dce841c8196a",
+    "d673b8835373c6fa116d6d8006b33d48734e305d"
+   ]
+  },
+  {
+   "model": "microsoft/MiniLM-L12-H384-uncased",
+   "cached": true,
+   "refs": {
+    "main": "44acabbec0ef496f6dbc93adadea57f376b7c0ec"
+   },
+   "snapshots": [
+    "44acabbec0ef496f6dbc93adadea57f376b7c0ec"
+   ]
+  },
+  {
+   "model": "microsoft/xtremedistil-l6-h256-uncased",
+   "cached": true,
+   "refs": {
+    "main": "8d58f0e6e83c1ab87f88d8c556ec537a111e2ee0"
+   },
+   "snapshots": [
+    "4226d9e4d2c08703e5cb0491b479bfc6a1607181",
+    "8d58f0e6e83c1ab87f88d8c556ec537a111e2ee0"
+   ]
+  },
+  {
+   "model": "nlpaueb/legal-bert-base-uncased",
+   "cached": true,
+   "refs": {
+    "main": "15b570cbf88259610b082a167dacc190124f60f6"
+   },
+   "snapshots": [
+    "15b570cbf88259610b082a167dacc190124f60f6",
+    "418b58a010be042386a2ad50f350a9881ef3c578"
+   ]
+  },
+  {
+   "model": "nreimers/BERT-Tiny_L-2_H-128_A-2",
+   "cached": true,
+   "refs": {
+    "main": "9cb03776b08d300ae73aa6ba4860a760c606f62d"
+   },
+   "snapshots": [
+    "56f68e363692ca1fece686bcb7471b33a3696bf9",
+    "9cb03776b08d300ae73aa6ba4860a760c606f62d"
+   ]
+  },
+  {
+   "model": "nreimers/TinyBERT_L-4_H-312_v2",
+   "cached": true,
+   "refs": {
+    "main": "d782507ee95c6565fe5924fcd6090999055e8db6"
+   },
+   "snapshots": [
+    "241b4e5f8490fa292824a8d8840dcf433ed439f7",
+    "d782507ee95c6565fe5924fcd6090999055e8db6"
+   ]
+  },
+  {
+   "model": "openai-community/gpt2",
+   "cached": true,
+   "refs": {
+    "main": "607a30d783dfa663caf39e06633721c8d4cfcd7e"
+   },
+   "snapshots": [
+    "607a30d783dfa663caf39e06633721c8d4cfcd7e"
+   ]
+  },
+  {
+   "model": "openai-community/gpt2-medium",
+   "cached": true,
+   "refs": {
+    "main": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da"
+   },
+   "snapshots": [
+    "6dcaa7a952f72f9298047fd5137cd6e4f05f41da"
+   ]
+  },
+  {
+   "model": "prajjwal1/bert-tiny",
+   "cached": true,
+   "refs": {
+    "main": "6f75de8b60a9f8a2fdf7b69cbd86d9e64bcb3837"
+   },
+   "snapshots": [
+    "6f75de8b60a9f8a2fdf7b69cbd86d9e64bcb3837"
+   ]
+  },
+  {
+   "model": "pythia-1.4b/-deduped",
+   "cached": false,
+   "revision": null
+  },
+  {
+   "model": "pythia-160m/-deduped",
+   "cached": false,
+   "revision": null
+  },
+  {
+   "model": "pythia-1b/-deduped",
+   "cached": false,
+   "revision": null
+  },
+  {
+   "model": "pythia-410m/-deduped",
+   "cached": false,
+   "revision": null
+  },
+  {
+   "model": "pythia-70m/-deduped",
+   "cached": false,
+   "revision": null
+  },
+  {
+   "model": "sentence-transformers/all-distilroberta-v1",
+   "cached": true,
+   "refs": {
+    "main": "842eaed40bee4d61673a81c92d5689a8fed7a09f"
+   },
+   "snapshots": [
+    "842eaed40bee4d61673a81c92d5689a8fed7a09f"
+   ]
+  },
+  {
+   "model": "sshleifer/distilbart-cnn-12-6",
+   "cached": true,
+   "refs": {
+    "main": "a4f8f3ea906ed274767e9906dbaede7531d660ff"
+   },
+   "snapshots": [
+    "a4f8f3ea906ed274767e9906dbaede7531d660ff"
+   ]
+  },
+  {
+   "model": "sshleifer/distilbart-cnn-6-6",
+   "cached": true,
+   "refs": {
+    "main": "d2fde4ca965ba893255479612e4b801aa6500029"
+   },
+   "snapshots": [
+    "6c3b7d1f25fa7e46a801ad41790679138628dca5",
+    "d2fde4ca965ba893255479612e4b801aa6500029"
+   ]
+  },
+  {
+   "model": "sshleifer/distilbart-xsum-12-3",
+   "cached": true,
+   "refs": {
+    "main": "1d2bfbc16dcdd28720f9f1d37be764e5cc5c78c8"
+   },
+   "snapshots": [
+    "1d2bfbc16dcdd28720f9f1d37be764e5cc5c78c8",
+    "a1cd29019a8821fc17a0a730d23627f56e27e213"
+   ]
+  },
+  {
+   "model": "sshleifer/distilbart-xsum-6-6",
+   "cached": true,
+   "refs": {
+    "main": "9a31391363021090d1fceb38a9c83ecd0d0dc020"
+   },
+   "snapshots": [
+    "53b8e4c89c4664dd959245cffc5f35c4c0a5ef8a",
+    "9a31391363021090d1fceb38a9c83ecd0d0dc020"
+   ]
+  },
+  {
+   "model": "textattack/bert-base-uncased-SST-2",
+   "cached": true,
+   "refs": {
+    "main": "95f0f6f859b35c8ff0863ae3cd4e2dbc702c0ae2"
+   },
+   "snapshots": [
+    "205ffbd1bc5c5b89802266f4948a601f53556b00",
+    "95f0f6f859b35c8ff0863ae3cd4e2dbc702c0ae2"
+   ]
+  },
+  {
+   "model": "textattack/bert-base-uncased-imdb",
+   "cached": true,
+   "refs": {
+    "main": "c70b9f391af2067f7eff69a03940218bba9b8d39"
+   },
+   "snapshots": [
+    "17ca895f921568df9ed118bd73ed9f1cb29421b5",
+    "c70b9f391af2067f7eff69a03940218bba9b8d39"
+   ]
+  }
+ ]
+}

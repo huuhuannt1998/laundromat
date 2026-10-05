@@ -1,0 +1,30 @@
+[
+ {
+  "kind": "independent run (same corpus)",
+  "a": "EleutherAI/pythia-160m",
+  "b": "EleutherAI/pythia-160m-v0",
+  "displacement": 0.9210751284337962,
+  "displacement_embed": 1.3351172935277875
+ },
+ {
+  "kind": "independent run (dedup corpus)",
+  "a": "EleutherAI/pythia-160m",
+  "b": "EleutherAI/pythia-160m-deduped",
+  "displacement": 0.9919576973965621,
+  "displacement_embed": 1.169891394789949
+ },
+ {
+  "kind": "independent run (same corpus)",
+  "a": "EleutherAI/pythia-70m",
+  "b": "EleutherAI/pythia-70m-v0",
+  "displacement": 0.899536009102861,
+  "displacement_embed": 1.154763777402947
+ },
+ {
+  "kind": "independent run (dedup corpus)",
+  "a": "EleutherAI/pythia-70m",
+  "b": "EleutherAI/pythia-70m-deduped",
+  "displacement": 1.0008292543849164,
+  "displacement_embed": 1.1579461739600452
+ }
+]

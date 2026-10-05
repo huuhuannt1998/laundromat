@@ -1,0 +1,72 @@
+{
+ "rule": {
+  "gguf": "name ends in -GGUF",
+  "test_fixture": "test-account namespace (\u2026-testing, robot-test, peft-internal-testing) or name containing tiny-random / dummy"
+ },
+ "n_fetched": 545,
+ "n_keyless": 47,
+ "counts": {
+  "ordinary": 17,
+  "test fixture": 7,
+  "gguf": 23
+ },
+ "groups": {
+  "ordinary": [
+   "emilyalsentzer/Bio_ClinicalBERT",
+   "stanford-crfm/music-medium-800k",
+   "stanford-crfm/music-small-800k",
+   "aynetdia/babylm-mtp-gpt2",
+   "hfl/chinese-electra-180g-small-ex-discriminator",
+   "microsoft/mdeberta-v3-base",
+   "microsoft/deberta-v3-base",
+   "microsoft/deberta-v3-large",
+   "microsoft/deberta-v3-small",
+   "microsoft/deberta-base",
+   "microsoft/deberta-v2-xlarge",
+   "microsoft/deberta-large",
+   "microsoft/deberta-v3-xsmall",
+   "ku-nlp/deberta-v3-base-japanese",
+   "microsoft/deberta-v2-xxlarge",
+   "antflydb/gliner2-base-v1",
+   "lighthouse/mdeberta-v3-base-kor-further"
+  ],
+  "test fixture": [
+   "optimum-intel-internal-testing/tiny-random-roberta",
+   "optimum-intel-internal-testing/tiny-random-gpt2",
+   "joaogante/tiny-random-gpt2-with-generation-config",
+   "optimum-intel-internal-testing/tiny-random-t5",
+   "optimum-intel-internal-testing/tiny-random-electra",
+   "optimum-intel-internal-testing/tiny-random-albert",
+   "robot-test/dummy-tokenizer-fast-with-model-config"
+  ],
+  "gguf": [
+   "MaziyarPanahi/Qwen3-4B-GGUF",
+   "MaziyarPanahi/Qwen3-0.6B-GGUF",
+   "MaziyarPanahi/Qwen3-14B-GGUF",
+   "MaziyarPanahi/Qwen3-1.7B-GGUF",
+   "MaziyarPanahi/Qwen3-8B-GGUF",
+   "MaziyarPanahi/Qwen3-4B-Instruct-2507-GGUF",
+   "MaziyarPanahi/Meta-Llama-3-8B-Instruct-GGUF",
+   "MaziyarPanahi/Mistral-7B-Instruct-v0.3-GGUF",
+   "MaziyarPanahi/gemma-3-4b-it-GGUF",
+   "MaziyarPanahi/Llama-3-8B-Instruct-32k-v0.1-GGUF",
+   "MaziyarPanahi/Mistral-Small-24B-Instruct-2501-GGUF",
+   "MaziyarPanahi/Phi-3.5-mini-instruct-GGUF",
+   "MaziyarPanahi/Yi-1.5-6B-Chat-GGUF",
+   "MaziyarPanahi/Llama-3.2-1B-Instruct-GGUF",
+   "MaziyarPanahi/Mistral-Nemo-Instruct-2407-GGUF",
+   "MaziyarPanahi/Qwen2.5-7B-Instruct-GGUF",
+   "MaziyarPanahi/Phi-4-mini-instruct-GGUF",
+   "MaziyarPanahi/Llama-3.2-3B-Instruct-GGUF",
+   "MaziyarPanahi/WizardLM-2-7B-GGUF",
+   "MaziyarPanahi/solar-pro-preview-instruct-GGUF",
+   "MaziyarPanahi/Qwen2.5-1.5B-Instruct-GGUF",
+   "MaziyarPanahi/gemma-3-12b-it-GGUF",
+   "MaziyarPanahi/Yi-Coder-1.5B-Chat-GGUF"
+  ]
+ },
+ "rate_ordinary": 0.031192660550458717,
+ "changed_from_e14b": [
+  "robot-test/dummy-tokenizer-fast-with-model-config"
+ ]
+}

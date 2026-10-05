@@ -1,0 +1,62 @@
+{
+ "as_served": {
+  "fail-open": {
+   "missed": 8,
+   "quarantined": 5,
+   "correct": 19,
+   "quarantined_models": [
+    "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+    "EleutherAI/pythia-70m-deduped",
+    "EleutherAI/pythia-160m-deduped",
+    "EleutherAI/pythia-410m-deduped",
+    "EleutherAI/pythia-1b-deduped"
+   ]
+  },
+  "fail-closed": {
+   "missed": 3,
+   "quarantined": 8,
+   "correct": 21,
+   "quarantined_models": [
+    "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+    "EleutherAI/pythia-70m-deduped",
+    "EleutherAI/pythia-160m-deduped",
+    "EleutherAI/pythia-410m-deduped",
+    "EleutherAI/pythia-1b-deduped",
+    "microsoft/MiniLM-L12-H384-uncased",
+    "google/bert_uncased_L-4_H-256_A-4",
+    "emilyalsentzer/Bio_ClinicalBERT"
+   ]
+  }
+ },
+ "legalbert_weak": {
+  "fail-open": {
+   "missed": 8,
+   "quarantined": 6,
+   "correct": 18,
+   "quarantined_models": [
+    "nlpaueb/legal-bert-base-uncased",
+    "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+    "EleutherAI/pythia-70m-deduped",
+    "EleutherAI/pythia-160m-deduped",
+    "EleutherAI/pythia-410m-deduped",
+    "EleutherAI/pythia-1b-deduped"
+   ]
+  },
+  "fail-closed": {
+   "missed": 3,
+   "quarantined": 9,
+   "correct": 20,
+   "quarantined_models": [
+    "nlpaueb/legal-bert-base-uncased",
+    "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+    "EleutherAI/pythia-70m-deduped",
+    "EleutherAI/pythia-160m-deduped",
+    "EleutherAI/pythia-410m-deduped",
+    "EleutherAI/pythia-1b-deduped",
+    "microsoft/MiniLM-L12-H384-uncased",
+    "google/bert_uncased_L-4_H-256_A-4",
+    "emilyalsentzer/Bio_ClinicalBERT"
+   ]
+  }
+ }
+}

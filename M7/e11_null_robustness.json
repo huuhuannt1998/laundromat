@@ -1,0 +1,27 @@
+{
+ "n": 1388,
+ "p75": 0.5296,
+ "boot": {
+  "B": 20000,
+  "seed": 17,
+  "median": 0.5296,
+  "ci": [
+   0.5184,
+   0.5398499999999999
+  ],
+  "min": 0.51105,
+  "max": 0.55425
+ },
+ "half_split": {
+  "min": 0.5128,
+  "max": 0.5504249999999999
+ },
+ "alt_construction_p75": 0.5327,
+ "alt_n": 1400,
+ "lowest_capability_preserving": {
+  "arm": "frac_sweep_HuggingFaceTB--SmolLM2-135M-Instruct",
+  "identity": 0.9116
+ },
+ "conclusion_stable": true,
+ "blocked": "per-score stratum labels are not retained in null_frozen.json, so the stratified-by-scale and same-family-vs-cross-family splits could not be run"
+}

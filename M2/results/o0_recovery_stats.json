@@ -1,0 +1,10 @@
+{
+ "recovered_w_wvc": 0.20970666666666665,
+ "sd": 0.00042843384034820957,
+ "published": 0.21,
+ "rel_err_pct": 0.1396825396825428,
+ "ols_slope": -0.20932210526315745,
+ "ols_r2": 0.9999978161597002,
+ "n_points": 6,
+ "observability": "O0 -- scores only; signal values never used"
+}

@@ -1,0 +1,96 @@
+{
+ "models": [
+  {
+   "ref": "EleutherAI/pythia-6.9b",
+   "strategy": "full",
+   "source": "automodel_causal",
+   "n_keys": 388,
+   "first_keys": [
+    "gpt_neox.embed_in.weight",
+    "gpt_neox.layers.0.input_layernorm.weight",
+    "gpt_neox.layers.0.input_layernorm.bias",
+    "gpt_neox.layers.0.post_attention_layernorm.weight"
+   ],
+   "n_norm": 130,
+   "first_norm_keys": [
+    "gpt_neox.layers.0.input_layernorm.weight",
+    "gpt_neox.layers.0.input_layernorm.bias",
+    "gpt_neox.layers.0.post_attention_layernorm.weight",
+    "gpt_neox.layers.0.post_attention_layernorm.bias",
+    "gpt_neox.layers.1.input_layernorm.weight",
+    "gpt_neox.layers.1.input_layernorm.bias"
+   ],
+   "norm_keys_sorted": false,
+   "nlf_mode": "direct",
+   "nlf_len": 532480,
+   "nlf_mean": 0.5585259795188904,
+   "name": "hub_6.9b"
+  },
+  {
+   "ref": "EleutherAI/pythia-6.9b-deduped",
+   "strategy": "full",
+   "source": "automodel_causal",
+   "n_keys": 388,
+   "first_keys": [
+    "gpt_neox.embed_in.weight",
+    "gpt_neox.layers.0.input_layernorm.weight",
+    "gpt_neox.layers.0.input_layernorm.bias",
+    "gpt_neox.layers.0.post_attention_layernorm.weight"
+   ],
+   "n_norm": 130,
+   "first_norm_keys": [
+    "gpt_neox.layers.0.input_layernorm.weight",
+    "gpt_neox.layers.0.input_layernorm.bias",
+    "gpt_neox.layers.0.post_attention_layernorm.weight",
+    "gpt_neox.layers.0.post_attention_layernorm.bias",
+    "gpt_neox.layers.1.input_layernorm.weight",
+    "gpt_neox.layers.1.input_layernorm.bias"
+   ],
+   "norm_keys_sorted": false,
+   "nlf_mode": "direct",
+   "nlf_len": 532480,
+   "nlf_mean": 0.5579530596733093,
+   "name": "hub_6.9b-deduped"
+  },
+  {
+   "ref": "M9/work_e44c/pythia-6.9b-deduped-safetensors-from-bin",
+   "strategy": "full",
+   "source": "safetensors_sharded",
+   "n_keys": 484,
+   "first_keys": [
+    "gpt_neox.embed_in.weight",
+    "gpt_neox.layers.0.attention.dense.bias",
+    "gpt_neox.layers.0.attention.dense.weight",
+    "gpt_neox.layers.0.attention.masked_bias"
+   ],
+   "n_norm": 130,
+   "first_norm_keys": [
+    "gpt_neox.layers.0.input_layernorm.bias",
+    "gpt_neox.layers.0.input_layernorm.weight",
+    "gpt_neox.layers.0.post_attention_layernorm.bias",
+    "gpt_neox.layers.0.post_attention_layernorm.weight",
+    "gpt_neox.layers.1.input_layernorm.bias",
+    "gpt_neox.layers.1.input_layernorm.weight"
+   ],
+   "norm_keys_sorted": false,
+   "nlf_mode": "direct",
+   "nlf_len": 532480,
+   "nlf_mean": 0.5579530000686646,
+   "name": "resaved_6.9b-deduped"
+  }
+ ],
+ "pairs": {
+  "hub_6.9b | hub_6.9b-deduped": {
+   "nlf_similarity": 0.9976,
+   "same_norm_key_order": true
+  },
+  "hub_6.9b | resaved_6.9b-deduped": {
+   "nlf_similarity": 0.0059,
+   "same_norm_key_order": false
+  },
+  "hub_6.9b-deduped | resaved_6.9b-deduped": {
+   "nlf_similarity": 0.005,
+   "same_norm_key_order": false
+  }
+ }
+}

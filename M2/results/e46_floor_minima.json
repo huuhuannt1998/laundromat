@@ -1,0 +1,345 @@
+{
+ "weights": {
+  "eas": 0.36,
+  "wvc": 0.21,
+  "end": 0.19,
+  "lep": 0.16,
+  "nlf": 0.08
+ },
+ "bar": 0.5298,
+ "transform_floors": {
+  "eas": 0.4987,
+  "wvc": 0.0018,
+  "end": 0.0786,
+  "lep": 0.5386,
+  "nlf": 0.6836
+ },
+ "all_arm": {
+  "sigma": 0.3255,
+  "signals": {
+   "eas": 0.4987,
+   "wvc": 0.0034,
+   "end": 0.0684,
+   "lep": 0.4836,
+   "nlf": 0.6861
+  },
+  "tier": 1,
+  "pipeline": 1.0,
+  "verdict": "Confirmed Match"
+ },
+ "all_arm_predicted_from_single_arms": 0.335708,
+ "all_arm_residual": 0.010208,
+ "wide_scans": {
+  "n_comparisons": 1400,
+  "n_targets": 10,
+  "observations_per_signal": {
+   "eas": 960,
+   "wvc": 1096,
+   "end": 1400,
+   "lep": 1400,
+   "nlf": 1400
+  },
+  "minima": {
+   "eas": 0.557,
+   "wvc": 0.0004,
+   "end": 0.0002,
+   "lep": 0.0395,
+   "nlf": 0.0829
+  },
+  "examples": {
+   "eas": [
+    [
+     "google-bert/bert-base-uncased",
+     "Phi-4-mini-reasoning"
+    ]
+   ],
+   "wvc": [
+    [
+     "EleutherAI/pythia-160m-deduped",
+     "OpenMath-Nemotron-1.5B"
+    ]
+   ],
+   "end": [
+    [
+     "HuggingFaceTB/SmolLM2-135M",
+     "gemma-3-4b-it"
+    ],
+    [
+     "HuggingFaceTB/SmolLM2-135M-Instruct",
+     "gemma-3-4b-it"
+    ],
+    [
+     "EleutherAI/pythia-160m",
+     "gemma-2-2b-it"
+    ]
+   ],
+   "lep": [
+    [
+     "Qwen/Qwen2.5-0.5B",
+     "DeepSeek-Coder-V2-Lite-Instruct"
+    ]
+   ],
+   "nlf": [
+    [
+     "bigscience/bloom-560m",
+     "Qwen3-0.6B"
+    ]
+   ]
+  }
+ },
+ "qualified_cells": {
+  "wvc": {
+   "value": 0.0002,
+   "pair": [
+    "TheBloke/TinyLlama-1.1B-Chat-v0.3-GPTQ",
+    "PY007/TinyLlama-1.1B-Chat-v0.3"
+   ],
+   "source": "M3/verify_claims.jsonl"
+  },
+  "nlf": {
+   "value": 0.0,
+   "children": [
+    "nlpaueb/legal-bert-base-uncased",
+    "ProsusAI/finbert",
+    "emilyalsentzer/Bio_ClinicalBERT",
+    "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+    "textattack/bert-base-uncased-SST-2",
+    "textattack/bert-base-uncased-imdb"
+   ],
+   "source": "M5/sweep_bert.jsonl",
+   "caveat": ".bin-only children; serialisation-order artefact (E35-E39)"
+  }
+ },
+ "wide_scans_only": {
+  "lower_of_two": {
+   "eas": 0.4987,
+   "wvc": 0.0004,
+   "end": 0.0002,
+   "lep": 0.0395,
+   "nlf": 0.0829
+  },
+  "least_identity": 0.192606,
+  "anchor_mass": 0.179532,
+  "pairs_below_bar": [],
+  "best_pair": [
+   "wvc+end",
+   0.600122
+  ],
+  "eas_wvc": 0.609616,
+  "triples_below_bar": [
+   [
+    "eas+wvc+end",
+    0.419654
+   ],
+   [
+    "wvc+end+lep",
+    0.446442
+   ],
+   [
+    "eas+wvc+lep",
+    0.455936
+   ],
+   [
+    "eas+end+lep",
+    0.47589
+   ],
+   [
+    "wvc+end+nlf",
+    0.526754
+   ]
+  ],
+  "triples_sorted": [
+   [
+    "eas+wvc+end",
+    0.419654
+   ],
+   [
+    "wvc+end+lep",
+    0.446442
+   ],
+   [
+    "eas+wvc+lep",
+    0.455936
+   ],
+   [
+    "eas+end+lep",
+    0.47589
+   ],
+   [
+    "wvc+end+nlf",
+    0.526754
+   ],
+   [
+    "eas+wvc+nlf",
+    0.536248
+   ],
+   [
+    "eas+end+nlf",
+    0.556202
+   ],
+   [
+    "wvc+lep+nlf",
+    0.563036
+   ],
+   [
+    "end+lep+nlf",
+    0.58299
+   ],
+   [
+    "eas+lep+nlf",
+    0.592484
+   ]
+  ],
+  "subsets": {
+   "eas": 0.819532,
+   "wvc": 0.790084,
+   "end": 0.810038,
+   "lep": 0.84632,
+   "nlf": 0.926632,
+   "eas+wvc": 0.609616,
+   "eas+end": 0.62957,
+   "eas+lep": 0.665852,
+   "eas+nlf": 0.746164,
+   "wvc+end": 0.600122,
+   "wvc+lep": 0.636404,
+   "wvc+nlf": 0.716716,
+   "end+lep": 0.656358,
+   "end+nlf": 0.73667,
+   "lep+nlf": 0.772952,
+   "eas+wvc+end": 0.419654,
+   "eas+wvc+lep": 0.455936,
+   "eas+wvc+nlf": 0.536248,
+   "eas+end+lep": 0.47589,
+   "eas+end+nlf": 0.556202,
+   "eas+lep+nlf": 0.592484,
+   "wvc+end+lep": 0.446442,
+   "wvc+end+nlf": 0.526754,
+   "wvc+lep+nlf": 0.563036,
+   "end+lep+nlf": 0.58299,
+   "eas+wvc+end+lep": 0.265974,
+   "eas+wvc+end+nlf": 0.346286,
+   "eas+wvc+lep+nlf": 0.382568,
+   "eas+end+lep+nlf": 0.402522,
+   "wvc+end+lep+nlf": 0.373074,
+   "eas+wvc+end+lep+nlf": 0.192606
+  }
+ },
+ "with_qualified_cells": {
+  "lower_of_two": {
+   "eas": 0.4987,
+   "wvc": 0.0002,
+   "end": 0.0002,
+   "lep": 0.0395,
+   "nlf": 0.0
+  },
+  "least_identity": 0.185932,
+  "anchor_mass": 0.179532,
+  "pairs_below_bar": [],
+  "best_pair": [
+   "wvc+end",
+   0.60008
+  ],
+  "eas_wvc": 0.609574,
+  "triples_below_bar": [
+   [
+    "eas+wvc+end",
+    0.419612
+   ],
+   [
+    "wvc+end+lep",
+    0.4464
+   ],
+   [
+    "eas+wvc+lep",
+    0.455894
+   ],
+   [
+    "eas+end+lep",
+    0.47589
+   ],
+   [
+    "wvc+end+nlf",
+    0.52008
+   ],
+   [
+    "eas+wvc+nlf",
+    0.529574
+   ]
+  ],
+  "triples_sorted": [
+   [
+    "eas+wvc+end",
+    0.419612
+   ],
+   [
+    "wvc+end+lep",
+    0.4464
+   ],
+   [
+    "eas+wvc+lep",
+    0.455894
+   ],
+   [
+    "eas+end+lep",
+    0.47589
+   ],
+   [
+    "wvc+end+nlf",
+    0.52008
+   ],
+   [
+    "eas+wvc+nlf",
+    0.529574
+   ],
+   [
+    "eas+end+nlf",
+    0.54957
+   ],
+   [
+    "wvc+lep+nlf",
+    0.556362
+   ],
+   [
+    "end+lep+nlf",
+    0.576358
+   ],
+   [
+    "eas+lep+nlf",
+    0.585852
+   ]
+  ],
+  "subsets": {
+   "eas": 0.819532,
+   "wvc": 0.790042,
+   "end": 0.810038,
+   "lep": 0.84632,
+   "nlf": 0.92,
+   "eas+wvc": 0.609574,
+   "eas+end": 0.62957,
+   "eas+lep": 0.665852,
+   "eas+nlf": 0.739532,
+   "wvc+end": 0.60008,
+   "wvc+lep": 0.636362,
+   "wvc+nlf": 0.710042,
+   "end+lep": 0.656358,
+   "end+nlf": 0.730038,
+   "lep+nlf": 0.76632,
+   "eas+wvc+end": 0.419612,
+   "eas+wvc+lep": 0.455894,
+   "eas+wvc+nlf": 0.529574,
+   "eas+end+lep": 0.47589,
+   "eas+end+nlf": 0.54957,
+   "eas+lep+nlf": 0.585852,
+   "wvc+end+lep": 0.4464,
+   "wvc+end+nlf": 0.52008,
+   "wvc+lep+nlf": 0.556362,
+   "end+lep+nlf": 0.576358,
+   "eas+wvc+end+lep": 0.265932,
+   "eas+wvc+end+nlf": 0.339612,
+   "eas+wvc+lep+nlf": 0.375894,
+   "eas+end+lep+nlf": 0.39589,
+   "wvc+end+lep+nlf": 0.3664,
+   "eas+wvc+end+lep+nlf": 0.185932
+  }
+ }
+}

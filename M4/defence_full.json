@@ -1,0 +1,62 @@
+[
+ {
+  "class": "P+ fine-tune",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "lap": 0.9968764225641886
+ },
+ {
+  "class": "P+ multitask",
+  "a": "bigscience/bloom-560m",
+  "b": "bigscience/bloomz-560m",
+  "lap": 0.9761763190229734
+ },
+ {
+  "class": "P+ distill",
+  "a": "google-bert/bert-base-uncased",
+  "b": "distilbert/distilbert-base-uncased",
+  "lap": 0.5255436400572459
+ },
+ {
+  "class": "P+ distill",
+  "a": "FacebookAI/roberta-base",
+  "b": "distilbert/distilroberta-base",
+  "lap": 0.5986927375197411
+ },
+ {
+  "class": "P+ distill",
+  "a": "gpt2",
+  "b": "distilgpt2",
+  "lap": 0.5147546293834845
+ },
+ {
+  "class": "P~ same-recipe",
+  "a": "EleutherAI/pythia-160m",
+  "b": "EleutherAI/pythia-160m-deduped",
+  "lap": 0.1960927496353785
+ },
+ {
+  "class": "P~ same-recipe",
+  "a": "EleutherAI/pythia-410m",
+  "b": "EleutherAI/pythia-410m-deduped",
+  "lap": 0.21511989335219064
+ },
+ {
+  "class": "P- unrelated",
+  "a": "google-bert/bert-base-uncased",
+  "b": "FacebookAI/roberta-base",
+  "lap": 0.11699134111404419
+ },
+ {
+  "class": "P- unrelated",
+  "a": "distilbert/distilbert-base-uncased",
+  "b": "distilbert/distilroberta-base",
+  "lap": 0.11688039327661197
+ },
+ {
+  "class": "P- unrelated",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "HuggingFaceTB/SmolLM2-360M",
+  "lap": NaN
+ }
+]

@@ -1,0 +1,7 @@
+{"arm": "none", "sigma_id": 1.0, "tier": 1, "pipeline": 1.0, "verdict": "Confirmed Match", "signals": {"eas": 1.0, "wvc": 1.0, "end": 1.0, "lep": 1.0, "nlf": 1.0}}
+{"arm": "EAS", "sigma_id": 0.8195, "tier": 1, "pipeline": 1.0, "verdict": "Confirmed Match", "signals": {"eas": 0.4987, "wvc": 1.0, "end": 1.0, "lep": 1.0, "nlf": 1.0}}
+{"arm": "WVC", "sigma_id": 0.7904, "tier": 1, "pipeline": 1.0, "verdict": "Confirmed Match", "signals": {"eas": 1.0, "wvc": 0.0018, "end": 1.0, "lep": 1.0, "nlf": 1.0}}
+{"arm": "END", "sigma_id": 0.8249, "tier": 1, "pipeline": 1.0, "verdict": "Confirmed Match", "signals": {"eas": 1.0, "wvc": 1.0, "end": 0.0786, "lep": 1.0, "nlf": 1.0}}
+{"arm": "LEP", "sigma_id": 0.9262, "tier": 1, "pipeline": 1.0, "verdict": "Confirmed Match", "signals": {"eas": 1.0, "wvc": 1.0, "end": 1.0, "lep": 0.5386, "nlf": 1.0}}
+{"arm": "NLF", "sigma_id": 0.9747, "tier": 1, "pipeline": 1.0, "verdict": "Confirmed Match", "signals": {"eas": 1.0, "wvc": 1.0, "end": 1.0, "lep": 1.0, "nlf": 0.6836}}
+{"arm": "ALL", "sigma_id": 0.3255, "tier": 1, "pipeline": 1.0, "verdict": "Confirmed Match", "signals": {"eas": 0.4987, "wvc": 0.0034, "end": 0.0684, "lep": 0.4836, "nlf": 0.6861}}

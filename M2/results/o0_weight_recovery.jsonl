@@ -1,0 +1,6 @@
+{"p": 0.0, "rows_moved": 0, "rows_total": 155520, "sigma_id": 1.0, "tier": 1, "signals": {"eas": 1.0, "nlf": 1.0, "lep": 1.0, "end": 1.0, "wvc": 1.0}}
+{"p": 0.125, "rows_moved": 19440, "rows_total": 155520, "sigma_id": 0.9738, "tier": 1, "signals": {"eas": 1.0, "nlf": 1.0, "lep": 1.0, "end": 1.0, "wvc": 0.8753}}
+{"p": 0.25, "rows_moved": 38880, "rows_total": 155520, "sigma_id": 0.9474, "tier": 1, "signals": {"eas": 1.0, "nlf": 1.0, "lep": 1.0, "end": 1.0, "wvc": 0.7494}}
+{"p": 0.5, "rows_moved": 77760, "rows_total": 155520, "sigma_id": 0.8951, "tier": 1, "signals": {"eas": 1.0, "nlf": 1.0, "lep": 1.0, "end": 1.0, "wvc": 0.5006}}
+{"p": 0.75, "rows_moved": 116640, "rows_total": 155520, "sigma_id": 0.843, "tier": 1, "signals": {"eas": 1.0, "nlf": 1.0, "lep": 1.0, "end": 1.0, "wvc": 0.2524}}
+{"p": 1.0, "rows_moved": 155520, "rows_total": 155520, "sigma_id": 0.7906, "tier": 1, "signals": {"eas": 1.0, "nlf": 1.0, "lep": 1.0, "end": 1.0, "wvc": 0.0027}}

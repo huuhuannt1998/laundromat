@@ -1,0 +1,66 @@
+[
+ {
+  "class": "IDENTITY",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "HuggingFaceTB/SmolLM2-135M",
+  "laundered": false,
+  "svd_spectral": 1.0,
+  "raw_positional": 1.0
+ },
+ {
+  "class": "P+ derived",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "laundered": false,
+  "svd_spectral": 0.9999885488322194,
+  "raw_positional": 0.9963073773469878
+ },
+ {
+  "class": "P+ derived",
+  "a": "Qwen/Qwen2.5-0.5B",
+  "b": "Qwen/Qwen2.5-0.5B-Instruct",
+  "laundered": false,
+  "svd_spectral": 0.9999970588715137,
+  "raw_positional": 0.9975204438376621
+ },
+ {
+  "class": "P~ SAME-RECIPE INDEP",
+  "a": "EleutherAI/pythia-160m",
+  "b": "EleutherAI/pythia-160m-deduped",
+  "laundered": false,
+  "svd_spectral": 0.9923538024394506,
+  "raw_positional": 0.13405187518875628
+ },
+ {
+  "class": "P- unrelated",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "EleutherAI/pythia-160m",
+  "laundered": false,
+  "svd_spectral": 0.9460433150574925,
+  "raw_positional": 0.000314881754606548
+ },
+ {
+  "class": "P- unrelated",
+  "a": "gpt2",
+  "b": "bigscience/bloom-560m",
+  "laundered": false,
+  "svd_spectral": 0.9851859419162041,
+  "raw_positional": -0.003224294422385953
+ },
+ {
+  "class": "LAUNDERED (X1a.X1b.X2)",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "laundered": true,
+  "svd_spectral": 0.995492239991486,
+  "raw_positional": 0.24133604120028113
+ },
+ {
+  "class": "LAUNDERED (X1a.X1b.X2)",
+  "a": "Qwen/Qwen2.5-0.5B",
+  "b": "Qwen/Qwen2.5-0.5B-Instruct",
+  "laundered": true,
+  "svd_spectral": 0.995757123943945,
+  "raw_positional": 0.24099035216266143
+ }
+]

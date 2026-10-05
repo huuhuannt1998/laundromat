@@ -1,0 +1,78 @@
+{
+ "child": "HuggingFaceTB/SmolLM2-135M-Instruct",
+ "tolerance": 0.01,
+ "config_dtype": "torch.bfloat16",
+ "native_load_dtype": "torch.bfloat16",
+ "native": {
+  "probes8": {
+   "M2t(0.0)": {
+    "max_abs_logit_delta": 0.0,
+    "within_1e_2": true,
+    "n_probes": 8
+   },
+   "X1a": {
+    "max_abs_logit_delta": 0.4375,
+    "within_1e_2": false,
+    "n_probes": 8
+   },
+   "M2t(0.0) o X1a": {
+    "max_abs_logit_delta": 0.4375,
+    "within_1e_2": false,
+    "n_probes": 8
+   }
+  },
+  "all": {
+   "M2t(0.0)": {
+    "max_abs_logit_delta": 0.0,
+    "within_1e_2": true,
+    "n_probes": 24
+   },
+   "X1a": {
+    "max_abs_logit_delta": 0.4375,
+    "within_1e_2": false,
+    "n_probes": 24
+   },
+   "M2t(0.0) o X1a": {
+    "max_abs_logit_delta": 0.4375,
+    "within_1e_2": false,
+    "n_probes": 24
+   }
+  }
+ },
+ "float32": {
+  "probes8": {
+   "M2t(0.0)": {
+    "max_abs_logit_delta": 0.0,
+    "within_1e_2": true,
+    "n_probes": 8
+   },
+   "X1a": {
+    "max_abs_logit_delta": 5.340576171875e-05,
+    "within_1e_2": true,
+    "n_probes": 8
+   },
+   "M2t(0.0) o X1a": {
+    "max_abs_logit_delta": 5.340576171875e-05,
+    "within_1e_2": true,
+    "n_probes": 8
+   }
+  },
+  "all": {
+   "M2t(0.0)": {
+    "max_abs_logit_delta": 0.0,
+    "within_1e_2": true,
+    "n_probes": 24
+   },
+   "X1a": {
+    "max_abs_logit_delta": 5.340576171875e-05,
+    "within_1e_2": true,
+    "n_probes": 24
+   },
+   "M2t(0.0) o X1a": {
+    "max_abs_logit_delta": 5.340576171875e-05,
+    "within_1e_2": true,
+    "n_probes": 24
+   }
+  }
+ }
+}

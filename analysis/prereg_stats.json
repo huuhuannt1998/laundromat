@@ -1,0 +1,38 @@
+{
+ "rows": [
+  {
+   "n": "C1  S2 vs S1 (composition beats free symmetry?)",
+   "eff": "sigma_pipe 0.8924 vs 1.0000  (delta -0.1076)",
+   "p": null,
+   "note": "EXHAUSTIVE (4+3 pts). Both > bar 0.5298. YES it helps, NO it does not evade."
+  },
+  {
+   "n": "C2  S2 vs M1t-alone (composition beats metadata?)",
+   "eff": "sigma_pipe 0.8924 vs 0.9000  (delta -0.0076)",
+   "p": null,
+   "note": "EXHAUSTIVE. chi_comp with C1. Both > bar 0.5298."
+  },
+  {
+   "n": "C3  kappa=0 frontier vs B-3 (scratch @ matched kappa)",
+   "eff": "won by construction (B-3 is empty at kappa=0)",
+   "p": null,
+   "note": "TRUE BY CONSTRUCTION. Reported for completeness; carries no evidential weight."
+  },
+  {
+   "n": "C4  P~ vs P+ on s_struct (masking existence)",
+   "eff": "P~ 0.8735 (n=11)  vs  P+ 0.8975 (n=16)   AUC 0.443",
+   "p": 0.5879,
+   "note": "20k Monte-Carlo permutation; MWU p=0.6391"
+  },
+  {
+   "n": "C5  P~ vs P+ on s_raw / WVC (separability -> RESCORE)",
+   "eff": "P~ 0.1541 (n=10)  vs  P+ 0.2590 (n=10)   AUC 0.390",
+   "p": 0.482628533695611,
+   "note": "exact permutation; MWU p=0.4272"
+  }
+ ],
+ "holm_inferential": {
+  "C4  P~ vs P+ on s_struct (masking existence)": 0.965257067391222,
+  "C5  P~ vs P+ on s_raw / WVC (separability -> RESCORE)": 0.965257067391222
+ }
+}

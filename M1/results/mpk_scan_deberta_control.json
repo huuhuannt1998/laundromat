@@ -1,0 +1,101 @@
+{
+  "model_info": {
+    "model_path": "microsoft/deberta-base-mnli",
+    "model_type": "deberta",
+    "architectures": [
+      "DebertaForSequenceClassification"
+    ],
+    "hidden_size": 768,
+    "num_hidden_layers": 12,
+    "num_attention_heads": 12,
+    "num_key_value_heads": null,
+    "head_dim": null,
+    "intermediate_size": 3072,
+    "vocab_size": 50265,
+    "tie_word_embeddings": true,
+    "hidden_act": "gelu",
+    "num_parameters": null,
+    "arch_hash": "22094daaba7bf2d0847638fc7392971fbf8be6ecb19999eec8f5d521e9d5bba9",
+    "family_hash": "aaf928951b1e538768f1f864ac942d2e9e49e7bc9bc1af75e0202878ce1f724b",
+    "param_bucket": "<=1B",
+    "has_weight_signals": true
+  },
+  "matches": [
+    {
+      "asset_id": "gpt2-medium__hf-safetensors",
+      "model_id": "gpt2-medium",
+      "family_id": "openaicommunity--gpt",
+      "family_name": "GPT",
+      "param_bucket": "<=1B",
+      "match_type": "similarity",
+      "scores": {
+        "pipeline_score": 0.7118,
+        "identity_score": 0.7118,
+        "mfi_score": 0.5645,
+        "mfi_tier": 3,
+        "mfi_match_type": "soft_match",
+        "tokenizer_score": 0.1425,
+        "eas": 0.9059,
+        "nlf": 0.3919,
+        "lep": 0.3486,
+        "end": 0.7845,
+        "wvc": null,
+        "tfv": 0.57
+      },
+      "provenance_decision": "Weak Match",
+      "elapsed_ms": 19.08
+    },
+    {
+      "asset_id": "OLMo-3-7B-Instruct__hf-safetensors",
+      "model_id": "OLMo-3-7B-Instruct",
+      "family_id": "allenai--olmo",
+      "family_name": "OLMo",
+      "param_bucket": "1-10B",
+      "match_type": "similarity",
+      "scores": {
+        "pipeline_score": 0.7008,
+        "identity_score": 0.7008,
+        "mfi_score": 0.4316,
+        "mfi_tier": 3,
+        "mfi_match_type": "soft_match",
+        "tokenizer_score": 0.0835,
+        "eas": 0.9208,
+        "nlf": 0.7008,
+        "lep": 0.8246,
+        "end": 0.9514,
+        "wvc": 0.0026,
+        "tfv": 0.334
+      },
+      "provenance_decision": "Weak Match",
+      "elapsed_ms": 304.78
+    },
+    {
+      "asset_id": "Ministral-3-3B-Base-2512__hf-safetensors",
+      "model_id": "Ministral-3-3B-Base-2512",
+      "family_id": "mistralai--ministral",
+      "family_name": "Ministral",
+      "param_bucket": "1-10B",
+      "match_type": "similarity",
+      "scores": {
+        "pipeline_score": 0.6863,
+        "identity_score": 0.6863,
+        "mfi_score": 0.4899,
+        "mfi_tier": 3,
+        "mfi_match_type": "soft_match",
+        "tokenizer_score": 0.0972,
+        "eas": 0.8972,
+        "nlf": 0.7213,
+        "lep": 0.7595,
+        "end": 0.9668,
+        "wvc": 0.0019,
+        "tfv": 0.3887
+      },
+      "provenance_decision": "Weak Match",
+      "elapsed_ms": 731.07
+    }
+  ],
+  "match_count": 3,
+  "elapsed_ms": 86835.01,
+  "extract_seconds": 6.314,
+  "lookup_seconds": 80.455
+}

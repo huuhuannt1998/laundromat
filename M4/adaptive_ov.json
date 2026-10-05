@@ -1,0 +1,138 @@
+[
+ {
+  "variant": "identity (control)",
+  "fid": {
+   "max_abs_logit_delta": 0.0,
+   "ppl_ref": 9.56165885925293,
+   "ppl_new": 9.56165885925293,
+   "rel_ppl_delta": 0.0,
+   "n_tokens": 432,
+   "exact_within_tolerance": true
+  },
+  "scores": {
+   "mfi_score": 1.0,
+   "mfi_tier": 1,
+   "mfi_match": "exact",
+   "identity_score": 0.9992,
+   "tokenizer_score": 0.98,
+   "pipeline_score": 1.0,
+   "provenance_decision": "Confirmed Match"
+  },
+  "signals": {
+   "eas": 0.9997,
+   "nlf": 0.9999,
+   "lep": 0.9997,
+   "end": 0.9999,
+   "wvc": 0.997,
+   "tfv": 0.92,
+   "voa": 1.0
+  },
+  "defence": {
+   "LAP_MLP": 1.0,
+   "LAP_VO": 1.000000003973643
+  },
+  "pi": 100.0
+ },
+ {
+  "variant": "X3ov sigma=0.1",
+  "fid": {
+   "max_abs_logit_delta": 0.08477258682250977,
+   "ppl_ref": 9.56165885925293,
+   "ppl_new": 9.563145637512207,
+   "rel_ppl_delta": 0.00015549375701043455,
+   "n_tokens": 432,
+   "exact_within_tolerance": false
+  },
+  "scores": {
+   "mfi_score": 1.0,
+   "mfi_tier": 1,
+   "mfi_match": "exact",
+   "identity_score": 0.9773,
+   "tokenizer_score": 0.98,
+   "pipeline_score": 1.0,
+   "provenance_decision": "Confirmed Match"
+  },
+  "signals": {
+   "eas": 0.9997,
+   "nlf": 0.9999,
+   "lep": 0.9743,
+   "end": 0.9999,
+   "wvc": 0.9121,
+   "tfv": 0.92,
+   "voa": 1.0
+  },
+  "defence": {
+   "LAP_MLP": 1.0,
+   "LAP_VO": 0.7573196291923523
+  },
+  "pi": 100.0
+ },
+ {
+  "variant": "X3ov sigma=0.3",
+  "fid": {
+   "max_abs_logit_delta": 1.5499811172485352,
+   "ppl_ref": 9.56165885925293,
+   "ppl_new": 9.31948471069336,
+   "rel_ppl_delta": 0.025327629036379556,
+   "n_tokens": 432,
+   "exact_within_tolerance": false
+  },
+  "scores": {
+   "mfi_score": 1.0,
+   "mfi_tier": 1,
+   "mfi_match": "exact",
+   "identity_score": 0.8523,
+   "tokenizer_score": 0.98,
+   "pipeline_score": 1.0,
+   "provenance_decision": "Confirmed Match"
+  },
+  "signals": {
+   "eas": 0.9997,
+   "nlf": 0.9999,
+   "lep": 0.8581,
+   "end": 0.9999,
+   "wvc": 0.4052,
+   "tfv": 0.92,
+   "voa": 1.0
+  },
+  "defence": {
+   "LAP_MLP": 1.0,
+   "LAP_VO": 0.24776443044344584
+  },
+  "pi": 100.0
+ },
+ {
+  "variant": "X3ov + X1a + X2",
+  "fid": {
+   "max_abs_logit_delta": 1.399523377418518,
+   "ppl_ref": 9.56165885925293,
+   "ppl_new": 9.207669258117676,
+   "rel_ppl_delta": 0.037021776905656285,
+   "n_tokens": 432,
+   "exact_within_tolerance": false
+  },
+  "scores": {
+   "mfi_score": 1.0,
+   "mfi_tier": 1,
+   "mfi_match": "exact",
+   "identity_score": 0.8116,
+   "tokenizer_score": 0.98,
+   "pipeline_score": 1.0,
+   "provenance_decision": "Confirmed Match"
+  },
+  "signals": {
+   "eas": 0.9997,
+   "nlf": 0.9149,
+   "lep": 0.8747,
+   "end": 0.9999,
+   "wvc": 0.2314,
+   "tfv": 0.92,
+   "voa": 1.0
+  },
+  "defence": {
+   "LAP_MLP": 0.9999986430009206,
+   "LAP_VO": 0.2477644383907318
+  },
+  "pi": 100.0
+ }
+]

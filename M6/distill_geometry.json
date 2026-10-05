@@ -1,0 +1,110 @@
+[
+  {
+    "child": "distilbert/distilbert-base-uncased",
+    "sigma": 0.922,
+    "h_parent": 768,
+    "h_child": null,
+    "l_parent": 12,
+    "l_child": null,
+    "h_ratio": null
+  },
+  {
+    "child": "distilbert/distilgpt2",
+    "sigma": 0.891,
+    "h_parent": 768,
+    "h_child": 768,
+    "l_parent": 12,
+    "l_child": 6,
+    "h_ratio": 1.0
+  },
+  {
+    "child": "distilbert/distilroberta-base",
+    "sigma": 0.73,
+    "h_parent": 768,
+    "h_child": 768,
+    "l_parent": 12,
+    "l_child": 6,
+    "h_ratio": 1.0
+  },
+  {
+    "child": "distilbert/distilbert-base-cased",
+    "sigma": 0.9151,
+    "h_parent": 768,
+    "h_child": null,
+    "l_parent": 12,
+    "l_child": null,
+    "h_ratio": null
+  },
+  {
+    "child": "distilbert/distilbert-base-multilingual-cased",
+    "sigma": 0.8593,
+    "h_parent": 768,
+    "h_child": null,
+    "l_parent": 12,
+    "l_child": null,
+    "h_ratio": null
+  },
+  {
+    "child": "microsoft/xtremedistil-l6-h256-uncased",
+    "sigma": 0.4211,
+    "h_parent": 768,
+    "h_child": 256,
+    "l_parent": 12,
+    "l_child": 6,
+    "h_ratio": 0.3333333333333333
+  },
+  {
+    "child": "sshleifer/distilbart-cnn-6-6",
+    "sigma": 0.73,
+    "h_parent": 1024,
+    "h_child": 1024,
+    "l_parent": 12,
+    "l_child": 6,
+    "h_ratio": 1.0
+  },
+  {
+    "child": "sshleifer/distilbart-xsum-6-6",
+    "sigma": 0.8034,
+    "h_parent": 1024,
+    "h_child": 1024,
+    "l_parent": 12,
+    "l_child": 6,
+    "h_ratio": 1.0
+  },
+  {
+    "child": "nreimers/BERT-Tiny_L-2_H-128_A-2",
+    "sigma": 0.652,
+    "h_parent": 768,
+    "h_child": 128,
+    "l_parent": 12,
+    "l_child": 2,
+    "h_ratio": 0.16666666666666666
+  },
+  {
+    "child": "sentence-transformers/all-distilroberta-v1",
+    "sigma": 0.7304,
+    "h_parent": 768,
+    "h_child": 768,
+    "l_parent": 12,
+    "l_child": 6,
+    "h_ratio": 1.0
+  },
+  {
+    "child": "distilbert/distilbert-base-uncased-distilled-squad",
+    "sigma": 0.9192,
+    "h_parent": 768,
+    "h_child": null,
+    "l_parent": 12,
+    "l_child": null,
+    "h_ratio": null
+  },
+  {
+    "child": "Intel/dynamic_tinybert",
+    "sigma": 0.3914,
+    "h_parent": 768,
+    "h_child": 768,
+    "l_parent": 12,
+    "l_child": 6,
+    "h_ratio": 1.0
+  }
+]

@@ -1,0 +1,126 @@
+{
+ "rank_rows": [
+  {
+   "target": "HuggingFaceTB/SmolLM2-135M",
+   "true_parent": null,
+   "top1": "SmolLM2-135M",
+   "n_candidates": 140
+  },
+  {
+   "target": "HuggingFaceTB/SmolLM2-135M-Instruct",
+   "true_parent": "SmolLM2-135M",
+   "parent_rank": 1,
+   "parent_score": 0.9783,
+   "top1": "SmolLM2-135M",
+   "top5_member": true,
+   "margin_to_best_wrong": 0.2702,
+   "n_candidates": 140
+  },
+  {
+   "target": "Qwen/Qwen2.5-0.5B",
+   "true_parent": null,
+   "top1": "Qwen2.5-0.5B",
+   "n_candidates": 140
+  },
+  {
+   "target": "Qwen/Qwen2.5-0.5B-Instruct",
+   "true_parent": "Qwen2.5-0.5B",
+   "parent_rank": 1,
+   "parent_score": 0.9901,
+   "top1": "Qwen2.5-0.5B",
+   "top5_member": true,
+   "margin_to_best_wrong": 0.16979999999999995,
+   "n_candidates": 140
+  },
+  {
+   "target": "gpt2",
+   "true_parent": null,
+   "top1": "gpt2",
+   "n_candidates": 140
+  },
+  {
+   "target": "distilgpt2",
+   "true_parent": "gpt2",
+   "parent_rank": 2,
+   "parent_score": 0.8689,
+   "top1": "Qwen2-1.5B",
+   "top5_member": true,
+   "margin_to_best_wrong": -0.0026000000000000467,
+   "n_candidates": 140
+  },
+  {
+   "target": "EleutherAI/pythia-160m",
+   "true_parent": null,
+   "top1": "gpt2-medium",
+   "n_candidates": 140
+  },
+  {
+   "target": "EleutherAI/pythia-160m-deduped",
+   "true_parent": null,
+   "top1": "gpt2-medium",
+   "n_candidates": 140
+  },
+  {
+   "target": "bigscience/bloom-560m",
+   "true_parent": null,
+   "top1": "gpt2-medium",
+   "n_candidates": 140
+  },
+  {
+   "target": "google-bert/bert-base-uncased",
+   "true_parent": null,
+   "top1": "bert-base-uncased",
+   "n_candidates": 140
+  },
+  {
+   "target": "gpt2",
+   "true_parent": null,
+   "top1": "gpt2",
+   "n_candidates": 5
+  },
+  {
+   "target": "distilgpt2",
+   "true_parent": null,
+   "top1": "Qwen2-1.5B",
+   "n_candidates": 5
+  },
+  {
+   "target": "HuggingFaceTB/SmolLM2-135M-Instruct",
+   "true_parent": null,
+   "top1": "SmolLM2-135M",
+   "n_candidates": 5
+  },
+  {
+   "target": "Qwen/Qwen2.5-0.5B-Instruct",
+   "true_parent": null,
+   "top1": "Qwen2.5-0.5B",
+   "n_candidates": 5
+  },
+  {
+   "target": "bigscience/bloomz-560m",
+   "true_parent": null,
+   "top1": "bloomz-560m",
+   "n_candidates": 5
+  },
+  {
+   "target": "EleutherAI/pythia-160m-deduped",
+   "true_parent": null,
+   "top1": "gpt2-medium",
+   "n_candidates": 5
+  },
+  {
+   "target": "EleutherAI/gpt-neo-125m",
+   "true_parent": null,
+   "top1": "gpt2-xl",
+   "n_candidates": 5
+  }
+ ],
+ "runtime": {
+  "n": 17,
+  "elapsed_ms_median": 14306.58,
+  "extract_s_median": 0.74,
+  "lookup_s_median": 13.629,
+  "candidates_min": 5,
+  "candidates_max": 140
+ }
+}

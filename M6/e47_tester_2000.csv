@@ -1,0 +1,14 @@
+outcome,precision,recall,accuracy,p-value,highest mu, highest hits, tot prompts, model name, parent true, parent guess
+FP,  0.00,0.00,0.00,  0.00023614,0.6025,1205, 2000,    EleutherAI/pythia-160m-deduped,None,EleutherAI/pythia-160m
+TN,  0.00,0.00,0.50,  0.16187810,0.6280,1256, 2000,    EleutherAI/pythia-410m-deduped,None,None
+TN,  0.00,0.00,0.67,  0.37522345,0.5340,1068, 2000,    EleutherAI/pythia-70m-seed1,None,None
+FP,  0.00,0.00,0.50,  0.01383528,0.5925,1185, 2000,    EleutherAI/pythia-160m-seed1,None,EleutherAI/pythia-160m
+TN,  0.00,0.00,0.60,  0.64852180,0.6225,1245, 2000,    EleutherAI/pythia-410m-seed1,None,None
+FP,  0.00,0.00,0.50,  0.00088012,0.5560,1112, 2000,    EleutherAI/pythia-70m-seed2,None,EleutherAI/pythia-70m
+TN,  0.00,0.00,0.57,  0.09072069,0.5810,1162, 2000,    EleutherAI/pythia-160m-seed2,None,None
+TN,  0.00,0.00,0.62,  0.45575772,0.6165,1233, 2000,    EleutherAI/pythia-410m-seed2,None,None
+FP,  0.00,0.00,0.56,  0.00480847,0.5525,1105, 2000,    EleutherAI/pythia-70m-seed3,None,EleutherAI/pythia-70m
+FP,  0.00,0.00,0.50,  0.02746880,0.5890,1178, 2000,    EleutherAI/pythia-160m-seed3,None,EleutherAI/pythia-160m
+TN,  0.00,0.00,0.55,  0.08399275,0.5900,1180, 2000,    EleutherAI/pythia-410m-seed3,None,None
+TN,  0.00,0.00,0.58,  0.06867423,0.5845,1169, 2000,    EleutherAI/pythia-160m-data-seed1,None,None
+FP,  0.00,0.00,0.54,  0.00022594,0.6120,1224, 2000,    EleutherAI/pythia-160m-weight-seed1,None,EleutherAI/pythia-160m

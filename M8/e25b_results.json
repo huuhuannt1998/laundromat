@@ -1,0 +1,1380 @@
+{
+ "note": "'union' reproduces the frozen E25 population (repaired rows plus their as-published no-verdict rows). 'consumer' keeps each model once, in the state a consumer downloads: the manuscript reports 'consumer'.",
+ "skipped_for_want_of_verdict": 1,
+ "card_evidence": {
+  "microsoft/MiniLM-L12-H384-uncased": {
+   "derived": false,
+   "source": "primary",
+   "quote": "12-layer model with 384 hidden size distilled from an in-house pre-trained UniLM v2 model in BERT-Base size",
+   "why": "teacher is UniLMv2, not bert-base-uncased; no weight is inherited from the advisory's ancestor"
+  },
+  "google/bert_uncased_L-4_H-256_A-4": {
+   "derived": false,
+   "source": "primary",
+   "quote": "We have shown that the standard BERT recipe (including model architecture and training objective) is effective on a wide range of model sizes",
+   "why": "pretrained from scratch with the BERT recipe; distillation is recommended only for downstream fine-tuning"
+  },
+  "huawei-noah/TinyBERT_General_4L_312D": {
+   "derived": true,
+   "source": "primary",
+   "quote": "In general distillation, we use the original BERT-base without fine-tuning as the teacher and a large-scale text corpus as the learning data",
+   "why": "distilled from BERT-base; the 30,522-entry uncased vocabulary identifies the uncased release"
+  },
+  "emilyalsentzer/Bio_ClinicalBERT": {
+   "derived": false,
+   "source": "primary",
+   "quote": "Model parameters were initialized with BioBERT (BioBERT-Base v1.0 + PubMed 200K + PMC 270K)",
+   "why": "BioBERT-Base v1.0 is initialised from bert-base-CASED (vocabulary 28,996 cased entries); as a child of bert-base-UNCASED this is cross-lineage, which is what the manifest's own evidence quote says"
+  }
+ },
+ "overrides": [
+  {
+   "child": "emilyalsentzer/Bio_ClinicalBERT",
+   "manifest_class": "D-CP",
+   "card": {
+    "derived": false,
+    "source": "primary",
+    "quote": "Model parameters were initialized with BioBERT (BioBERT-Base v1.0 + PubMed 200K + PMC 270K)",
+    "why": "BioBERT-Base v1.0 is initialised from bert-base-CASED (vocabulary 28,996 cased entries); as a child of bert-base-UNCASED this is cross-lineage, which is what the manifest's own evidence quote says"
+   }
+  }
+ ],
+ "populations": {
+  "union": {
+   "fail-open": {
+    "missed": [
+     "cardiffnlp/twitter-roberta-base-sentiment-latest",
+     "microsoft/xtremedistil-l6-h256-uncased",
+     "Intel/dynamic_tinybert",
+     "huawei-noah/TinyBERT_General_4L_312D",
+     "allenai/cs_roberta_base",
+     "allenai/biomed_roberta_base",
+     "allenai/news_roberta_base",
+     "allenai/reviews_roberta_base"
+    ],
+    "quarantined": [
+     "emilyalsentzer/Bio_ClinicalBERT",
+     "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+     "EleutherAI/pythia-70m-deduped",
+     "EleutherAI/pythia-160m-deduped",
+     "EleutherAI/pythia-410m-deduped",
+     "EleutherAI/pythia-1b-deduped"
+    ],
+    "correct": 23,
+    "n": 37,
+    "rows": [
+     {
+      "child": "nlpaueb/legal-bert-base-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "correct"
+     },
+     {
+      "child": "ProsusAI/finbert",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "emilyalsentzer/Bio_ClinicalBERT",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "repaired",
+      "verdict": "Weak Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "textattack/bert-base-uncased-SST-2",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "textattack/bert-base-uncased-imdb",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "csarron/bert-base-uncased-squad-v1",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/cs_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "repaired",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/biomed_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "repaired",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/news_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "repaired",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/reviews_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "repaired",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "ehsanaghaei/SecureBERT",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "missed"
+     },
+     {
+      "child": "cardiffnlp/twitter-roberta-base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "EleutherAI/pythia-70m-deduped",
+      "parent": "EleutherAI/pythia-70m",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "EleutherAI/pythia-160m-deduped",
+      "parent": "EleutherAI/pythia-160m",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "EleutherAI/pythia-410m-deduped",
+      "parent": "EleutherAI/pythia-410m",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "EleutherAI/pythia-1b-deduped",
+      "parent": "EleutherAI/pythia-1b",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "distilbert/distilbert-base-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilgpt2",
+      "parent": "openai-community/gpt2",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilroberta-base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Weak Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilbert-base-cased",
+      "parent": "google-bert/bert-base-cased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilbert-base-multilingual-cased",
+      "parent": "google-bert/bert-base-multilingual-cased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "microsoft/xtremedistil-l6-h256-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "missed"
+     },
+     {
+      "child": "sshleifer/distilbart-cnn-6-6",
+      "parent": "facebook/bart-large-cnn",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Weak Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "sshleifer/distilbart-xsum-6-6",
+      "parent": "facebook/bart-large-xsum",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "sentence-transformers/all-distilroberta-v1",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Weak Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilbert-base-uncased-distilled-squad",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "Intel/dynamic_tinybert",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "missed"
+     },
+     {
+      "child": "microsoft/MiniLM-L12-H384-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     },
+     {
+      "child": "huawei-noah/TinyBERT_General_4L_312D",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "missed"
+     },
+     {
+      "child": "google/bert_uncased_L-4_H-256_A-4",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/cs_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "missed"
+     },
+     {
+      "child": "allenai/biomed_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "missed"
+     },
+     {
+      "child": "allenai/news_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "missed"
+     },
+     {
+      "child": "allenai/reviews_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "missed"
+     },
+     {
+      "child": "emilyalsentzer/Bio_ClinicalBERT",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     }
+    ]
+   },
+   "fail-closed": {
+    "missed": [
+     "cardiffnlp/twitter-roberta-base-sentiment-latest",
+     "microsoft/xtremedistil-l6-h256-uncased",
+     "Intel/dynamic_tinybert"
+    ],
+    "quarantined": [
+     "emilyalsentzer/Bio_ClinicalBERT",
+     "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+     "EleutherAI/pythia-70m-deduped",
+     "EleutherAI/pythia-160m-deduped",
+     "EleutherAI/pythia-410m-deduped",
+     "EleutherAI/pythia-1b-deduped",
+     "microsoft/MiniLM-L12-H384-uncased",
+     "google/bert_uncased_L-4_H-256_A-4",
+     "emilyalsentzer/Bio_ClinicalBERT"
+    ],
+    "correct": 25,
+    "n": 37,
+    "rows": [
+     {
+      "child": "nlpaueb/legal-bert-base-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "correct"
+     },
+     {
+      "child": "ProsusAI/finbert",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "emilyalsentzer/Bio_ClinicalBERT",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "repaired",
+      "verdict": "Weak Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "textattack/bert-base-uncased-SST-2",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "textattack/bert-base-uncased-imdb",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "csarron/bert-base-uncased-squad-v1",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/cs_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "repaired",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/biomed_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "repaired",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/news_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "repaired",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/reviews_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "repaired",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "ehsanaghaei/SecureBERT",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "missed"
+     },
+     {
+      "child": "cardiffnlp/twitter-roberta-base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "EleutherAI/pythia-70m-deduped",
+      "parent": "EleutherAI/pythia-70m",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "EleutherAI/pythia-160m-deduped",
+      "parent": "EleutherAI/pythia-160m",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "EleutherAI/pythia-410m-deduped",
+      "parent": "EleutherAI/pythia-410m",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "EleutherAI/pythia-1b-deduped",
+      "parent": "EleutherAI/pythia-1b",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "distilbert/distilbert-base-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilgpt2",
+      "parent": "openai-community/gpt2",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilroberta-base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Weak Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilbert-base-cased",
+      "parent": "google-bert/bert-base-cased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilbert-base-multilingual-cased",
+      "parent": "google-bert/bert-base-multilingual-cased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "microsoft/xtremedistil-l6-h256-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "missed"
+     },
+     {
+      "child": "sshleifer/distilbart-cnn-6-6",
+      "parent": "facebook/bart-large-cnn",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Weak Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "sshleifer/distilbart-xsum-6-6",
+      "parent": "facebook/bart-large-xsum",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "sentence-transformers/all-distilroberta-v1",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Weak Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilbert-base-uncased-distilled-squad",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "Intel/dynamic_tinybert",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "missed"
+     },
+     {
+      "child": "microsoft/MiniLM-L12-H384-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "huawei-noah/TinyBERT_General_4L_312D",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     },
+     {
+      "child": "google/bert_uncased_L-4_H-256_A-4",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "allenai/cs_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/biomed_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/news_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/reviews_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     },
+     {
+      "child": "emilyalsentzer/Bio_ClinicalBERT",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "quarantined"
+     }
+    ]
+   }
+  },
+  "consumer": {
+   "fail-open": {
+    "missed": [
+     "cardiffnlp/twitter-roberta-base-sentiment-latest",
+     "microsoft/xtremedistil-l6-h256-uncased",
+     "Intel/dynamic_tinybert",
+     "huawei-noah/TinyBERT_General_4L_312D",
+     "allenai/cs_roberta_base",
+     "allenai/biomed_roberta_base",
+     "allenai/news_roberta_base",
+     "allenai/reviews_roberta_base"
+    ],
+    "quarantined": [
+     "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+     "EleutherAI/pythia-70m-deduped",
+     "EleutherAI/pythia-160m-deduped",
+     "EleutherAI/pythia-410m-deduped",
+     "EleutherAI/pythia-1b-deduped"
+    ],
+    "correct": 19,
+    "n": 32,
+    "rows": [
+     {
+      "child": "nlpaueb/legal-bert-base-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "correct"
+     },
+     {
+      "child": "ProsusAI/finbert",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "textattack/bert-base-uncased-SST-2",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "textattack/bert-base-uncased-imdb",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "csarron/bert-base-uncased-squad-v1",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "ehsanaghaei/SecureBERT",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "missed"
+     },
+     {
+      "child": "cardiffnlp/twitter-roberta-base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "EleutherAI/pythia-70m-deduped",
+      "parent": "EleutherAI/pythia-70m",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "EleutherAI/pythia-160m-deduped",
+      "parent": "EleutherAI/pythia-160m",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "EleutherAI/pythia-410m-deduped",
+      "parent": "EleutherAI/pythia-410m",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "EleutherAI/pythia-1b-deduped",
+      "parent": "EleutherAI/pythia-1b",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "distilbert/distilbert-base-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilgpt2",
+      "parent": "openai-community/gpt2",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilroberta-base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Weak Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilbert-base-cased",
+      "parent": "google-bert/bert-base-cased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilbert-base-multilingual-cased",
+      "parent": "google-bert/bert-base-multilingual-cased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "microsoft/xtremedistil-l6-h256-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "missed"
+     },
+     {
+      "child": "sshleifer/distilbart-cnn-6-6",
+      "parent": "facebook/bart-large-cnn",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Weak Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "sshleifer/distilbart-xsum-6-6",
+      "parent": "facebook/bart-large-xsum",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "sentence-transformers/all-distilroberta-v1",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Weak Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilbert-base-uncased-distilled-squad",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "Intel/dynamic_tinybert",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "missed"
+     },
+     {
+      "child": "microsoft/MiniLM-L12-H384-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     },
+     {
+      "child": "huawei-noah/TinyBERT_General_4L_312D",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "missed"
+     },
+     {
+      "child": "google/bert_uncased_L-4_H-256_A-4",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/cs_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "missed"
+     },
+     {
+      "child": "allenai/biomed_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "missed"
+     },
+     {
+      "child": "allenai/news_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "missed"
+     },
+     {
+      "child": "allenai/reviews_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "missed"
+     },
+     {
+      "child": "emilyalsentzer/Bio_ClinicalBERT",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     }
+    ]
+   },
+   "fail-closed": {
+    "missed": [
+     "cardiffnlp/twitter-roberta-base-sentiment-latest",
+     "microsoft/xtremedistil-l6-h256-uncased",
+     "Intel/dynamic_tinybert"
+    ],
+    "quarantined": [
+     "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+     "EleutherAI/pythia-70m-deduped",
+     "EleutherAI/pythia-160m-deduped",
+     "EleutherAI/pythia-410m-deduped",
+     "EleutherAI/pythia-1b-deduped",
+     "microsoft/MiniLM-L12-H384-uncased",
+     "google/bert_uncased_L-4_H-256_A-4",
+     "emilyalsentzer/Bio_ClinicalBERT"
+    ],
+    "correct": 21,
+    "n": 32,
+    "rows": [
+     {
+      "child": "nlpaueb/legal-bert-base-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "correct"
+     },
+     {
+      "child": "ProsusAI/finbert",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "textattack/bert-base-uncased-SST-2",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "textattack/bert-base-uncased-imdb",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "csarron/bert-base-uncased-squad-v1",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "ehsanaghaei/SecureBERT",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "missed"
+     },
+     {
+      "child": "cardiffnlp/twitter-roberta-base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "EleutherAI/pythia-70m-deduped",
+      "parent": "EleutherAI/pythia-70m",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "EleutherAI/pythia-160m-deduped",
+      "parent": "EleutherAI/pythia-160m",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "EleutherAI/pythia-410m-deduped",
+      "parent": "EleutherAI/pythia-410m",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "EleutherAI/pythia-1b-deduped",
+      "parent": "EleutherAI/pythia-1b",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Confirmed Match",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "distilbert/distilbert-base-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilgpt2",
+      "parent": "openai-community/gpt2",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilroberta-base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "Weak Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilbert-base-cased",
+      "parent": "google-bert/bert-base-cased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilbert-base-multilingual-cased",
+      "parent": "google-bert/bert-base-multilingual-cased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "microsoft/xtremedistil-l6-h256-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "missed"
+     },
+     {
+      "child": "sshleifer/distilbart-cnn-6-6",
+      "parent": "facebook/bart-large-cnn",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Weak Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "sshleifer/distilbart-xsum-6-6",
+      "parent": "facebook/bart-large-xsum",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "sentence-transformers/all-distilroberta-v1",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Weak Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "distilbert/distilbert-base-uncased-distilled-squad",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "High-Confidence Match",
+      "outcome": "correct"
+     },
+     {
+      "child": "Intel/dynamic_tinybert",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "Not Matched",
+      "outcome": "missed"
+     },
+     {
+      "child": "microsoft/MiniLM-L12-H384-uncased",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "huawei-noah/TinyBERT_General_4L_312D",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     },
+     {
+      "child": "google/bert_uncased_L-4_H-256_A-4",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "quarantined"
+     },
+     {
+      "child": "allenai/cs_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/biomed_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/news_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     },
+     {
+      "child": "allenai/reviews_roberta_base",
+      "parent": "FacebookAI/roberta-base",
+      "truly_derived": true,
+      "label_source": "secondary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "correct"
+     },
+     {
+      "child": "emilyalsentzer/Bio_ClinicalBERT",
+      "parent": "google-bert/bert-base-uncased",
+      "truly_derived": false,
+      "label_source": "primary",
+      "config_state": "as published",
+      "verdict": "no verdict",
+      "outcome": "quarantined"
+     }
+    ]
+   }
+  }
+ }
+}

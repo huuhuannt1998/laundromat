@@ -1,0 +1,6 @@
+{"p": 0.0, "rows_moved": 0, "vocab": 49152, "sigma_id": 1.0, "signals": {"eas": 1.0, "nlf": 1.0, "lep": 1.0, "end": 1.0, "wvc": 1.0}}
+{"p": 0.125, "rows_moved": 6144, "vocab": 49152, "sigma_id": 0.9765, "signals": {"eas": 0.9347, "nlf": 1.0, "lep": 1.0, "end": 1.0, "wvc": 1.0}}
+{"p": 0.25, "rows_moved": 12288, "vocab": 49152, "sigma_id": 0.9698, "signals": {"eas": 0.9161, "nlf": 1.0, "lep": 1.0, "end": 1.0, "wvc": 1.0}}
+{"p": 0.5, "rows_moved": 24576, "vocab": 49152, "sigma_id": 0.8899, "signals": {"eas": 0.6942, "nlf": 1.0, "lep": 1.0, "end": 1.0, "wvc": 1.0}}
+{"p": 0.75, "rows_moved": 36864, "vocab": 49152, "sigma_id": 0.8596, "signals": {"eas": 0.6101, "nlf": 1.0, "lep": 1.0, "end": 1.0, "wvc": 1.0}}
+{"p": 1.0, "rows_moved": 49152, "vocab": 49152, "sigma_id": 0.8205, "signals": {"eas": 0.5013, "nlf": 1.0, "lep": 1.0, "end": 1.0, "wvc": 1.0}}

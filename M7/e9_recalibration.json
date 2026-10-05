@@ -1,0 +1,42 @@
+{
+ "n": 28,
+ "pos": 18,
+ "neg": 10,
+ "families": [
+  "bart-large-cnn",
+  "bart-large-xsum",
+  "bert-base-uncased",
+  "pythia",
+  "roberta-base"
+ ],
+ "loo_mean": {
+  "vendor": 0.7142857142857143,
+  "logistic": 0.35714285714285715,
+  "nonneg": 0.7142857142857143,
+  "best1": 0.7142857142857143
+ },
+ "full_vendor": 0.6,
+ "full_logistic": 0.8222222222222222,
+ "full_nonneg": 0.7277777777777777,
+ "nonneg_weights": [
+  0.2423217748527881,
+  0.1426154310155718,
+  0.61506279413164,
+  0.0,
+  0.0
+ ],
+ "vendor_weights": [
+  0.36,
+  0.21,
+  0.19,
+  0.16,
+  0.08
+ ],
+ "signals": [
+  "eas",
+  "wvc",
+  "end",
+  "lep",
+  "nlf"
+ ]
+}

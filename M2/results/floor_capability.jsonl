@@ -1,0 +1,1 @@
+{"arm": "ALL", "model": "HuggingFaceTB/SmolLM2-135M", "n_tokens": 44, "ppl_ref": 164.21377563476562, "ppl_new": 113210.578125, "rel_ppl_delta": 688.4097507190636, "max_abs_logit_delta": 34.0, "capability_threshold": 0.01, "capability_preserving": false}

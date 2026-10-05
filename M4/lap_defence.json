@@ -1,0 +1,58 @@
+[
+ {
+  "class": "IDENTITY",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "HuggingFaceTB/SmolLM2-135M",
+  "laundered": false,
+  "lap": 1.0000001192092896,
+  "naive": 1.0000041087468465
+ },
+ {
+  "class": "P+ derived",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "laundered": false,
+  "lap": 0.9969153086344401,
+  "naive": 0.9969409147898356
+ },
+ {
+  "class": "P+ derived",
+  "a": "Qwen/Qwen2.5-0.5B",
+  "b": "Qwen/Qwen2.5-0.5B-Instruct",
+  "laundered": false,
+  "lap": 0.9968574146429697,
+  "naive": 0.9970189183950424
+ },
+ {
+  "class": "P~ SAME-RECIPE INDEP",
+  "a": "EleutherAI/pythia-160m",
+  "b": "EleutherAI/pythia-160m-deduped",
+  "laundered": false,
+  "lap": 0.1862059806783994,
+  "naive": 0.17535223563512167
+ },
+ {
+  "class": "P- unrelated",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "EleutherAI/pythia-160m",
+  "laundered": false,
+  "lap": NaN,
+  "naive": NaN
+ },
+ {
+  "class": "LAUNDERED",
+  "a": "HuggingFaceTB/SmolLM2-135M",
+  "b": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "laundered": true,
+  "lap": 0.8807213048140208,
+  "naive": 0.0027660471367804956
+ },
+ {
+  "class": "LAUNDERED",
+  "a": "Qwen/Qwen2.5-0.5B",
+  "b": "Qwen/Qwen2.5-0.5B-Instruct",
+  "laundered": true,
+  "lap": 0.35932259013255435,
+  "naive": 0.00048593490888985497
+ }
+]

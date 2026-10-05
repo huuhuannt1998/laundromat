@@ -1,0 +1,1410 @@
+{
+ "pairs": [
+  {
+   "parent": "EleutherAI/pythia-1.4b",
+   "child": "EleutherAI/pythia-1.4b-deduped",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "automodel_causal",
+   "same_norm_order": false,
+   "n_shared_norm": 98,
+   "same_within_layer_order": false,
+   "n_common_layers": 24,
+   "parent_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "child_first_norm": [
+    "layers.0.input_layernorm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.post_attention_layernorm.weight",
+    "layers.0.post_attention_layernorm.bias"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "EleutherAI/pythia-160m",
+   "child": "EleutherAI/pythia-160m-deduped",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 50,
+   "same_within_layer_order": true,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "child_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "EleutherAI/pythia-160m",
+   "child": "EleutherAI/pythia-160m-v0",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 50,
+   "same_within_layer_order": true,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "child_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "EleutherAI/pythia-1b",
+   "child": "EleutherAI/pythia-1b-deduped",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 66,
+   "same_within_layer_order": true,
+   "n_common_layers": 16,
+   "parent_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "child_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "EleutherAI/pythia-410m",
+   "child": "EleutherAI/pythia-410m-deduped",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 98,
+   "same_within_layer_order": true,
+   "n_common_layers": 24,
+   "parent_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "child_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "EleutherAI/pythia-410m",
+   "child": "EleutherAI/pythia-410m-v0",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 98,
+   "same_within_layer_order": true,
+   "n_common_layers": 24,
+   "parent_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "child_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "EleutherAI/pythia-70m",
+   "child": "EleutherAI/pythia-70m-deduped",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 26,
+   "same_within_layer_order": true,
+   "n_common_layers": 6,
+   "parent_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "child_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "EleutherAI/pythia-70m",
+   "child": "EleutherAI/pythia-70m-v0",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 26,
+   "same_within_layer_order": false,
+   "n_common_layers": 6,
+   "parent_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "child_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "EleutherAI/pythia-70m-deduped",
+   "child": "EleutherAI/pythia-70m-deduped-v0",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 26,
+   "same_within_layer_order": true,
+   "n_common_layers": 6,
+   "parent_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "child_first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "FacebookAI/roberta-base",
+   "child": "allenai/biomed_roberta_base",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": false,
+   "n_shared_norm": 52,
+   "same_within_layer_order": false,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "encoder.layer.0.output.LayerNorm.weight",
+    "encoder.layer.4.attention.output.LayerNorm.weight",
+    "encoder.layer.1.output.LayerNorm.weight",
+    "encoder.layer.2.output.LayerNorm.weight"
+   ],
+   "child_first_norm": [
+    "lm_head.layer_norm.bias",
+    "lm_head.layer_norm.weight",
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "FacebookAI/roberta-base",
+   "child": "allenai/cs_roberta_base",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": false,
+   "n_shared_norm": 52,
+   "same_within_layer_order": false,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "encoder.layer.0.output.LayerNorm.weight",
+    "encoder.layer.4.attention.output.LayerNorm.weight",
+    "encoder.layer.1.output.LayerNorm.weight",
+    "encoder.layer.2.output.LayerNorm.weight"
+   ],
+   "child_first_norm": [
+    "lm_head.layer_norm.bias",
+    "lm_head.layer_norm.weight",
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "FacebookAI/roberta-base",
+   "child": "allenai/news_roberta_base",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": false,
+   "n_shared_norm": 52,
+   "same_within_layer_order": false,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "encoder.layer.0.output.LayerNorm.weight",
+    "encoder.layer.4.attention.output.LayerNorm.weight",
+    "encoder.layer.1.output.LayerNorm.weight",
+    "encoder.layer.2.output.LayerNorm.weight"
+   ],
+   "child_first_norm": [
+    "lm_head.layer_norm.bias",
+    "lm_head.layer_norm.weight",
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "FacebookAI/roberta-base",
+   "child": "allenai/reviews_roberta_base",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": false,
+   "n_shared_norm": 52,
+   "same_within_layer_order": false,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "encoder.layer.0.output.LayerNorm.weight",
+    "encoder.layer.4.attention.output.LayerNorm.weight",
+    "encoder.layer.1.output.LayerNorm.weight",
+    "encoder.layer.2.output.LayerNorm.weight"
+   ],
+   "child_first_norm": [
+    "lm_head.layer_norm.bias",
+    "lm_head.layer_norm.weight",
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "FacebookAI/roberta-base",
+   "child": "cardiffnlp/twitter-roberta-base",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": false,
+   "n_shared_norm": 52,
+   "same_within_layer_order": false,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "encoder.layer.0.output.LayerNorm.weight",
+    "encoder.layer.4.attention.output.LayerNorm.weight",
+    "encoder.layer.1.output.LayerNorm.weight",
+    "encoder.layer.2.output.LayerNorm.weight"
+   ],
+   "child_first_norm": [
+    "lm_head.layer_norm.bias",
+    "lm_head.layer_norm.weight",
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "FacebookAI/roberta-base",
+   "child": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": false,
+   "n_shared_norm": 50,
+   "same_within_layer_order": false,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "encoder.layer.0.output.LayerNorm.weight",
+    "encoder.layer.4.attention.output.LayerNorm.weight",
+    "encoder.layer.1.output.LayerNorm.weight",
+    "encoder.layer.2.output.LayerNorm.weight"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "FacebookAI/roberta-base",
+   "child": "distilbert/distilroberta-base",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": false,
+   "n_shared_norm": 28,
+   "same_within_layer_order": false,
+   "n_common_layers": 6,
+   "parent_first_norm": [
+    "encoder.layer.0.output.LayerNorm.weight",
+    "encoder.layer.4.attention.output.LayerNorm.weight",
+    "encoder.layer.1.output.LayerNorm.weight",
+    "encoder.layer.2.output.LayerNorm.weight"
+   ],
+   "child_first_norm": [
+    "lm_head.layer_norm.bias",
+    "lm_head.layer_norm.weight",
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "FacebookAI/roberta-base",
+   "child": "ehsanaghaei/SecureBERT",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": false,
+   "n_shared_norm": 52,
+   "same_within_layer_order": false,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "encoder.layer.0.output.LayerNorm.weight",
+    "encoder.layer.4.attention.output.LayerNorm.weight",
+    "encoder.layer.1.output.LayerNorm.weight",
+    "encoder.layer.2.output.LayerNorm.weight"
+   ],
+   "child_first_norm": [
+    "lm_head.layer_norm.bias",
+    "lm_head.layer_norm.weight",
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "FacebookAI/roberta-base",
+   "child": "sentence-transformers/all-distilroberta-v1",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": false,
+   "n_shared_norm": 26,
+   "same_within_layer_order": false,
+   "n_common_layers": 6,
+   "parent_first_norm": [
+    "encoder.layer.0.output.LayerNorm.weight",
+    "encoder.layer.4.attention.output.LayerNorm.weight",
+    "encoder.layer.1.output.LayerNorm.weight",
+    "encoder.layer.2.output.LayerNorm.weight"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "facebook/bart-large-cnn",
+   "child": "sshleifer/distilbart-cnn-6-6",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 64,
+   "same_within_layer_order": true,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "decoder.layernorm_embedding.bias",
+    "decoder.layernorm_embedding.weight",
+    "decoder.layers.0.encoder_attn_layer_norm.bias",
+    "decoder.layers.0.encoder_attn_layer_norm.weight"
+   ],
+   "child_first_norm": [
+    "decoder.layernorm_embedding.bias",
+    "decoder.layernorm_embedding.weight",
+    "decoder.layers.0.encoder_attn_layer_norm.bias",
+    "decoder.layers.0.encoder_attn_layer_norm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "facebook/bart-large-xsum",
+   "child": "sshleifer/distilbart-xsum-6-6",
+   "child_mode": "both_resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 64,
+   "same_within_layer_order": true,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "decoder.layernorm_embedding.bias",
+    "decoder.layernorm_embedding.weight",
+    "decoder.layers.0.encoder_attn_layer_norm.bias",
+    "decoder.layers.0.encoder_attn_layer_norm.weight"
+   ],
+   "child_first_norm": [
+    "decoder.layernorm_embedding.bias",
+    "decoder.layernorm_embedding.weight",
+    "decoder.layers.0.encoder_attn_layer_norm.bias",
+    "decoder.layers.0.encoder_attn_layer_norm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "google-bert/bert-base-cased",
+   "child": "distilbert/distilbert-base-cased",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 0,
+   "same_within_layer_order": null,
+   "n_common_layers": 0,
+   "parent_first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "transformer.layer.0.output_layer_norm.bias",
+    "transformer.layer.0.output_layer_norm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "google-bert/bert-base-multilingual-cased",
+   "child": "distilbert/distilbert-base-multilingual-cased",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 0,
+   "same_within_layer_order": null,
+   "n_common_layers": 0,
+   "parent_first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "transformer.layer.0.output_layer_norm.bias",
+    "transformer.layer.0.output_layer_norm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "google-bert/bert-base-uncased",
+   "child": "Intel/dynamic_tinybert",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 0,
+   "same_within_layer_order": true,
+   "n_common_layers": 6,
+   "parent_first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "google-bert/bert-base-uncased",
+   "child": "ProsusAI/finbert",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 0,
+   "same_within_layer_order": true,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "google-bert/bert-base-uncased",
+   "child": "csarron/bert-base-uncased-squad-v1",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 0,
+   "same_within_layer_order": true,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "google-bert/bert-base-uncased",
+   "child": "distilbert/distilbert-base-uncased",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 0,
+   "same_within_layer_order": null,
+   "n_common_layers": 0,
+   "parent_first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "transformer.layer.0.output_layer_norm.bias",
+    "transformer.layer.0.output_layer_norm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "google-bert/bert-base-uncased",
+   "child": "distilbert/distilbert-base-uncased-distilled-squad",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 0,
+   "same_within_layer_order": null,
+   "n_common_layers": 0,
+   "parent_first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "transformer.layer.0.output_layer_norm.bias",
+    "transformer.layer.0.output_layer_norm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "google-bert/bert-base-uncased",
+   "child": "emilyalsentzer/Bio_ClinicalBERT",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 0,
+   "same_within_layer_order": true,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "google-bert/bert-base-uncased",
+   "child": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 0,
+   "same_within_layer_order": true,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "google-bert/bert-base-uncased",
+   "child": "microsoft/xtremedistil-l6-h256-uncased",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 0,
+   "same_within_layer_order": true,
+   "n_common_layers": 6,
+   "parent_first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "google-bert/bert-base-uncased",
+   "child": "nlpaueb/legal-bert-base-uncased",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 0,
+   "same_within_layer_order": true,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "google-bert/bert-base-uncased",
+   "child": "nreimers/BERT-Tiny_L-2_H-128_A-2",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 0,
+   "same_within_layer_order": true,
+   "n_common_layers": 2,
+   "parent_first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "google-bert/bert-base-uncased",
+   "child": "textattack/bert-base-uncased-SST-2",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 0,
+   "same_within_layer_order": true,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "google-bert/bert-base-uncased",
+   "child": "textattack/bert-base-uncased-imdb",
+   "child_mode": "resaved",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": true,
+   "n_shared_norm": 0,
+   "same_within_layer_order": true,
+   "n_common_layers": 12,
+   "parent_first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ],
+   "child_first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ],
+   "errors": []
+  },
+  {
+   "parent": "openai-community/gpt2",
+   "child": "distilbert/distilgpt2",
+   "child_mode": "served",
+   "parent_source": "safetensors",
+   "child_source": "safetensors",
+   "same_norm_order": false,
+   "n_shared_norm": 26,
+   "same_within_layer_order": false,
+   "n_common_layers": 6,
+   "parent_first_norm": [
+    "h.5.ln_1.weight",
+    "ln_f.weight",
+    "h.5.ln_2.bias",
+    "h.5.ln_1.bias"
+   ],
+   "child_first_norm": [
+    "h.0.ln_1.bias",
+    "h.0.ln_1.weight",
+    "h.0.ln_2.bias",
+    "h.0.ln_2.weight"
+   ],
+   "errors": []
+  }
+ ],
+ "models": [
+  {
+   "ref": "EleutherAI/pythia-1.4b",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 98,
+   "first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ]
+  },
+  {
+   "ref": "EleutherAI/pythia-1.4b-deduped",
+   "source": "automodel_causal",
+   "strategy": "full",
+   "n_norm": 98,
+   "first_norm": [
+    "layers.0.input_layernorm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.post_attention_layernorm.weight",
+    "layers.0.post_attention_layernorm.bias"
+   ]
+  },
+  {
+   "ref": "EleutherAI/pythia-160m",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 50,
+   "first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ]
+  },
+  {
+   "ref": "EleutherAI/pythia-160m-deduped",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 50,
+   "first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ]
+  },
+  {
+   "ref": "EleutherAI/pythia-160m-v0",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 50,
+   "first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ]
+  },
+  {
+   "ref": "EleutherAI/pythia-1b",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 66,
+   "first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ]
+  },
+  {
+   "ref": "EleutherAI/pythia-1b-deduped",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 66,
+   "first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ]
+  },
+  {
+   "ref": "EleutherAI/pythia-410m",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 98,
+   "first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ]
+  },
+  {
+   "ref": "EleutherAI/pythia-410m-deduped",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 98,
+   "first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ]
+  },
+  {
+   "ref": "EleutherAI/pythia-410m-v0",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 98,
+   "first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ]
+  },
+  {
+   "ref": "EleutherAI/pythia-70m",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 26,
+   "first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ]
+  },
+  {
+   "ref": "EleutherAI/pythia-70m-deduped",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 26,
+   "first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ]
+  },
+  {
+   "ref": "EleutherAI/pythia-70m-v0",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 26,
+   "first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ]
+  },
+  {
+   "ref": "EleutherAI/pythia-70m-deduped-v0",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 26,
+   "first_norm": [
+    "final_layer_norm.bias",
+    "final_layer_norm.weight",
+    "layers.0.input_layernorm.bias",
+    "layers.0.input_layernorm.weight"
+   ]
+  },
+  {
+   "ref": "FacebookAI/roberta-base",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 52,
+   "first_norm": [
+    "encoder.layer.0.output.LayerNorm.weight",
+    "encoder.layer.4.attention.output.LayerNorm.weight",
+    "encoder.layer.1.output.LayerNorm.weight",
+    "encoder.layer.2.output.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "allenai/biomed_roberta_base [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 52,
+   "first_norm": [
+    "lm_head.layer_norm.bias",
+    "lm_head.layer_norm.weight",
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "allenai/cs_roberta_base [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 52,
+   "first_norm": [
+    "lm_head.layer_norm.bias",
+    "lm_head.layer_norm.weight",
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "allenai/news_roberta_base [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 52,
+   "first_norm": [
+    "lm_head.layer_norm.bias",
+    "lm_head.layer_norm.weight",
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "allenai/reviews_roberta_base [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 52,
+   "first_norm": [
+    "lm_head.layer_norm.bias",
+    "lm_head.layer_norm.weight",
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "cardiffnlp/twitter-roberta-base [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 52,
+   "first_norm": [
+    "lm_head.layer_norm.bias",
+    "lm_head.layer_norm.weight",
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "cardiffnlp/twitter-roberta-base-sentiment-latest [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 50,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "distilbert/distilroberta-base",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 28,
+   "first_norm": [
+    "lm_head.layer_norm.bias",
+    "lm_head.layer_norm.weight",
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "ehsanaghaei/SecureBERT [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 52,
+   "first_norm": [
+    "lm_head.layer_norm.bias",
+    "lm_head.layer_norm.weight",
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "sentence-transformers/all-distilroberta-v1",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 26,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "facebook/bart-large-cnn",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 124,
+   "first_norm": [
+    "decoder.layernorm_embedding.bias",
+    "decoder.layernorm_embedding.weight",
+    "decoder.layers.0.encoder_attn_layer_norm.bias",
+    "decoder.layers.0.encoder_attn_layer_norm.weight"
+   ]
+  },
+  {
+   "ref": "sshleifer/distilbart-cnn-6-6 [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 64,
+   "first_norm": [
+    "decoder.layernorm_embedding.bias",
+    "decoder.layernorm_embedding.weight",
+    "decoder.layers.0.encoder_attn_layer_norm.bias",
+    "decoder.layers.0.encoder_attn_layer_norm.weight"
+   ]
+  },
+  {
+   "ref": "facebook/bart-large-xsum [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 124,
+   "first_norm": [
+    "decoder.layernorm_embedding.bias",
+    "decoder.layernorm_embedding.weight",
+    "decoder.layers.0.encoder_attn_layer_norm.bias",
+    "decoder.layers.0.encoder_attn_layer_norm.weight"
+   ]
+  },
+  {
+   "ref": "sshleifer/distilbart-xsum-6-6 [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 64,
+   "first_norm": [
+    "decoder.layernorm_embedding.bias",
+    "decoder.layernorm_embedding.weight",
+    "decoder.layers.0.encoder_attn_layer_norm.bias",
+    "decoder.layers.0.encoder_attn_layer_norm.weight"
+   ]
+  },
+  {
+   "ref": "google-bert/bert-base-cased",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 52,
+   "first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ]
+  },
+  {
+   "ref": "distilbert/distilbert-base-cased",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 28,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "transformer.layer.0.output_layer_norm.bias",
+    "transformer.layer.0.output_layer_norm.weight"
+   ]
+  },
+  {
+   "ref": "google-bert/bert-base-multilingual-cased",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 52,
+   "first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ]
+  },
+  {
+   "ref": "distilbert/distilbert-base-multilingual-cased",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 28,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "transformer.layer.0.output_layer_norm.bias",
+    "transformer.layer.0.output_layer_norm.weight"
+   ]
+  },
+  {
+   "ref": "google-bert/bert-base-uncased",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 52,
+   "first_norm": [
+    "embeddings.LayerNorm.beta",
+    "embeddings.LayerNorm.gamma",
+    "encoder.layer.0.attention.output.LayerNorm.beta",
+    "encoder.layer.0.attention.output.LayerNorm.gamma"
+   ]
+  },
+  {
+   "ref": "Intel/dynamic_tinybert [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 26,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "ProsusAI/finbert [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 50,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "csarron/bert-base-uncased-squad-v1",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 50,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "distilbert/distilbert-base-uncased",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 28,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "transformer.layer.0.output_layer_norm.bias",
+    "transformer.layer.0.output_layer_norm.weight"
+   ]
+  },
+  {
+   "ref": "distilbert/distilbert-base-uncased-distilled-squad",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 26,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "transformer.layer.0.output_layer_norm.bias",
+    "transformer.layer.0.output_layer_norm.weight"
+   ]
+  },
+  {
+   "ref": "emilyalsentzer/Bio_ClinicalBERT [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 52,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 52,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "microsoft/xtremedistil-l6-h256-uncased [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 26,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "nlpaueb/legal-bert-base-uncased [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 52,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "nreimers/BERT-Tiny_L-2_H-128_A-2 [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 12,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "textattack/bert-base-uncased-SST-2 [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 50,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "textattack/bert-base-uncased-imdb [re-saved]",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 50,
+   "first_norm": [
+    "embeddings.LayerNorm.bias",
+    "embeddings.LayerNorm.weight",
+    "encoder.layer.0.attention.output.LayerNorm.bias",
+    "encoder.layer.0.attention.output.LayerNorm.weight"
+   ]
+  },
+  {
+   "ref": "openai-community/gpt2",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 50,
+   "first_norm": [
+    "h.5.ln_1.weight",
+    "ln_f.weight",
+    "h.5.ln_2.bias",
+    "h.5.ln_1.bias"
+   ]
+  },
+  {
+   "ref": "distilbert/distilgpt2",
+   "source": "safetensors",
+   "strategy": "full",
+   "n_norm": 26,
+   "first_norm": [
+    "h.0.ln_1.bias",
+    "h.0.ln_1.weight",
+    "h.0.ln_2.bias",
+    "h.0.ln_2.weight"
+   ]
+  }
+ ]
+}

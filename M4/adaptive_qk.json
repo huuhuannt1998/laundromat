@@ -1,0 +1,101 @@
+[
+ {
+  "variant": "identity (control)",
+  "fid": {
+   "max_abs_logit_delta": 0.0,
+   "ppl_ref": 18.86416244506836,
+   "ppl_new": 18.86416244506836,
+   "rel_ppl_delta": 0.0,
+   "n_tokens": 552,
+   "exact_within_tolerance": true
+  },
+  "scores": {
+   "mfi_score": 1.0,
+   "mfi_tier": 1,
+   "mfi_match": "exact",
+   "identity_score": 0.9212,
+   "tokenizer_score": 1.0,
+   "pipeline_score": 1.0,
+   "provenance_decision": "Confirmed Match"
+  },
+  "signals": {
+   "eas": 1.0,
+   "nlf": 0.2221,
+   "lep": 1.0,
+   "end": 1.0,
+   "wvc": null,
+   "tfv": 1.0,
+   "voa": 1.0
+  },
+  "defence": {
+   "LAP_on_MLP": 1.0,
+   "LAP_on_ATTN": 0.9999999950329462
+  }
+ },
+ {
+  "variant": "X7 qk-invariance s=0.3",
+  "fid": {
+   "max_abs_logit_delta": 0.00101470947265625,
+   "ppl_ref": 18.86416244506836,
+   "ppl_new": 18.864198684692383,
+   "rel_ppl_delta": 1.9210831187955334e-06,
+   "n_tokens": 552,
+   "exact_within_tolerance": true
+  },
+  "scores": {
+   "mfi_score": 1.0,
+   "mfi_tier": 1,
+   "mfi_match": "exact",
+   "identity_score": 0.8471,
+   "tokenizer_score": 1.0,
+   "pipeline_score": 1.0,
+   "provenance_decision": "Confirmed Match"
+  },
+  "signals": {
+   "eas": 1.0,
+   "nlf": 0.2221,
+   "lep": 0.6338,
+   "end": 1.0,
+   "wvc": null,
+   "tfv": 1.0,
+   "voa": 1.0
+  },
+  "defence": {
+   "LAP_on_MLP": 1.0,
+   "LAP_on_ATTN": 0.21598556389411291
+  }
+ },
+ {
+  "variant": "X7 qk-invariance s=0.1",
+  "fid": {
+   "max_abs_logit_delta": 0.000244140625,
+   "ppl_ref": 18.86416244506836,
+   "ppl_new": 18.864194869995117,
+   "rel_ppl_delta": 1.7188638431328457e-06,
+   "n_tokens": 552,
+   "exact_within_tolerance": true
+  },
+  "scores": {
+   "mfi_score": 1.0,
+   "mfi_tier": 1,
+   "mfi_match": "exact",
+   "identity_score": 0.9192,
+   "tokenizer_score": 1.0,
+   "pipeline_score": 1.0,
+   "provenance_decision": "Confirmed Match"
+  },
+  "signals": {
+   "eas": 1.0,
+   "nlf": 0.2221,
+   "lep": 0.9901,
+   "end": 1.0,
+   "wvc": null,
+   "tfv": 1.0,
+   "voa": 1.0
+  },
+  "defence": {
+   "LAP_on_MLP": 1.0,
+   "LAP_on_ATTN": 0.756460651755333
+  }
+ }
+]
