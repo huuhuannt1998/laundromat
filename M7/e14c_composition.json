@@ -1,0 +1,135 @@
+{
+ "transformers_version": "5.5.4",
+ "n_fetched": 545,
+ "n_genuine_missing_architectures": 18,
+ "composition": {
+  "deberta_by_model_type": 11,
+  "deberta_by_family_filter": 12,
+  "microsoft": 9,
+  "deberta_by_model_type_repos": [
+   "microsoft/mdeberta-v3-base",
+   "microsoft/deberta-v3-base",
+   "microsoft/deberta-v3-large",
+   "microsoft/deberta-v3-small",
+   "microsoft/deberta-base",
+   "microsoft/deberta-v2-xlarge",
+   "microsoft/deberta-large",
+   "microsoft/deberta-v3-xsmall",
+   "ku-nlp/deberta-v3-base-japanese",
+   "microsoft/deberta-v2-xxlarge",
+   "lighthouse/mdeberta-v3-base-kor-further"
+  ],
+  "deberta_by_family_filter_repos": [
+   "microsoft/mdeberta-v3-base",
+   "microsoft/deberta-v3-base",
+   "microsoft/deberta-v3-large",
+   "microsoft/deberta-v3-small",
+   "microsoft/deberta-base",
+   "microsoft/deberta-v2-xlarge",
+   "microsoft/deberta-large",
+   "microsoft/deberta-v3-xsmall",
+   "ku-nlp/deberta-v3-base-japanese",
+   "microsoft/deberta-v2-xxlarge",
+   "antflydb/gliner2-base-v1",
+   "lighthouse/mdeberta-v3-base-kor-further"
+  ],
+  "microsoft_repos": [
+   "microsoft/mdeberta-v3-base",
+   "microsoft/deberta-v3-base",
+   "microsoft/deberta-v3-large",
+   "microsoft/deberta-v3-small",
+   "microsoft/deberta-base",
+   "microsoft/deberta-v2-xlarge",
+   "microsoft/deberta-large",
+   "microsoft/deberta-v3-xsmall",
+   "microsoft/deberta-v2-xxlarge"
+  ],
+  "manuscript_stated": {
+   "deberta": 13,
+   "microsoft": 11
+  }
+ },
+ "model_type": {
+  "unrecognised": 1,
+  "unrecognised_rows": [
+   {
+    "repo": "antflydb/gliner2-base-v1",
+    "model_type": "extractor",
+    "has_architectures": false,
+    "family_filter": "deberta"
+   }
+  ],
+  "absent": 0,
+  "counts": [
+   [
+    "bert",
+    40
+   ],
+   [
+    "roberta",
+    40
+   ],
+   [
+    "distilbert",
+    40
+   ],
+   [
+    "gpt2",
+    40
+   ],
+   [
+    "qwen2",
+    40
+   ],
+   [
+    "bart",
+    40
+   ],
+   [
+    "t5",
+    40
+   ],
+   [
+    "electra",
+    40
+   ],
+   [
+    "xlm-roberta",
+    40
+   ],
+   [
+    "mistral",
+    39
+   ],
+   [
+    "gpt_neox",
+    39
+   ],
+   [
+    "albert",
+    39
+   ],
+   [
+    "llama",
+    27
+   ],
+   [
+    "deberta-v2",
+    25
+   ],
+   [
+    "deberta",
+    14
+   ],
+   [
+    "gpt_neox_japanese",
+    1
+   ],
+   [
+    "extractor",
+    1
+   ]
+  ]
+ },
+ "note": "The sample draws the 40 most-downloaded models per family the tool supports, so it cannot measure how often genuinely new architectures carry an unregistered model_type."
+}

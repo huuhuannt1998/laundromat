@@ -1,0 +1,113 @@
+{
+ "method": "M9/verify_label.py statistic",
+ "rows": [
+  {
+   "revision": "step0",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "mean_cos": -0.000199
+  },
+  {
+   "revision": "step0",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "mean_cos": 1.0
+  },
+  {
+   "revision": "step0",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-seed1",
+   "mean_cos": -3.4e-05
+  },
+  {
+   "revision": "step1",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "mean_cos": 1.0
+  },
+  {
+   "revision": "step1",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "mean_cos": 1.0
+  },
+  {
+   "revision": "step1",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-seed1",
+   "mean_cos": -3.4e-05
+  },
+  {
+   "revision": "step64",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "mean_cos": 0.999998
+  },
+  {
+   "revision": "step64",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "mean_cos": 0.999998
+  },
+  {
+   "revision": "step64",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-seed1",
+   "mean_cos": -4.1e-05
+  },
+  {
+   "revision": "step1000",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "mean_cos": 0.994206
+  },
+  {
+   "revision": "step1000",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "mean_cos": 0.992604
+  },
+  {
+   "revision": "step1000",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-seed1",
+   "mean_cos": -0.00015
+  },
+  {
+   "revision": "step10000",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "mean_cos": 0.484503
+  },
+  {
+   "revision": "step10000",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "mean_cos": 0.461029
+  },
+  {
+   "revision": "step10000",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-seed1",
+   "mean_cos": -0.000152
+  },
+  {
+   "revision": "main",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-weight-seed1",
+   "mean_cos": 0.211082
+  },
+  {
+   "revision": "main",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-data-seed1",
+   "mean_cos": 0.19568
+  },
+  {
+   "revision": "main",
+   "a": "EleutherAI/pythia-160m",
+   "b": "EleutherAI/pythia-160m-seed1",
+   "mean_cos": -1.9e-05
+  }
+ ]
+}

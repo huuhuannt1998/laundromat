@@ -1,0 +1,503 @@
+{
+ "note": "Manuscript numbers are 'manifest_labels'. 'bio_clinicalbert_relabelled' relabels one pair (bert-base-uncased -> Bio_ClinicalBERT) from derivative to non-derivative on card evidence; reported as a sensitivity arm only.",
+ "signals": [
+  "eas",
+  "wvc",
+  "end",
+  "lep",
+  "nlf"
+ ],
+ "vendor_weights": [
+  0.36,
+  0.21,
+  0.19,
+  0.16,
+  0.08
+ ],
+ "manifest_labels": {
+  "n": 28,
+  "pos": 18,
+  "neg": 10,
+  "families": [
+   "bart-large-cnn",
+   "bart-large-xsum",
+   "bert-base-uncased",
+   "pythia",
+   "roberta-base"
+  ],
+  "pairs": [
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "ehsanaghaei/SecureBERT",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "distilbert/distilroberta-base",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "microsoft/xtremedistil-l6-h256-uncased",
+    "y": 1,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "facebook/bart-large-cnn",
+    "child": "sshleifer/distilbart-cnn-6-6",
+    "y": 1,
+    "family": "bart-large-cnn"
+   },
+   {
+    "parent": "facebook/bart-large-xsum",
+    "child": "sshleifer/distilbart-xsum-6-6",
+    "y": 1,
+    "family": "bart-large-xsum"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "sentence-transformers/all-distilroberta-v1",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "Intel/dynamic_tinybert",
+    "y": 1,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "EleutherAI/pythia-160m",
+    "child": "EleutherAI/pythia-160m-deduped",
+    "y": 0,
+    "family": "pythia"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "nlpaueb/legal-bert-base-uncased",
+    "y": 0,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "ProsusAI/finbert",
+    "y": 1,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "emilyalsentzer/Bio_ClinicalBERT",
+    "y": 1,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+    "y": 0,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "textattack/bert-base-uncased-SST-2",
+    "y": 1,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "textattack/bert-base-uncased-imdb",
+    "y": 1,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "csarron/bert-base-uncased-squad-v1",
+    "y": 1,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "allenai/cs_roberta_base",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "allenai/biomed_roberta_base",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "allenai/news_roberta_base",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "allenai/reviews_roberta_base",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "cardiffnlp/twitter-roberta-base",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "EleutherAI/pythia-70m",
+    "child": "EleutherAI/pythia-70m-deduped",
+    "y": 0,
+    "family": "pythia"
+   },
+   {
+    "parent": "EleutherAI/pythia-410m",
+    "child": "EleutherAI/pythia-410m-deduped",
+    "y": 0,
+    "family": "pythia"
+   },
+   {
+    "parent": "EleutherAI/pythia-1b",
+    "child": "EleutherAI/pythia-1b-deduped",
+    "y": 0,
+    "family": "pythia"
+   },
+   {
+    "parent": "EleutherAI/pythia-70m",
+    "child": "EleutherAI/pythia-70m-v0",
+    "y": 0,
+    "family": "pythia"
+   },
+   {
+    "parent": "EleutherAI/pythia-160m",
+    "child": "EleutherAI/pythia-160m-v0",
+    "y": 0,
+    "family": "pythia"
+   },
+   {
+    "parent": "EleutherAI/pythia-70m-deduped",
+    "child": "EleutherAI/pythia-70m-deduped-v0",
+    "y": 0,
+    "family": "pythia"
+   },
+   {
+    "parent": "EleutherAI/pythia-410m",
+    "child": "EleutherAI/pythia-410m-v0",
+    "y": 0,
+    "family": "pythia"
+   }
+  ],
+  "leave_one_family_out_mean": {
+   "vendor": 0.7142857142857143,
+   "logistic": 0.35714285714285715,
+   "nonneg": 0.7142857142857143,
+   "best1": 0.7142857142857143
+  },
+  "auc_vendor_coefficients": 0.6,
+  "auc_loo_logistic": 0.6222222222222222,
+  "auc_loo_nonneg": 0.6055555555555555,
+  "family_disjoint_split": {
+   "train_families": [
+    "bert-base-uncased",
+    "roberta-base"
+   ],
+   "test_families": [
+    "bart-large-cnn",
+    "bart-large-xsum",
+    "pythia"
+   ],
+   "n_train": 18,
+   "train_pos": 16,
+   "train_neg": 2,
+   "n_test": 10,
+   "test_pos": 2,
+   "test_neg": 8,
+   "auc_vendor": 0.6875,
+   "auc_logistic": 0.125,
+   "auc_nonneg": 0.125,
+   "nonneg_weights": [
+    0.674878458728008,
+    0.0,
+    0.0,
+    0.0,
+    0.325121541271992
+   ]
+  },
+  "auc_insample_logistic": 0.8222222222222222,
+  "auc_insample_nonneg": 0.7277777777777777,
+  "insample_logistic_weights": [
+   1.4319927685120803,
+   1.3527833056296854,
+   1.6290501581808847,
+   -0.3001542578565299,
+   -3.242460262019697
+  ],
+  "insample_nonneg_weights": [
+   0.2423217748527881,
+   0.1426154310155718,
+   0.61506279413164,
+   0.0,
+   0.0
+  ],
+  "auc_single_signal": {
+   "eas": 0.7444444444444445,
+   "wvc": 0.5777777777777777,
+   "end": 0.7277777777777777,
+   "lep": 0.7777777777777778,
+   "nlf": 0.2222222222222222
+  },
+  "best_single_signal": "lep",
+  "auc_best_single_signal": 0.7777777777777778
+ },
+ "bio_clinicalbert_relabelled": {
+  "n": 28,
+  "pos": 17,
+  "neg": 11,
+  "families": [
+   "bart-large-cnn",
+   "bart-large-xsum",
+   "bert-base-uncased",
+   "pythia",
+   "roberta-base"
+  ],
+  "pairs": [
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "ehsanaghaei/SecureBERT",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "distilbert/distilroberta-base",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "microsoft/xtremedistil-l6-h256-uncased",
+    "y": 1,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "facebook/bart-large-cnn",
+    "child": "sshleifer/distilbart-cnn-6-6",
+    "y": 1,
+    "family": "bart-large-cnn"
+   },
+   {
+    "parent": "facebook/bart-large-xsum",
+    "child": "sshleifer/distilbart-xsum-6-6",
+    "y": 1,
+    "family": "bart-large-xsum"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "sentence-transformers/all-distilroberta-v1",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "Intel/dynamic_tinybert",
+    "y": 1,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "EleutherAI/pythia-160m",
+    "child": "EleutherAI/pythia-160m-deduped",
+    "y": 0,
+    "family": "pythia"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "nlpaueb/legal-bert-base-uncased",
+    "y": 0,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "ProsusAI/finbert",
+    "y": 1,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "emilyalsentzer/Bio_ClinicalBERT",
+    "y": 0,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+    "y": 0,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "textattack/bert-base-uncased-SST-2",
+    "y": 1,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "textattack/bert-base-uncased-imdb",
+    "y": 1,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "google-bert/bert-base-uncased",
+    "child": "csarron/bert-base-uncased-squad-v1",
+    "y": 1,
+    "family": "bert-base-uncased"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "allenai/cs_roberta_base",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "allenai/biomed_roberta_base",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "allenai/news_roberta_base",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "allenai/reviews_roberta_base",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "FacebookAI/roberta-base",
+    "child": "cardiffnlp/twitter-roberta-base",
+    "y": 1,
+    "family": "roberta-base"
+   },
+   {
+    "parent": "EleutherAI/pythia-70m",
+    "child": "EleutherAI/pythia-70m-deduped",
+    "y": 0,
+    "family": "pythia"
+   },
+   {
+    "parent": "EleutherAI/pythia-410m",
+    "child": "EleutherAI/pythia-410m-deduped",
+    "y": 0,
+    "family": "pythia"
+   },
+   {
+    "parent": "EleutherAI/pythia-1b",
+    "child": "EleutherAI/pythia-1b-deduped",
+    "y": 0,
+    "family": "pythia"
+   },
+   {
+    "parent": "EleutherAI/pythia-70m",
+    "child": "EleutherAI/pythia-70m-v0",
+    "y": 0,
+    "family": "pythia"
+   },
+   {
+    "parent": "EleutherAI/pythia-160m",
+    "child": "EleutherAI/pythia-160m-v0",
+    "y": 0,
+    "family": "pythia"
+   },
+   {
+    "parent": "EleutherAI/pythia-70m-deduped",
+    "child": "EleutherAI/pythia-70m-deduped-v0",
+    "y": 0,
+    "family": "pythia"
+   },
+   {
+    "parent": "EleutherAI/pythia-410m",
+    "child": "EleutherAI/pythia-410m-v0",
+    "y": 0,
+    "family": "pythia"
+   }
+  ],
+  "leave_one_family_out_mean": {
+   "vendor": 0.6666666666666666,
+   "logistic": 0.16666666666666666,
+   "nonneg": 0.6666666666666666,
+   "best1": 0.6666666666666666
+  },
+  "auc_vendor_coefficients": 0.6417112299465241,
+  "auc_loo_logistic": 0.5668449197860963,
+  "auc_loo_nonneg": 0.44919786096256686,
+  "family_disjoint_split": {
+   "train_families": [
+    "bert-base-uncased",
+    "roberta-base"
+   ],
+   "test_families": [
+    "bart-large-cnn",
+    "bart-large-xsum",
+    "pythia"
+   ],
+   "n_train": 18,
+   "train_pos": 15,
+   "train_neg": 3,
+   "n_test": 10,
+   "test_pos": 2,
+   "test_neg": 8,
+   "auc_vendor": 0.6875,
+   "auc_logistic": 0.0,
+   "auc_nonneg": 0.0,
+   "nonneg_weights": [
+    0.44173684424151793,
+    0.11858260570800873,
+    0.0,
+    0.0,
+    0.43968055005047335
+   ]
+  },
+  "auc_insample_logistic": 0.7754010695187166,
+  "auc_insample_nonneg": 0.6844919786096256,
+  "insample_logistic_weights": [
+   1.8607893165710543,
+   1.9850480239070645,
+   1.0995245198700594,
+   -0.941780369440838,
+   -1.9232453733054962
+  ],
+  "insample_nonneg_weights": [
+   0.32590381079811054,
+   0.35248679248730314,
+   0.32160939671458627,
+   0.0,
+   0.0
+  ],
+  "auc_single_signal": {
+   "eas": 0.7754010695187166,
+   "wvc": 0.6310160427807486,
+   "end": 0.7112299465240641,
+   "lep": 0.8181818181818182,
+   "nlf": 0.2914438502673797
+  },
+  "best_single_signal": "lep",
+  "auc_best_single_signal": 0.8181818181818182
+ }
+}

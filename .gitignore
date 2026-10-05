@@ -48,3 +48,9 @@ __pycache__/
 .venv/
 .DS_Store
 .ipynb_checkpoints/
+
+# E23 spilled up-projection caches (24 GB, regenerable from cached weights)
+M9/reduced/
+M9/*.log
+M9/work_e27/
+M9/work_e29/

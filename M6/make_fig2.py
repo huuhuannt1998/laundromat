@@ -1,7 +1,7 @@
 """Rebuild fig2 from the audited corpus (E2), so figure and manifest cannot drift.
 
 Derived scores come from the gold lineage manifest, excluding any row the label
-audit disqualified.  Same-recipe scores are the five independently-trained Pythia
+audit disqualified.  Same-recipe scores are the six independently-trained Pythia
 pairs.  Same-family are the two from-scratch models in the BERT family.  Unrelated
 is the frozen null.
 """
@@ -26,7 +26,8 @@ for r in man["rows"]:
         continue
     (same_fam if r["relationship_class"] == "N-FAM" else derived).append(r["identity_score"])
 
-same_recipe = [0.7856, 0.6745, 0.7810, 0.7262, 0.7976]      # pythia X vs X-deduped, Table II
+same_recipe = [0.7856, 0.6745, 0.7810, 0.7262, 0.7976, 0.8211]  # pythia X vs X-deduped, Table II
+                                                            # 0.8211 is the 6.9B pair added by E23
 null = json.loads((ROOT/"M2"/"results"/"null_frozen.json").read_text())["scores"]
 
 rows = [("derived\n(true descent)", derived, "#1f4e79"),

@@ -1,0 +1,50 @@
+[
+ {
+  "scale": "70m",
+  "a": "EleutherAI/pythia-70m",
+  "b": "EleutherAI/pythia-70m-deduped",
+  "displacement_embed": 1.1586675643920898
+ },
+ {
+  "scale": "70m",
+  "a": "EleutherAI/pythia-70m",
+  "b": "EleutherAI/pythia-70m-v0",
+  "displacement_embed": 1.1555876731872559
+ },
+ {
+  "scale": "160m",
+  "a": "EleutherAI/pythia-160m",
+  "b": "EleutherAI/pythia-160m-deduped",
+  "displacement_embed": 1.1687147617340088
+ },
+ {
+  "scale": "160m",
+  "a": "EleutherAI/pythia-160m",
+  "b": "EleutherAI/pythia-160m-v0",
+  "displacement_embed": 1.3347150087356567
+ },
+ {
+  "scale": "410m",
+  "a": "EleutherAI/pythia-410m",
+  "b": "EleutherAI/pythia-410m-deduped",
+  "displacement_embed": 1.1418144702911377
+ },
+ {
+  "scale": "1b",
+  "a": "EleutherAI/pythia-1b",
+  "b": "EleutherAI/pythia-1b-deduped",
+  "displacement_embed": 1.1529033184051514
+ },
+ {
+  "scale": "1.4b",
+  "a": "EleutherAI/pythia-1.4b",
+  "b": "EleutherAI/pythia-1.4b-deduped",
+  "displacement_embed": 1.1132267713546753
+ },
+ {
+  "scale": "6.9b",
+  "a": "EleutherAI/pythia-6.9b",
+  "b": "EleutherAI/pythia-6.9b-deduped",
+  "displacement_embed": 0.9512912034988403
+ }
+]

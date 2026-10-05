@@ -15,7 +15,7 @@ them so a reviewer can spend effort where it matters.
 | Verifier behaviour on public models | minutes to hours | `make reproduce-gate`, `make reproduce-crash` |
 | Full measurement campaigns | hours, network-bound | `make reproduce-ladder`, `make reproduce-awm`, `make reproduce-substrate` |
 
-Frozen results are recorded in `MANIFEST-dataintegrity.txt` (80 files, md5). `make verify-data`
+Frozen results are recorded in `MANIFEST-dataintegrity.txt` (94 files, md5). `make verify-data`
 checks them. Every reproduction script writes **new** files; none overwrites a frozen one.
 
 ## 1. The object under study
@@ -73,6 +73,12 @@ Rebuild with `python3 M6/build_gold_manifest.py`.
 | Rank + runtime (E17/E22) | §VI, §X | `M7/e17_rank_e22_runtime.py` → `M7/e17_e22.json` |
 | Consolidated transform matrix (E15) | §VI | `M7/e15_transform_matrix.py` → `.csv` / `.md` |
 | Deployment testbed (E25) | §III, §VIII-B | `M8/run_testbed.py` → `M8/e25_results.json` |
+| Tab. admission outcomes (E25b) | §III, §VIII-B | `M8/run_testbed_b.py` → `M8/e25b_results.json` |
+| Recalibration, frozen (E9b) | §V-F | `M7/e9b_recalibrate.py` → `M7/e9b_recalibration_frozen.json` |
+| Width-mismatched alignment (E31) | §X, Tab. alignment | `M7/e31_width_mismatch.py` → `M7/e31_width_mismatch.json` |
+| Ladder alignment (E32) | Tab. training ladder | `M7/e32_ladder_alignment.py` → `M7/e32_ladder_alignment.json` |
+| Merging, corrected instrument (E29b) | §VI-B | `M9/e29b_merging.py` → `M9/e29b_merging.jsonl` |
+| M1 metadata adversary (E30) | §III, §VIII | `M9/e30_m1_adversary.py` → `M9/e30_m1_adversary.jsonl` |
 
 Figures 2–4 regenerate from frozen data, so figure and text cannot drift. `make_fig3.py` prints
 the fit it produces; it must read `sigma = 0.8692 - 0.3327 d, R2 = 0.6927, last_obs = 0.8295`.
@@ -134,15 +140,20 @@ tester's verdicts are **sample-dependent at 300 prompts** — see §5.
    layer. `M4/defence_distill.json` records both readings side by side (`lap_index` 0.2900 vs
    `lap_stride` 0.5255 for bert to distilbert) so the choice is auditable. `M7/e18_defence.py`
    reproduces the stride values exactly (0.5987 distilroberta, 0.5148 distilgpt2).
-6. **MLP extraction is architecture-specific.** DistilBERT names its up-projection
+6. **Saving a merged model through `AutoModel` invalidates two measurements at once.** It drops
+   the language-model head, so a masked-LM loss computed afterwards reads chance (16.20 nats on
+   an unmerged RoBERTa child that reads 2.46 directly), and it rewrites `architectures`, which
+   moves the metadata tier from 1 to 3 and therefore the verdict. E29 hit both; `M9/e29b_merging.py`
+   saves with the head preserved and records the diagnostic row that shows the difference.
+7. **MLP extraction is architecture-specific.** DistilBERT names its up-projection
    `ffn.lin1.weight`, not `intermediate.dense.weight`. An extractor missing that key returns an
    empty layer list and a silent `null` score rather than an error.
-7. **Absence of a fidelity record is not evidence of capability preservation.** Some attack arms
+8. **Absence of a fidelity record is not evidence of capability preservation.** Some attack arms
    were logged without a fidelity block. `M7/e15_transform_matrix.py` reports those as
    `unmeasured` and excludes them from the preserving tally. Counting them as preserved
    manufactures an evasion that was never demonstrated — the one arm below the evasion bar is an
    anchor-noise injection at eight times the relative scale, i.e. the model-destroying family.
-8. **Pagination is non-monotone.** Trimming LaTeX text sometimes increases overflow.
+9. **Pagination is non-monotone.** Trimming LaTeX text sometimes increases overflow.
 
 ## 5b. Clean-room reproduction — performed 2026-08-25
 
@@ -166,7 +177,7 @@ It found two real defects first, both now fixed:
 ## 6. Smoke test (about two minutes)
 
 ```
-make verify-data        # 80 frozen md5s
+make verify-data        # 94 frozen md5s
 make smoke              # one gate comparison + one figure regeneration
 ```
 

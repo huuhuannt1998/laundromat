@@ -1,4 +1,33 @@
-d41d8cd98f00b204e9800998ecf8427e  M1/results/mpk_crashes.jsonl
+# LAUNDROMAT data-integrity manifest
+# Regenerated 2026-08-22. Previous version preserved as
+# MANIFEST-dataintegrity.prev.txt so the change is auditable rather than silent.
+#
+# WHY THIS REGENERATION MATTERS. The previous manifest pinned
+# M1/results/mpk_crashes.jsonl at d41d8cd98f00b204e9800998ecf8427e -- the MD5 of a
+# ZERO-BYTE FILE. That is the artifact of record behind the paper's denial-of-verification
+# claim, and the pin certified the broken version of it. The file was regenerated on
+# 2026-08-20 (10 models, 8 confirmed defects, 2 controls) and is now 7214 bytes; the
+# manifest had never been refreshed to match.
+#
+# CHANGED SINCE THE PREVIOUS MANIFEST (2):
+#   M1/results/mpk_crashes.jsonl
+#     d41d8cd98f00b204e9800998ecf8427e -> 50e7982fa8df32490081e6212f4b07ff
+#   M5/sweep_bert.jsonl
+#     06c8524d60f3de74cb8e2f1f71a53385 -> e8ce9969aaa29fd893cd6c2704d4a506
+#
+# ADDED (8) -- results produced after the previous manifest was written:
+#   M2/results/o0_eas_recovery.jsonl
+#   M2/results/o0_weight_recovery.jsonl
+#   M2/results/signal_floors.jsonl
+#   M4/defence_distill.json
+#   M4/defence_expanded.json
+#   M4/defence_expanded_stats.json
+#   M4/defence_final_stats.json
+#   M4/heldout_split.json
+#
+# Total entries: 79
+#
+50e7982fa8df32490081e6212f4b07ff  M1/results/mpk_crashes.jsonl
 4521aa0371d105a7fea521ca626110f1  M1/results/pairs.jsonl
 ce9879b807a5a4ca5d688f27625c4274  M1/results/pairs2.jsonl
 32eb5916e6ef4c70a264361b9534e532  M1/results/scans.jsonl
@@ -12,7 +41,10 @@ ea55e2cfc5fdcd263b74edd24279c371  M2/results/gate_HuggingFaceTB--SmolLM2-135M-In
 b30afeb77e30c9cf29108818b011e626  M2/results/m2t_attack.jsonl
 38fe4fad947fbdbe048aa9d651b5abe5  M2/results/m2t_composed.jsonl
 69c9d9d29a926138c54f589a32d659f0  M2/results/null_frozen.json
+fdf312b60d21fafa52ecd66c5da9202f  M2/results/o0_eas_recovery.jsonl
+b47c30f6d71e584345bf1c8710346d22  M2/results/o0_weight_recovery.jsonl
 a074fa36f55ca7561dda9619abed1631  M2/results/q1_baseline.jsonl
+1fba92f5908da0525e8fc41d16377121  M2/results/signal_floors.jsonl
 fc3923103c9ff00093da059434da893a  M2/results/sweep_embed_HuggingFaceTB--SmolLM2-135M-Instruct.jsonl
 0b9c190b470485835d29ddfe43e91b3a  M2/results/wide_scans.jsonl
 8a7cc1bf3560c508a48b7150f7a5a299  M2/work/M2t-overlap0_50/config.json
@@ -28,10 +60,15 @@ fbf59647aa377da21e4b8f7384404ef9  M3/claim_survey2.json
 c3c2c92bf22410f03d6c053af1e0295f  M3/verify_claims.jsonl
 75f586f31adc87f8c858889b91a2e0d0  M4/adaptive_ov.json
 38d5bcbe19bef1942c1032bad910af87  M4/adaptive_qk.json
+b56b445b0c9692efc3f45ab8a5d27a0c  M4/defence_distill.json
+24191abcd6bcb6c1b05ebcac3e986647  M4/defence_expanded.json
+aa96c984cea2a9668e952092aa77d3f6  M4/defence_expanded_stats.json
+0b6266b2235808e6785c91e067716fd7  M4/defence_final_stats.json
 f8ebd7c9fbdca649533ef90279d3a5d9  M4/defence_full.json
 77c2b0353c2ade6cdd457fd12b329144  M4/defence_signals.json
 1153d3070fa6333583308e02a0efc7ca  M4/distill_stress.json
 3ebba3e6088b47613231b101db7141a6  M4/family_generality.jsonl
+7d35875d3a9f9ee60d09cd66ab7b73f1  M4/heldout_split.json
 9960c52a3cfec3ab59aeb316e7e02f85  M4/lap2.json
 a31c9a3e8be0d27e611c54d48f342c92  M4/lap_defence.json
 660582dfcfdda9b54d0982f02db0f8a7  M4/p_tilde_arm.jsonl
@@ -61,7 +98,7 @@ cf410ee085c5c69c957bb1f6d8456596  M5/repaired/allenai--news_roberta_base/vocab.j
 92caedfe02743db23e11e7fb456524f5  M5/repaired/allenai--reviews_roberta_base/tokenizer_config.json
 cf410ee085c5c69c957bb1f6d8456596  M5/repaired/allenai--reviews_roberta_base/vocab.json
 461a70b1fd20e0ecbee4acac09686c17  M5/repaired/emilyalsentzer--Bio_ClinicalBERT/config.json
-06c8524d60f3de74cb8e2f1f71a53385  M5/sweep_bert.jsonl
+e8ce9969aaa29fd893cd6c2704d4a506  M5/sweep_bert.jsonl
 7e010858f0bca95106c00f35366cf695  analysis/c5_final.json
 5d45f4463638b7936f4114c9f8268370  analysis/capability.json
 2646211a98271c4946ed7bdec85bea3d  analysis/mixed_effects_data.csv
@@ -69,3 +106,15 @@ cf410ee085c5c69c957bb1f6d8456596  M5/repaired/allenai--reviews_roberta_base/voca
 c67d46fc5018030780cd5c39584c986a  analysis/prereg_final.json
 5bf2b9ea81872f7227d40b69b2ba6a98  analysis/prereg_stats.json
 f4e0f0de6aa3c368063e948db42df178  analysis/prereg_stats2.json
+0d927c590b1ee9ca9b36396aeeb535b5  M6/pooled_lineage_corpus_31row.json
+843ebc0d477300dfcc13a91d7843e121  M8/e25_results.json
+a2856660829d89d6cf5d59baf56307c1  M8/model_licences.json
+4c47e735b3cf826c5487a347b1444602  M8/bom-1.6.schema.json
+# Appended 2026-08-31: E23 scale extension and E26 anchor scale-robustness.
+b0788e35b4cf12cc13a48f505994ddfa  M9/e23_scale.jsonl
+6a36b57865aa9a3e824a12fb9a134362  M9/e26_anchor_scale.json
+# Appended 2026-08-31: E27 genuine-ancestor control at 6.9B.
+fbaddcef4ad47817df44c6c5c7da2082  M9/e27_ancestor_scale.jsonl
+# Appended 2026-09-03: E28 symmetry, E29 merging (mock-review response).
+a7f10eee056a4d9cdb3a366a64d7e377  M9/e28_symmetry.jsonl
+77821cea7930b35bec603e0c5a22b42f  M9/e29_merging.jsonl

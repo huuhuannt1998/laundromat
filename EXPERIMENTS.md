@@ -1257,17 +1257,22 @@ AI-tics 0 BLOCK; 80/80 frozen.
 | population | N | no `architectures` |
 |---|---|---|
 | vendor's own fingerprint catalog | 157 | **0 (0.0%)** |
-| consumer-submitted sample (40 most-downloaded × 14 families) | 545 | 47 raw → **18 genuine (3.3%)** |
+| consumer-submitted sample (40 most-downloaded × 14 families) | 545 | 47 raw → **17 ordinary (3.1%)** |
 
 The vendor's 0% **measures curation, not prevalence** — an asset is in the catalog *because* it
 was fingerprintable, which requires the fields being counted. The review proposed that frame as
 "defensible" without flagging the conditioning; both populations are reported side by side.
 
 The raw 8.6% is not reported unqualified either: of 47, **23 are GGUF repos** (not the format the
-tool reads) and **6 are test fixtures**. Defensible rate 18/545 = 3.3%.
+tool reads) and **7 are test fixtures**. Defensible rate 17/545 = 3.1%.
+*Corrected 2026-09-25:* this first said 6 fixtures and 18/545 = 3.3%. The seventh fixture,
+`robot-test/dummy-tokenizer-fast-with-model-config`, holds a tokenizer and no weights; the written
+rule and the recount are in `M7/e14d_classify.py` → `M7/e14d_classified.json`.
 
-**The composition is the finding.** 13 of 18 are DeBERTa; **11 are first-party Microsoft** —
-`deberta-base`, `-large`, both v2 sizes, all four v3 sizes, `mdeberta-v3-base`. Verified directly
+**The composition is the finding.** 11 of 17 are DeBERTa; **9 are first-party Microsoft** —
+`deberta-base`, `-large`, both v2 sizes, all four v3 sizes, `mdeberta-v3-base`. *Corrected
+2026-09-25:* this first said 13 and 11, which the list itself contradicts (it names nine); recount
+in `M7/e14c_composition.json`. Verified directly
 against three configs. An entire model line from a major publisher, including one of the
 most-downloaded encoders on the hub, cannot be verified. §VIII is now a measurement rather than
 eight anecdotes — which is exactly what review §30 said it needed.
@@ -1292,7 +1297,7 @@ optional replication is GPU-gated and explicitly non-mandatory).
 Three limits stated rather than papered over: the stratified null split is permanently
 unavailable (the frozen artifact kept counts, not per-score labels, and its exclusion rule could
 not be reproduced — 1400 vs 1388); E9's family-disjoint split has only 2 held-out positives, so
-its 0.125 rests on 16 comparisons and the leave-one-out figure is the robust one; E14's 3.3% is a
+its 0.125 rests on 16 comparisons and the leave-one-out figure is the robust one; E14's 3.1% (first recorded as 3.3%) is a
 rate within a most-downloaded sample, not a hub-wide estimate.
 
 ### Final state

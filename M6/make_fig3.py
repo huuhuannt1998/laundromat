@@ -1,3 +1,4 @@
+# OBSOLETE (2026-10-04): wrote only into the removed [READY] (S&P 2027) folder; the TMLR manuscript has no displacement figure (its figures come from '[READY] (TMLR) LAUNDROMAT - P6/floats/make_floats.py').
 """Figure 3 -- identity score vs embedding displacement, over the eleven true
 derivatives. Regenerates the fit reported in Sec. pricing directly from the
 frozen sweep files, so figure and text cannot drift."""
@@ -37,7 +38,7 @@ ax.text((xmax+1.35)/2,0.98,"extrapolated",fontsize=5.6,ha='center',color='0.45')
 xs=np.linspace(0,1.35,50)
 ax.plot(xs,a+b*xs,color='#1f4e79',lw=1.0,zorder=2)
 ax.scatter(x,y,s=16,c='#1f4e79',zorder=3,lw=0)
-for t,lab,ls in ((0.65,'0.65 rejection',':'),(0.5298,'0.5298 evasion bar','--')):
+for t,lab,ls in ((0.65,'0.65 weak-match line',':'),(0.5298,'0.5298 evasion bar','--')):
     ax.axhline(t,color='0.4',lw=0.7,ls=ls,zorder=1)
     ax.text(1.34,t+0.012,lab,fontsize=5.4,ha='right',color='0.4')
     xc=(t-a)/b
@@ -49,6 +50,6 @@ ax.text(0.03,0.50,rf"$\sigma_{{\mathrm{{id}}}}={a:.4f}{b:+.4f}\,d$,  $R^2={r2:.3
 for sp in ('top','right'): ax.spines[sp].set_visible(False)
 ax.tick_params(length=2,labelsize=6)
 fig.tight_layout(pad=0.15)
-fig.savefig(ROOT/"manuscripts/laundromat/figures/fig3_displacement.pdf",dpi=300)
+fig.savefig(ROOT/"[READY] (S&P 2027) LAUNDROMAT - P6"/"figures"/"fig3_displacement.pdf",dpi=300)
 print(f"n={len(x)} fit sigma={a:.4f}{b:+.4f}d R2={r2:.4f} last_obs={xmax:.4f} "
       f"cross065={(0.65-a)/b:.4f} cross05298={(0.5298-a)/b:.4f}")

@@ -110,3 +110,26 @@ f4e0f0de6aa3c368063e948db42df178  analysis/prereg_stats2.json
 843ebc0d477300dfcc13a91d7843e121  M8/e25_results.json
 a2856660829d89d6cf5d59baf56307c1  M8/model_licences.json
 4c47e735b3cf826c5487a347b1444602  M8/bom-1.6.schema.json
+# Appended 2026-08-31: E23 scale extension and E26 anchor scale-robustness.
+b0788e35b4cf12cc13a48f505994ddfa  M9/e23_scale.jsonl
+6a36b57865aa9a3e824a12fb9a134362  M9/e26_anchor_scale.json
+# Appended 2026-08-31: E27 genuine-ancestor control at 6.9B.
+fbaddcef4ad47817df44c6c5c7da2082  M9/e27_ancestor_scale.jsonl
+# Appended 2026-09-03: E28 symmetry, E29 merging (mock-review response).
+a7f10eee056a4d9cdb3a366a64d7e377  M9/e28_symmetry.jsonl
+77821cea7930b35bec603e0c5a22b42f  M9/e29_merging.jsonl
+
+# Appended 2026-09-08: six artifacts answering the S&P 2027 cycle-2 review's evidence gaps.
+# Each is a NEW file; no frozen file was edited (ARTIFACT.md sec. 0).
+#   e9b  freezes the six recalibration numbers that lived only in EXPERIMENTS.md prose
+#   e31  alignment on width-mismatched children, with and without a fitted projection
+#   e32  alignment across the pythia-160m checkpoint ladder
+#   e25b Table 3 ground truth re-derived from the audited manifest, per-row card evidence
+#   e29b merging re-run with a loadable MLM head and a head-preserving save
+#   e30  the M1 metadata adversary, forge and deny directions
+dd671c44b75f5364016bdbf54a02d5a0  M7/e9b_recalibration_frozen.json
+002cdea534d650e1b6c248e75abd9445  M7/e31_width_mismatch.json
+15bd50d0639eff3425a2b1c07e8f698a  M7/e32_ladder_alignment.json
+f2dc45224605f32568a987fc44f0433e  M8/e25b_results.json
+1ff25b594419771ba3b25d2ea90caa39  M9/e29b_merging.jsonl
+3a08259493f231f7f5dc9e2320edfe85  M9/e30_m1_adversary.jsonl

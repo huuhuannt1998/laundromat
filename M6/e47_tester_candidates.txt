@@ -1,0 +1,13 @@
+EleutherAI/pythia-160m-deduped,None
+EleutherAI/pythia-410m-deduped,None
+EleutherAI/pythia-70m-seed1,None
+EleutherAI/pythia-160m-seed1,None
+EleutherAI/pythia-410m-seed1,None
+EleutherAI/pythia-70m-seed2,None
+EleutherAI/pythia-160m-seed2,None
+EleutherAI/pythia-410m-seed2,None
+EleutherAI/pythia-70m-seed3,None
+EleutherAI/pythia-160m-seed3,None
+EleutherAI/pythia-410m-seed3,None
+EleutherAI/pythia-160m-data-seed1,None
+EleutherAI/pythia-160m-weight-seed1,None

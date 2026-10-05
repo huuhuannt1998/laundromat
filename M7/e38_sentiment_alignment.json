@@ -1,0 +1,26 @@
+{
+ "cls": "P+ (rejected by the verifier)",
+ "kind": "cont-pre+fine-tune",
+ "a": "FacebookAI/roberta-base",
+ "b": "cardiffnlp/twitter-roberta-base-sentiment-latest",
+ "m": 12,
+ "n": 12,
+ "fixed": 0.9228340486685435,
+ "dp": 0.9228340486685435,
+ "path": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11
+ ],
+ "threshold_0p4727_passed": true,
+ "printed_binding_negative": 0.4513
+}

@@ -1,0 +1,142 @@
+{
+ "EleutherAI/pythia-70m-seed1@main": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-70m-seed1/snapshots/b92214180642ad85f91ccbfffcbf118ebcf2529f",
+  "fmt": "*.bin",
+  "secs": 5.8
+ },
+ "EleutherAI/pythia-70m-seed2@main": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-70m-seed2/snapshots/9df96128bfe65ea5e7f1543f0c8ee707932df286",
+  "fmt": "*.bin",
+  "secs": 9.2
+ },
+ "EleutherAI/pythia-70m-seed3@main": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-70m-seed3/snapshots/3b039e52757be58fe0f769bec63cf50254853f88",
+  "fmt": "*.bin",
+  "secs": 7.2
+ },
+ "EleutherAI/pythia-160m-seed1@main": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-160m-seed1/snapshots/5ed55222b3092e69edcfa5fa646b7aac0b7e03d9",
+  "fmt": "*.safetensors",
+  "secs": 14.4
+ },
+ "EleutherAI/pythia-160m-seed2@main": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-160m-seed2/snapshots/6e9b9f6270d1d624f9d7188c1e8909600c4efae2",
+  "fmt": "*.safetensors",
+  "secs": 12.5
+ },
+ "EleutherAI/pythia-160m-seed3@main": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-160m-seed3/snapshots/a74886a25b5f4ffb3b9a0fa80bd02750f13461bd",
+  "fmt": "*.safetensors",
+  "secs": 14.7
+ },
+ "EleutherAI/pythia-410m-seed1@main": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-410m-seed1/snapshots/33803c4f5a1e9a4bece59e52f17bb8755add33e1",
+  "fmt": "*.bin",
+  "secs": 29.1
+ },
+ "EleutherAI/pythia-410m-seed2@main": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-410m-seed2/snapshots/da2549c8d3e03e6e927594b9060073abdb94e6ba",
+  "fmt": "*.bin",
+  "secs": 27.5
+ },
+ "EleutherAI/pythia-410m-seed3@main": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-410m-seed3/snapshots/1dd84c3d638fd5b6e3c77815ca2a26f1cdf1a307",
+  "fmt": "*.bin",
+  "secs": 22.5
+ },
+ "EleutherAI/pythia-160m-data-seed1@main": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-160m-data-seed1/snapshots/dfa32dc674e75495f4046a721de7025d6610109c",
+  "fmt": "*.bin",
+  "secs": 10.0
+ },
+ "EleutherAI/pythia-160m-weight-seed1@main": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-160m-weight-seed1/snapshots/fe3e1d29ca2b321c686a0b43d22bf6ed1c3ba6a2",
+  "fmt": "*.bin",
+  "secs": 9.3
+ },
+ "EleutherAI/pythia-70m@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-70m/snapshots/87c8ac0ba129db9b084502d341c6ca8dec0fa01f",
+  "fmt": "*.safetensors",
+  "secs": 13.0
+ },
+ "EleutherAI/pythia-70m-deduped@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-70m-deduped/snapshots/c913ae980de9355947d0bf73f9f10d580eb79301",
+  "fmt": "*.safetensors",
+  "secs": 11.1
+ },
+ "EleutherAI/pythia-70m-seed1@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-70m-seed1/snapshots/f26c445e87e94f8a85eadedd8d145cece0e661a3",
+  "fmt": "*.bin",
+  "secs": 5.2
+ },
+ "EleutherAI/pythia-70m-seed2@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-70m-seed2/snapshots/5443be7e2c05bf299aaa0d2207e2ad978b3b203d",
+  "fmt": "*.bin",
+  "secs": 4.3
+ },
+ "EleutherAI/pythia-70m-seed3@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-70m-seed3/snapshots/6b22820192cba3e6590b1c91a68d7314f87fc975",
+  "fmt": "*.bin",
+  "secs": 4.7
+ },
+ "EleutherAI/pythia-160m@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-160m/snapshots/0cf035e7d55e9b2fbec7f2db0c0c32670146b9b1",
+  "fmt": "*.safetensors",
+  "secs": 32.5
+ },
+ "EleutherAI/pythia-160m-deduped@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-160m-deduped/snapshots/0450b9dc64e8a49a87c9eec8813d0e6979643420",
+  "fmt": "*.safetensors",
+  "secs": 26.4
+ },
+ "EleutherAI/pythia-160m-seed1@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-160m-seed1/snapshots/e0512b7e8a9dad09e681ba0b8aa3e1d59be02f58",
+  "fmt": "*.bin",
+  "secs": 10.3
+ },
+ "EleutherAI/pythia-160m-seed2@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-160m-seed2/snapshots/67161ff839bd4e0cd21868ea8096d533576ef6e9",
+  "fmt": "*.bin",
+  "secs": 9.9
+ },
+ "EleutherAI/pythia-160m-seed3@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-160m-seed3/snapshots/df109a7fbb0c737d7e1ee0168adb0e130de8c867",
+  "fmt": "*.bin",
+  "secs": 10.6
+ },
+ "EleutherAI/pythia-410m@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-410m/snapshots/8bba10b3d3588a20deaaeacca9efc46a680ca91d",
+  "fmt": "*.safetensors",
+  "secs": 71.8
+ },
+ "EleutherAI/pythia-410m-deduped@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-410m-deduped/snapshots/e361f9afd54b3e7856879eead5326d36ff6f32d7",
+  "fmt": "*.safetensors",
+  "secs": 67.3
+ },
+ "EleutherAI/pythia-410m-seed1@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-410m-seed1/snapshots/4aa96ad7344b88d2a3e190d48499e37770c43556",
+  "fmt": "*.bin",
+  "secs": 21.0
+ },
+ "EleutherAI/pythia-410m-seed2@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-410m-seed2/snapshots/623c37c02909555e121370a154a784e51256f707",
+  "fmt": "*.bin",
+  "secs": 23.5
+ },
+ "EleutherAI/pythia-410m-seed3@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-410m-seed3/snapshots/e52f3a11137d627442a81b38faecc0eeb24a833b",
+  "fmt": "*.bin",
+  "secs": 24.1
+ },
+ "EleutherAI/pythia-160m-data-seed1@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-160m-data-seed1/snapshots/f93cb0d06bb9811900f09d6f311f8cb0defbfdbc",
+  "fmt": "*.bin",
+  "secs": 12.1
+ },
+ "EleutherAI/pythia-160m-weight-seed1@step0": {
+  "path": "/Users/huanbui/.cache/huggingface/hub/models--EleutherAI--pythia-160m-weight-seed1/snapshots/c974e61353ea6b5a94877c8864aa30c4b891ec5f",
+  "fmt": "*.bin",
+  "secs": 9.1
+ }
+}
